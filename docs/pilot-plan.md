@@ -2,15 +2,15 @@
 
 Capital : **~0,136 ETH ≈ 203 €** (WALLET-01).  
 **Ce PR = docs seulement — aucun spend on-chain.**  
-Plafonds : [`risk-limits.md`](risk-limits.md) · Catalogue : [`vecteurs.md`](vecteurs.md).
+Plafonds : [`risk-limits.md`](risk-limits.md) · Catalogue : [`vecteurs.md`](vecteurs.md) · Marchés agents : [`agent-markets.md`](agent-markets.md).
 
 ## 1. Pilotes retenus (3)
 
 | Priorité | ID | Vecteur | Panier | Pourquoi maintenant |
 |----------|----|---------|--------|---------------------|
-| P0 | **V-06** | Freelance web / ops | Cash services | 0 € capital ; 1 mission 200–400 € ≈ objectif 2× ; taux EU junior/mid documentés ~35–75 €/h → un micro-gig de quelques heures suffit |
-| P1 | **V-04** | Bounties / grants crypto | Cash services | Gas/outils seulement ; bounties docs/quests souvent 50–500 USD ; un bounty mid peut couvrir le 2× ; canal distinct du freelance classique |
-| P2 | **V-11** | Recherche on-chain à façon | Cash services | Quasi 0 capital ; aligne compétences anti-scam / due diligence ; brief 150–300 € = levier fort ; sample public = actif réutilisable |
+| P0 | **V-06** | Freelance / agent markets | Cash services | 0 € capital ; 1 mission 200–400 € ≈ objectif 2× ; **canaux GO** : Virtuals ACP + Skyfire seller ([`agent-markets.md`](agent-markets.md)) — Free-Work/LaborX/Malt/Upwork écartés (ToS / KYC) |
+| P1 | **V-04** | Bounties / Mech | Cash services | Gas/outils seulement ; **Olas Mech Marketplace** (turnover live) prioritaire vs Opire minuscule ; escrow on-chain préféré |
+| P2 | **V-11** | Recherche on-chain à façon | Cash services | Quasi 0 capital ; brief 150–300 € ; offre naturelle sur ACP / Mech / Skyfire MCP |
 
 ### Pourquoi pas les autres en vague 1
 
@@ -45,9 +45,9 @@ Toute activation capital exige : autorisation explicite + ledger rempli + triang
 
 | Pilote | Vert si… |
 |--------|----------|
-| V-06 | ≥ 1 offre publiée sur 2 canaux légitimes **et** ≥ 3 conversations qualifiées **ou** 1 proposition chiffrée envoyée |
-| V-04 | Shortlist ≥ 5 bounties triangulées **et** ≥ 1 soumission / draft soumis **ou** 1 bounty won / paid |
-| V-11 | 1 brief sample public publié **et** proposition format+prix sur ≥ 2 canaux |
+| V-06 | ≥ 1 offre publiée sur **2 canaux agent-friendly GO** (ACP / Skyfire / Olas) **et** ≥ 3 conversations qualifiées **ou** 1 job funded / proposition chiffrée |
+| V-04 | Shortlist ≥ 5 opportunités triangulées (Mech tools / bounties escrow) **et** ≥ 1 draft soumis **ou** 1 payout |
+| V-11 | 1 brief sample public publié **et** proposition format+prix sur ≥ 2 canaux GO agent-markets |
 
 **Succès capital (hors scope spend actuel)** : si spend autorisé plus tard — 0 violation des caps ; PnL vecteur ≥ 0 après frais sur la fenêtre.
 
@@ -74,29 +74,30 @@ Kill individuels du catalogue restent applicables immédiatement (scam, seed, ga
 - [x] Ouvrir / mettre à jour ledgers `ops/ledgers/V-06.md`, `V-04.md`, `V-11.md` (statut → `recherche`)
 - [x] Noter 1 hypothèse du jour + ≥ 2 sources web externes (règle challenge)
 
-### V-06 — Freelance
+### V-06 — Freelance / agent markets
 
 - [x] Rédiger 1 offre claire (stack, délai, prix cible 200–400 € ou TJM)
-- [x] Choisir 2 canaux légitimes (pas de « pay to apply ») — Free-Work + Freelance-informatique
+- [x] Choisir 2 canaux légitimes (pas de « pay to apply ») — **pivot 2026-11-21** : Free-Work + Freelance-informatique → **Virtuals ACP** + **Skyfire seller** ([`agent-markets.md`](agent-markets.md) GO)
 - [x] Lister 5 cibles / mots-clés de recherche
-- [x] Anti-scam : template escrow / acompte
-- [ ] Publier l’offre / ouvrir les comptes — **bloqué** : email (et KYC Malt/Upwork si retenus) → escalade
+- [x] Anti-scam : template escrow / acompte (+ escrow on-chain ACP/Skyfire)
+- [ ] Publier l’offre / ouvrir les comptes agent — **bloqué** : runtime / wallet agent / éventuel compte Virtuals ; Free-Work email humain = backup seulement
 
-### V-04 — Bounties
+### V-04 — Bounties / Mech
 
 - [x] Inventorier 5 bounties / boards (scrutés + triangulation) — liens officiels seulement
-- [x] Trianguler org + liveness / paiement pour chacune (plusieurs ❌ : OnlyDust fermé, Algora 404, etc.)
+- [x] Trianguler org + liveness / paiement (OnlyDust fermé, Algora 404, Opire minuscule)
+- [x] Shortlist marchés agents (Olas Mech **GO**, Opire WATCH) — [`agent-markets.md`](agent-markets.md)
 - [x] Estimer €/h ; écarter si frais d’entrée ou hors éthique
 - [x] Préparer 1 draft de soumission (texte) **sans** claim on-chain
-- [ ] Soumettre / claim — **non** (0 spend ; GitHub humain ; pipeline mid-size plus mince — hypothèse H1 rejetée)
+- [ ] Soumettre / claim / déployer Mech — **non** (0 spend ; GitHub humain ; infra Mech non bootstrap)
 
 ### V-11 — Recherche
 
 - [x] Choisir 1 protocole blue-chip pour sample — Lido / stETH
 - [x] Outline brief (sources publiques, disclaimer « pas un conseil financier »)
 - [x] Définir prix + format (1–2 pages, 180–250 €)
-- [x] Identifier 2 canaux de proposition — LaborX + Free-Work
-- [ ] Publier sample public + propositions — **bloqué** comptes / rédaction J2
+- [x] Identifier 2 canaux de proposition — **pivot** : LaborX + Free-Work → **Virtuals ACP** + **Olas/Skyfire**
+- [ ] Publier sample public + propositions — **bloqué** comptes agent / rédaction J2
 
 ### Fin de J1
 

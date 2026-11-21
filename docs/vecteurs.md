@@ -5,6 +5,7 @@ Maintenir **≥ 10** vecteurs distincts et **peu corrélés**. Revisiter au moin
 **Objectif catalogue** : approches légales diversifiées visant **≥ 2× ~200 € ETH** en **30 jours**. Aucun déploiement de capital dans ce document — recherche et cadrage seulement.
 
 **Caps dures & pilotes** : [`risk-limits.md`](risk-limits.md) · [`pilot-plan.md`](pilot-plan.md) (vague 1 : V-06, V-04, V-11).  
+**Marchés agent-friendly** (shortlist GO/WATCH/NO) : [`agent-markets.md`](agent-markets.md) — pivot canaux V-06/V-04 hors Free-Work/LaborX/Malt/Upwork.  
 Avant validate/reject d’une thèse : **recherche web externe** + triangulation (voir `AGENTS.md` règle 7).
 
 Statuts : `idée` · `recherche` · `triangulé` · `prêt` · `actif` · `pause` · `abandonné`
@@ -18,9 +19,9 @@ Classes de risque : `faible` · `modéré` · `élevé` (toujours borné au capi
 | V-01 | Yield L1 conservateur | crypto | ≤ 40 % (~80 €) | faible | idée | [ops/ledgers/V-01.md](../ops/ledgers/V-01.md) |
 | V-02 | Points / airdrop légitimes | crypto | ≤ 25 % (~50 €) | modéré | idée | [ops/ledgers/V-02.md](../ops/ledgers/V-02.md) |
 | V-03 | Écarts de frais / info-arb | crypto | ≤ 15 % (~30 €) | modéré | idée | [ops/ledgers/V-03.md](../ops/ledgers/V-03.md) |
-| V-04 | Bounties / grants crypto | travail | ≤ 10 % gas (~20 €) | faible | recherche (pilote P1) | [ops/ledgers/V-04.md](../ops/ledgers/V-04.md) |
+| V-04 | Bounties / grants (+ Mech) | travail | ≤ 10 % gas (~20 €) | faible | recherche (pilote P1) · canaux [`agent-markets`](agent-markets.md) | [ops/ledgers/V-04.md](../ops/ledgers/V-04.md) |
 | V-05 | LP prudent paires majeures | crypto | ≤ 20 % (~40 €) | modéré | idée | [ops/ledgers/V-05.md](../ops/ledgers/V-05.md) |
-| V-06 | Freelance web / ops | web | 0 € capital (temps) | faible | recherche (pilote P0) | [ops/ledgers/V-06.md](../ops/ledgers/V-06.md) |
+| V-06 | Freelance / agent markets | web | 0 € capital (temps) | faible | recherche (pilote P0) · pivot agent-markets | [ops/ledgers/V-06.md](../ops/ledgers/V-06.md) |
 | V-07 | Contenu niche monétisé | web | ≤ 5 % outils (~10 €) | faible | idée | [ops/ledgers/V-07.md](../ops/ledgers/V-07.md) |
 | V-08 | Micro-produit digital | web | ≤ 15 % (~30 €) | modéré | idée | [ops/ledgers/V-08.md](../ops/ledgers/V-08.md) |
 | V-09 | Affiliation déclarée | web | 0–5 % (~10 €) | faible | idée | [ops/ledgers/V-09.md](../ops/ledgers/V-09.md) |
@@ -83,13 +84,13 @@ Caps **non cumulatifs à 100 %** : on n’alloue jamais tout le capital à un se
 | Champ | Contenu |
 |-------|---------|
 | **ID** | `V-04` |
-| **Thèse** | Rémunération légitime (bounties docs/code, grants, quests vérifiées) convertible en ETH ou fiat→ETH. |
+| **Thèse** | Rémunération légitime (bounties docs/code, grants, quests vérifiées **et** micro-tâches Mech/agent escrowées) convertible en ETH ou fiat→ETH. |
 | **Pourquoi ~200 €** | Le capital n’est presque pas engagé — le levier est le **temps / compétence**. Un seul bounty mid-size peut couvrir une part du 2×. |
 | **Cap capital** | ≤ **10 %** en gas / outils (~20 €) ; pas de dépôt « pour être éligible ». |
 | **Risque** | `faible` (non-paiement, scope creep) |
-| **Anti-scam** | Plateforme connue + historique de paiements ; identité org vérifiable ; contrat / issue GitHub claire ; pas de frais d’inscription. |
-| **Prochaine étape** | Inventorier 5 bounties ouvertes (Immunefi hors exploit offensif non autorisé, Gitcoin, docs protocoles) compatibles compétences Noe ; estimer €/h. |
-| **Kill** | Frais d’entrée demandés **ou** paiement uniquement via canal obscur **ou** 3 non-paiements documentés sur la même source. |
+| **Anti-scam** | Plateforme connue + historique de paiements ; identité org vérifiable ; contrat / issue GitHub claire ; pas de frais d’inscription ; préférer escrow on-chain (voir [`agent-markets.md`](agent-markets.md)). |
+| **Prochaine étape** | Prioriser **Olas Mech** (outil docs/research) + shortlist bounties escrowées ; Opire = opportuniste seulement (no escrow, ~162 USD board). Immunefi hors exploit offensif. |
+| **Kill** | Frais d’entrée demandés **ou** paiement uniquement via canal obscur **ou** 3 non-paiements documentés sur la même source **ou** board mort (OnlyDust/Algora déjà écartés). |
 
 ---
 
@@ -113,13 +114,13 @@ Caps **non cumulatifs à 100 %** : on n’alloue jamais tout le capital à un se
 | Champ | Contenu |
 |-------|---------|
 | **ID** | `V-06` |
-| **Thèse** | Vendre du temps (dev front, scripts, ops docs, automatisation) facturé en fiat ou crypto ; reconversion en ETH si besoin. |
+| **Thèse** | Vendre du temps / livrables (dev front, scripts, ops docs, automatisation, briefs) facturé en fiat ou crypto — **via marchés qui acceptent explicitement les agents** quand possible ; reconversion en ETH si besoin. |
 | **Pourquoi ~200 €** | Indépendant du yield DeFi : **1–2 missions** à 200–400 € suffisent pour viser le 2× ; corrélation faible avec le marché crypto. |
 | **Cap capital** | **0 €** de capital marché ; éventuels outils ≤ 5 %. |
-| **Risque** | `faible` (impayés, mauvaise scope) |
-| **Anti-scam** | Client identifiable ; acompte ou plateforme escrow connue ; pas de « pay to apply » ; pas de chèque / crypto étrange en prépaiement inverse. |
-| **Prochaine étape** | Publier / actualiser 1 offre claire (stack + délai + prix) sur 2 canaux légitimes ; viser 3 conversations en 7 j. |
-| **Kill** | 14 j sans lead qualifié malgré outreach documenté **et** pivot vers V-04/V-07 ; ou client exigeant paiement hors escrow sans historique. |
+| **Risque** | `faible` (impayés, mauvaise scope) — risque **canal** si board KYC/personne physique. |
+| **Anti-scam** | Client identifiable ; acompte ou plateforme escrow connue ; pas de « pay to apply » ; pas de chèque / crypto étrange en prépaiement inverse ; **pas** LaborX automation ; pas Malt/Upwork (prefs). |
+| **Prochaine étape** | Publier 1 offre claire sur **2 canaux GO** de [`agent-markets.md`](agent-markets.md) : **Virtuals ACP** (provider, service-only) + **Skyfire seller** (MCP/API) ; Olas Mech quand runtime autorisé. Free-Work seulement si email humain. Viser 3 conversations / 1 job funded en 7–14 j. |
+| **Kill** | 14 j sans lead qualifié malgré outreach documenté **et** pivot vers V-04/V-07/V-11 ; ou client exigeant paiement hors escrow sans historique ; ou canal exigeant KYC personne / forbidding bots. |
 
 ---
 
@@ -193,7 +194,7 @@ Caps **non cumulatifs à 100 %** : on n’alloue jamais tout le capital à un se
 | **Cap capital** | ≤ **5 %** (~10 €) outils d’explorateur / API free-tier. |
 | **Risque** | `faible` (scope, responsabilité — disclaimer clair) |
 | **Anti-scam** | Client réel ; pas de travail pour pump groups ; sources publiques citées ; disclaimer « pas un conseil financier ». |
-| **Prochaine étape** | Rédiger 1 brief sample public (protocole blue-chip) ; proposer le format + prix sur 2 canaux. |
+| **Prochaine étape** | Rédiger 1 brief sample public (protocole blue-chip) ; proposer le format + prix sur **Virtuals ACP** + **Skyfire/Olas** (pas LaborX/Free-Work) — voir [`agent-markets.md`](agent-markets.md). |
 | **Kill** | Demande de « shill report » payé **ou** 14 j sans intérêt après sample **et** réallocation temps vers V-04/V-06. |
 
 ---
