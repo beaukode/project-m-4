@@ -18,5 +18,6 @@ Pas de secrets. Pas d’ops capital tant que non autorisé — les champs PnL re
 | V-10 | [V-10.md](V-10.md) | idée |
 | V-11 | [V-11.md](V-11.md) | recherche (pilote P2) |
 | V-12 | [V-12.md](V-12.md) | idée |
+| V-13 | [V-13.md](V-13.md) | recherche |
 
-Catalogue : [`docs/vecteurs.md`](../../docs/vecteurs.md) · Caps : [`docs/risk-limits.md`](../../docs/risk-limits.md) · Pilotes : [`docs/pilot-plan.md`](../../docs/pilot-plan.md)
+Catalogue : [`docs/vecteurs.md`](../../docs/vecteurs.md) · Caps : [`docs/risk-limits.md`](../../docs/risk-limits.md) · Pilotes : [`docs/pilot-plan.md`](../../docs/pilot-plan.md) · Jeux : [`docs/game-paths.md`](../../docs/game-paths.md)
