@@ -36,7 +36,9 @@ Sources d’étude : deep-study complet, top 5, découverte P2E, cibles Pawtato 
 
 ---
 
-## Classement (25 titres)
+## Classement (18 titres)
+
+Filtre opérateur : hors classement si **en pause** ou **sans cashout P2E métier** (devnet-only, démo sans earn, gambling/wager pur, prod morte, rail opaque non triangulé). Les cashouts **faibles** restent.
 
 ### 1. Ashen Throne — https://ashenthrone.com/
 
@@ -220,49 +222,7 @@ Sources d’étude : deep-study complet, top 5, découverte P2E, cibles Pawtato 
 
 ---
 
-### 14. Agent Poker — https://agentpoker.io/
-
-**Pour.** Heads-up poker pour agents via WebSocket : design agent-first. Docs publiques. Si mainnet + liquidité un jour, Track A structurellement aligné.
-
-**Contre.** Aujourd’hui **devnet SOL** seulement ; mainnet après audit. Poker avec rake = EV négative attendue dès qu’il y a de vrais stakes. Pas de gains réels maintenant.
-
-**Gagner in-game.** Poker heads-up pour agents via WebSocket : mise / bluff / pots selon règles NLHE. Aujourd’hui **devnet SOL** seulement (mainnet après audit).
-
-**Cashout.** Sur mainnet (futur) : pots **SOL** → wallet → DEX/CEX. Aujourd’hui = **aucun cashout réel** (devnet).
-
-**Verdict en clair :** **watch post-audit** ; zéro capital.
-
----
-
-### 15. HYTOPIA — https://hytopia.com/
-
-**Pour.** Metaverse Base ; angle créateur / earn si services reviennent. Historique produit et blog techniques.
-
-**Contre.** Homepage : services **en pause** 1–3 mois (funding). Pas de rail earn vivant. Réouverture conditionnelle seulement.
-
-**Gagner in-game.** Metaverse Base : angle créateur / services / expériences (quand live). Homepage : services **en pause** 1–3 mois (funding).
-
-**Cashout.** **Aucun cashout clair** tant que paused ; à réévaluer à l’unpause (token / marketplace créateur à confirmer).
-
-**Verdict en clair :** **fermé tant que paused** ; réévaluer à l’unpause + cashout clair.
-
----
-
-### 16. WhisperDark — https://whisperdark.ngd.network/
-
-**Pour.** Démo agent x402 (Neo X / COZ) : utile pour apprendre le rail paiement agent. Faible risque si on ne dépose rien.
-
-**Contre.** C’est du **spend** de démo, pas une boucle earn vers le NAV. Aucun cashout P2E. Hors objectif argent.
-
-**Gagner in-game.** Démo agent **x402** (Neo X / COZ) : sessions / rooms pour tester le paiement HTTP agent. C’est du **spend** de démo, pas une farm P2E.
-
-**Cashout.** **Aucun cashout P2E** — pas de boucle vers le NAV.
-
-**Verdict en clair :** **lab technique seulement**, pas un vecteur de gains.
-
----
-
-### 17. Parallel TCG — https://parallel.life/
+### 14. Parallel TCG — https://parallel.life/
 
 **Pour.** TCG sci-fi F2P Steam/mobile ; marketplace Sanctuary ; fondation Echelon longue durée. Skill + marché secondaire (pas idle farm).
 
@@ -276,7 +236,7 @@ Sources d’étude : deep-study complet, top 5, découverte P2E, cibles Pawtato 
 
 ---
 
-### 18. The Sandbox — https://www.sandbox.game/
+### 15. The Sandbox — https://www.sandbox.game/
 
 **Pour.** Marque connue ; events SAND parfois ; opportunité contenu / creator (vecteur éditorial) si besoin.
 
@@ -290,7 +250,7 @@ Sources d’étude : deep-study complet, top 5, découverte P2E, cibles Pawtato 
 
 ---
 
-### 19. RollerCoin — https://rollercoin.com/
+### 16. RollerCoin — https://rollercoin.com/
 
 **Pour.** Idle mining → withdraw crypto documenté ; produit connu / « legit » marketing.
 
@@ -304,49 +264,7 @@ Sources d’étude : deep-study complet, top 5, découverte P2E, cibles Pawtato 
 
 ---
 
-### 20. Arcade Cafe / x402 chance — https://arcade.cafe/ · https://play.0000402.xyz/
-
-**Pour.** Rail x402 agent-friendly (HTTP pay). Intéressant comme infra technique.
-
-**Contre.** Monétisation = **wager / house / lottery** (ex. 0,10 USDC → chance 1 USDC). EV house négative pour le joueur. Hors règles « skill P2E » et anti-gambling de fait pour le NAV.
-
-**Gagner in-game.** Rail x402 : jeux type Dice / Sweeper = **mise** ; lottery Base (ex. 0,10 USDC → chance 1 USDC). Agents attendus techniquement.
-
-**Cashout.** Si gain : USDC / SOL déjà on-chain → wallet. EV **house négative** (gambling).
-
-**Verdict en clair :** **fermé** — gambling, pas un métier.
-
----
-
-### 21. Cryptrix — https://cryptrix.app/ (404 au check)
-
-**Pour.** Idée : rooms Cache Rush agents avec stake USDC sur Arc ; API agent documentée en OSS GitHub.
-
-**Contre.** Site / guide / API → **HTTP 404** (prod morte). Même live : mise 0,5–5 USDC + rake 1 % → EV médiane négative (majorité perd). Gambling stake.
-
-**Gagner in-game.** Rooms Cache Rush agents : stake **0,5–5 USDC**/siège ; top 3 se partagent le pot (60/25/15 %) après **1 %** fee. Site / guide / API → **HTTP 404** au check (prod morte).
-
-**Cashout.** Si live : pot USDC → wallet Arc. EV médiane négative (rake + majorité perd).
-
-**Verdict en clair :** **mort + EV−** — ne pas rouvrir sans prod + preuve sans rake ruinant.
-
----
-
-### 22. GateQuake — https://gatequake.com/
-
-**Pour.** Browser battle-royale Solana ; pots USDC visibles marketing.
-
-**Contre.** Stake USDC → pot = **gambling / PvP wager**. Pas un grind skill F2P sûr. Risque de perte du stake.
-
-**Gagner in-game.** Battle-royale browser Solana : stake USDC → pot PvP (survive / win).
-
-**Cashout.** Pot **USDC** vers gagnants (marketing). Nature = **wager PvP**.
-
-**Verdict en clair :** **fermé** — mise = casino.
-
----
-
-### 23. BR1: INFINITE — https://litepaper.bravoready.com/br1-infinite-guide/br1-infinite-guide/br1-infinite-overview
+### 17. BR1: INFINITE — https://litepaper.bravoready.com/br1-infinite-guide/br1-infinite-guide/br1-infinite-overview
 
 **Pour.** Withdraw USDC min documenté presse ; positionnement kill-to-earn.
 
@@ -360,21 +278,7 @@ Sources d’étude : deep-study complet, top 5, découverte P2E, cibles Pawtato 
 
 ---
 
-### 24. Solana Bird (Finchb) — https://bird.finchb.com/
-
-**Pour.** Wallet game ; whitepaper ; payouts parfois publics en marketing.
-
-**Contre.** Très jeune ; triangulation anti-scam **insuffisante** pour GO. Yield-like / trust faible. Risque dépôt vers opérateur opaque.
-
-**Gagner in-game.** Wallet game / whitepaper : boucles yield-like / gameplay léger (jeune produit).
-
-**Cashout.** Payouts parfois annoncés en marketing — **triangulation anti-scam insuffisante** pour faire confiance au rail.
-
-**Verdict en clair :** **fermé** tant que preuves externes solides manquent.
-
----
-
-### 25. SolFarmer — https://solfarmer.io/
+### 18. SolFarmer — https://solfarmer.io/
 
 **Pour.** Idle Solana → withdraw SOL annoncé (min 0,1 SOL) ; couverture PlayToEarn.
 
@@ -385,6 +289,36 @@ Sources d’étude : deep-study complet, top 5, découverte P2E, cibles Pawtato 
 **Cashout.** Withdraw **SOL** annoncé (min 0,1 SOL) sujet anti-fraud / **KYC possible**. Opérateur anonyme ; ScamAdviser trust **0**.
 
 **Verdict en clair :** **fermé dur** — signaux scam / trust trop mauvais.
+
+---
+
+## Marché joueurs / craft / cashout trade-craft
+
+Lecture rapide des **18** titres restants : y a-t-il un **marché entre joueurs** pour l’économie interne, un **craft**, et ces gains (vente / craft) peuvent-ils devenir de l’**argent réel ou de la crypto** — pas seulement une monnaie fermée.  
+Les cashouts de type **prix de tournoi / pool** (hors trade-craft) restent dans les fiches ci-dessus ; cette table ne les compte comme « Oui » que s’ils passent par le **marché joueurs** ou le **craft**.
+
+| # | Jeu | Marché économie interne joueurs ? | Craft ? | Cashout depuis trade/craft ? |
+|---|-----|-----------------------------------|---------|------------------------------|
+| 1 | Ashen Throne | **Non** — prix d’alliance, pas de P2P | **Non** — pas de craft loot | **Non** — cashout = prix cup, pas trade |
+| 2 | MoltStation | **Non** — score agent → claim token | **Non** | **Non** — pas de boucle trade/craft |
+| 3 | ClawArcade | **Non** — pools tournoi, pas marché items | **Non** | **Non** — payouts = parts de pool |
+| 4 | Olderfall | **Oui** — marketplace NFT (Fallen, gear) | **Oui** — Forge / armures | **Partiel** — revente NFT possible ; USDC N3MUS = ladder, pas craft |
+| 5 | Clash of Coins | **Limité** — shop USDC (surtout achat) | **Non** | **Non** — points ≠ vente craft ; OWB flou |
+| 6 | Reworth Games | **Non** — leaderboard custodial | **Non** | **Non** — prix site, pas trade joueurs |
+| 7 | Photo Finish Live | **Oui** — marketplace chevaux en DERBY | **Non** — élevage ≠ craft | **Oui** — vente cheval → DERBY → USDC Solana |
+| 8 | Cambria | **Oui** — Trading Post (orderbook Silver) | **Oui** — forge / crafting tables | **Oui** — vente / craft → Silver → USDC |
+| 9 | Pixels | **Oui** — marketplace + trade (seuils réputation) | **Oui** — farm / cook / craft | **Partiel** — coins fermées ; withdraw = $PIXEL (gates) |
+| 10 | Sport.fun | **Non** — fantasy / packs, pas marché craft | **Non** | **Non** — cashout Pro = Gold↔USDC, pas trade |
+| 11 | Pawtato Land | **Oui** — marketplace + exchange orderbook | **Oui** — stations craft (glyphs, gear) | **Oui** — vente / craft → $TATO withdraw |
+| 12 | RavenQuest | **Oui** — marketplace + marché Silver↔QUEST | **Oui** — professions / tradepacks | **Oui** — Silver→QUEST→Passport (pass + Legacy) |
+| 13 | World of Dypians | **Oui** — Shop / marketplace P2P NFT | **Oui** — forge & craft land | **Oui** — NFT / $WOD → CEX (token faible) |
+| 14 | Parallel TCG | **Oui** — Sanctuary (cartes NFT / PRIME) | **Oui** — scraps → cartes | **Partiel** — NFT Sanctuary oui ; craft soft souvent fermé |
+| 15 | The Sandbox | **Oui** — marketplace ASSETS / LAND (SAND) | **Oui** — mint VoxEdit / Catalyst | **Oui** — ventes → SAND on-chain |
+| 16 | RollerCoin | **Non** — idle solo, pas marché joueurs | **Non** | **Non** — withdraw = solde mining, pas trade |
+| 17 | BR1: INFINITE | **Limité** — loot extraction, peu de marché documenté | **Non** | **Non** — withdraw = kill/loot, pas trade/craft |
+| 18 | SolFarmer | **Non** — balance treasury opérateur | **Non** | **Non** — withdraw SOL ≠ trade/craft |
+
+**Lecture utile :** les vrais rails **trade/craft → crypto** clairs restent surtout **Cambria, Pawtato, RavenQuest, Sandbox, Photo Finish (chevaux), Dypians** ; **Pixels / Parallel / Olderfall** sont **partiels** (gates, soft currency, ou earn principal hors craft).
 
 ---
 
@@ -405,7 +339,24 @@ Sources d’étude : deep-study complet, top 5, découverte P2E, cibles Pawtato 
 | 11 | Pawtato | NFT gate | Oui ($TATO, liquidité fine) | Track B ; capital fermé |
 | 12 | RavenQuest | Token cassé | Oui (pass + grind) | Contenu faible |
 | 13 | World of Dypians | Basse prio | Oui théorique (WOD → CEX) | Skip pilote |
-| 14–16 | Agent Poker, HYTOPIA, WhisperDark | Immature / pause / lab | Non / pas encore | Watch |
-| 17–25 | Parallel → SolFarmer | EV− / ToS / scam / NFT | Faible / gambling / opaque | Fermés |
+| 14 | Parallel TCG | NFT / PRIME faible | Oui mais négligeable | Fermé pour A4 |
+| 15 | The Sandbox | Events SAND | Oui (souvent KYC) | Pas path agent |
+| 16 | RollerCoin | Idle faible | Oui (withdraw crypto) | Skip (no bots) |
+| 17 | BR1: INFINITE | Pay-to-spawn | Oui USDC (burn bankroll) | Fermé |
+| 18 | SolFarmer | Trust 0 | Annoncé SOL (opaque) | Fermé dur |
 
-**Rappel :** aucun GO capital sur les 25. Le classement mesure surtout **où le temps (et un éventuel micro-gaz futur) a le plus de chances de devenir de vrais euros/crypto**, pas le hype Discord.
+**Rappel :** aucun GO capital sur les 18. Le classement mesure surtout **où le temps (et un éventuel micro-gaz futur) a le plus de chances de devenir de vrais euros/crypto**, pas le hype Discord.
+
+---
+
+## Retirés du classement (pause ou sans cashout)
+
+| Nom | URL | Raison |
+|-----|-----|--------|
+| Agent Poker | https://agentpoker.io/ | Cashout seulement **devnet** — pas de gains réels |
+| HYTOPIA | https://hytopia.com/ | Services **en pause** (funding) |
+| WhisperDark | https://whisperdark.ngd.network/ | Démo x402 — **aucun cashout P2E** |
+| Arcade Cafe / x402 | https://arcade.cafe/ · https://play.0000402.xyz/ | Gambling / house — **pas de cashout métier** |
+| Cryptrix | https://cryptrix.app/ | Prod **404** + stake gambling — sans cashout live |
+| GateQuake | https://gatequake.com/ | Wager PvP — **pas de cashout métier** |
+| Solana Bird (Finchb) | https://bird.finchb.com/ | Rail opaque — triangulation anti-scam insuffisante |
