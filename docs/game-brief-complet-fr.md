@@ -388,6 +388,43 @@ Sources d’étude : deep-study complet, top 5, découverte P2E, cibles Pawtato 
 
 ---
 
+## Marché joueurs / craft / cashout trade-craft
+
+Lecture rapide des **25** titres : y a-t-il un **marché entre joueurs** pour l’économie interne, un **craft**, et ces gains (vente / craft) peuvent-ils devenir de l’**argent réel ou de la crypto** — pas seulement une monnaie fermée.  
+Les cashouts de type **prix de tournoi / pool / mise** (hors trade-craft) restent dans les fiches ci-dessus ; cette table ne les compte comme « Oui » que s’ils passent par le **marché joueurs** ou le **craft**.
+
+| # | Jeu | Marché économie interne joueurs ? | Craft ? | Cashout depuis trade/craft ? |
+|---|-----|-----------------------------------|---------|------------------------------|
+| 1 | Ashen Throne | **Non** — prix d’alliance, pas de P2P | **Non** — pas de craft loot | **Non** — cashout = prix cup, pas trade |
+| 2 | MoltStation | **Non** — score agent → claim token | **Non** | **Non** — pas de boucle trade/craft |
+| 3 | ClawArcade | **Non** — pools tournoi, pas marché items | **Non** | **Non** — payouts = parts de pool |
+| 4 | Olderfall | **Oui** — marketplace NFT (Fallen, gear) | **Oui** — Forge / armures | **Partiel** — revente NFT possible ; USDC N3MUS = ladder, pas craft |
+| 5 | Clash of Coins | **Limité** — shop USDC (surtout achat) | **Non** | **Non** — points ≠ vente craft ; OWB flou |
+| 6 | Reworth Games | **Non** — leaderboard custodial | **Non** | **Non** — prix site, pas trade joueurs |
+| 7 | Photo Finish Live | **Oui** — marketplace chevaux en DERBY | **Non** — élevage ≠ craft | **Oui** — vente cheval → DERBY → USDC Solana |
+| 8 | Cambria | **Oui** — Trading Post (orderbook Silver) | **Oui** — forge / crafting tables | **Oui** — vente / craft → Silver → USDC |
+| 9 | Pixels | **Oui** — marketplace + trade (seuils réputation) | **Oui** — farm / cook / craft | **Partiel** — coins fermées ; withdraw = $PIXEL (gates) |
+| 10 | Sport.fun | **Non** — fantasy / packs, pas marché craft | **Non** | **Non** — cashout Pro = Gold↔USDC, pas trade |
+| 11 | Pawtato Land | **Oui** — marketplace + exchange orderbook | **Oui** — stations craft (glyphs, gear) | **Oui** — vente / craft → $TATO withdraw |
+| 12 | RavenQuest | **Oui** — marketplace + marché Silver↔QUEST | **Oui** — professions / tradepacks | **Oui** — Silver→QUEST→Passport (pass + Legacy) |
+| 13 | World of Dypians | **Oui** — Shop / marketplace P2P NFT | **Oui** — forge & craft land | **Oui** — NFT / $WOD → CEX (token faible) |
+| 14 | Agent Poker | **Non** — pots heads-up seulement | **Non** | **Non** — (devnet ; hors trade/craft) |
+| 15 | HYTOPIA | **Limité** — angle créateur (services paused) | **N/A** — outils créateur, pas craft live | **Non** — paused ; pas de rail trade vivant |
+| 16 | WhisperDark | **Non** — démo x402 | **Non** | **Non** |
+| 17 | Parallel TCG | **Oui** — Sanctuary (cartes NFT / PRIME) | **Oui** — scraps → cartes | **Partiel** — NFT Sanctuary oui ; craft soft souvent fermé |
+| 18 | The Sandbox | **Oui** — marketplace ASSETS / LAND (SAND) | **Oui** — mint VoxEdit / Catalyst | **Oui** — ventes → SAND on-chain |
+| 19 | RollerCoin | **Non** — idle solo, pas marché joueurs | **Non** | **Non** — withdraw = solde mining, pas trade |
+| 20 | Arcade Cafe / x402 | **Non** — mises / lottery | **Non** | **Non** — pot wager, pas craft |
+| 21 | Cryptrix | **Non** — rooms stake (prod 404) | **Non** | **Non** |
+| 22 | GateQuake | **Non** — pot PvP stake | **Non** | **Non** — wager, pas marché items |
+| 23 | BR1: INFINITE | **Limité** — loot extraction, peu de marché documenté | **Non** | **Non** — withdraw = kill/loot, pas trade/craft |
+| 24 | Solana Bird (Finchb) | **Non** — wallet game opaque | **Non** | **Non** — triangulation insuffisante |
+| 25 | SolFarmer | **Non** — balance treasury opérateur | **Non** | **Non** — withdraw SOL ≠ trade/craft |
+
+**Lecture utile :** les vrais rails **trade/craft → crypto** clairs restent surtout **Cambria, Pawtato, RavenQuest, Sandbox, Photo Finish (chevaux), Dypians** ; **Pixels / Parallel / Olderfall** sont **partiels** (gates, soft currency, ou earn principal hors craft).
+
+---
+
 ## Synthèse opérateur
 
 | Rang | Titre | Potentiel relatif | Cashout en clair ? | Action sensée |
