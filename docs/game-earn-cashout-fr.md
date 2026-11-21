@@ -1,5 +1,7 @@
 # Jeux P2E — gagner in-game & cashout (français clair)
 
+> Brief fusionné (pour / contre + gagner / cashout) : [`game-brief-complet-fr.md`](game-brief-complet-fr.md).
+
 Brief opérateur Agent 4 / Project M. Date : **2026-11-21**.  
 Même classement que [`game-pros-cons-fr.md`](game-pros-cons-fr.md) : **meilleur potentiel de gains réels** (euros ou crypto) en premier.  
 Pour chaque titre : **comment gagner dans le jeu**, puis **comment convertir en argent / crypto** (ou « aucun cashout clair »).
