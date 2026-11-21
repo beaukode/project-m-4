@@ -7,7 +7,12 @@
 
 **Verdicts :** `GO` = canal documenté + liveness + fit plausible 200 € / 30 j (temps, pas capital) · `WATCH` = intéressant mais volume / escrow / KYC / maturité non prouvés · `NO` = mort, mauvais côté du marché, ou monétisation absente.
 
-**Réf. croisées :** [`vecteurs.md`](vecteurs.md) (V-06 / V-04) · [`pilot-plan.md`](pilot-plan.md) · ledgers `ops/ledgers/V-06.md`, `V-04.md`.
+**Réf. croisées :** [`vecteurs.md`](vecteurs.md) (V-06 / V-04) · [`pilot-plan.md`](pilot-plan.md) · ledgers `ops/ledgers/V-06.md`, `V-04.md`.  
+**Vérification earn (2026-11-21) :** [`agent-markets-verification.md`](agent-markets-verification.md) — falsification claim-by-claim + survey providers ; **corrige** les GO trop optimistes ci-dessous.
+
+### Historique de correction (2026-11-21)
+
+Après audit earn (providers live + earnings) : Olas Mech et Skyfire seller passent de **GO** → **WATCH** pour l’objectif 2×~200 €/30 j (marché/rails réels, earn nouvel entrant non prouvé). Virtuals ACP reste **GO** avec prix cibles **abaissés** (5–25 USDC modal ; 50–250 = exception). Détail des scores CONFIRMED/PARTIAL/FALSE : doc de vérification.
 
 ---
 
@@ -15,9 +20,9 @@
 
 | # | Plateforme | Escrow ? | Maturité | Fit ~200 € / 30 j | Verdict |
 |---|------------|----------|----------|-------------------|---------|
-| 1 | [Olas Mech Marketplace](#1-olas-mech-marketplace) | Oui (on-chain / balance tracker) | Live (turnover annoncé) | Moyen–élevé si outil niche demandée | **GO** |
-| 2 | [Virtuals ACP](#2-virtuals-acp) | Oui (job contract USDC) | Live (docs + contrats Base) | Moyen (graduation + offre claire) | **GO** |
-| 3 | [Skyfire (seller)](#3-skyfire-seller-directory) | Hold token pay / charge | Live (réseau + partenaires) | Moyen (MCP/API payante) | **GO** |
+| 1 | [Olas Mech Marketplace](#1-olas-mech-marketplace) | Oui (on-chain / balance tracker) | Live (turnover lifetime ; flux récent faible) | Faible–moyen (Predict-dominant ; niche non garantie) | **WATCH** (earn) / GO docs |
+| 2 | [Virtuals ACP](#2-virtuals-acp) | Oui (job contract USDC) | Live (docs + contrats Base + payouts API) | Moyen si graduation + prix 5–25 USDC | **GO** |
+| 3 | [Skyfire (seller)](#3-skyfire-seller-directory) | Hold token pay / charge | Live (directory + partenaires) | Faible (listing ≠ trafic payant) | **WATCH** |
 | 4 | [Agrenting](#4-agrenting) | Oui (plateforme) | Live API ; payouts non prouvés | Incertain | **WATCH** |
 | 5 | [Opire](#5-opire) | Non | Live mais minuscule | Faible | **WATCH** |
 | 6 | [GetAgentic](#6-getagentic) | Annoncé (x402 / Escrow.sol) | Pré-public / API 502 | Incertain | **WATCH** |
@@ -26,7 +31,7 @@
 | 9 | [SwarmSync](#9-swarmsync) | Oui (claim) | Site up ; fiabilité contestée | Incertain | **WATCH** |
 | 10 | [Vangrid](#10-vangrid) | Oui (côté acheteur) | Live docs | N/A (agent = acheteur) | **NO** (earn) |
 
-**Top GO pour Agent 4 (ordre) :** Olas Mech → Virtuals ACP (provider) → Skyfire seller.
+**Top pour Agent 4 (ordre révisé) :** Virtuals ACP (provider) → Olas Mech (docs/dry-run) → Skyfire seller (rail, pas earn Day-1).
 
 ---
 
@@ -39,11 +44,11 @@
 | **Rails de paiement** | Crypto multi-chaînes (USDC / natifs / OLAS selon chaîne) ; paiements accumulés dans un balance tracker ; retrait avec fee DAO. |
 | **Escrow ?** | Oui — dépôt requester + règlement à la livraison (détail : [theagenteconomy.si compare](https://theagenteconomy.si/compare/agent-escrow-marketplaces)). |
 | **ToS / politique agent** | Marketplace **ouverte et permissionless** : « Anyone can run a Mech and offer its services there » ([blog KYA](https://olas.network/blog/kya)). Pearl Terms : les Mechs sont des logiciels enregistrés sur le marketplace ; Mechs tiers = Third-Party Integrations ([pearl-terms](https://olas.network/pearl-terms)). Quote Pearl : « Agents may request and pay for services from “Mechs” (software registered on the Olas Marketplace that performs tasks…) ». |
-| **Maturité** | **Live** — page marketplace (snapshot 2026-11-21) : turnover ~**111 215 $** task payments ; millions de tx A2A revendiquées. API ERC-8004 marketplace HTTP 200 (probe). |
-| **Volume / fit 200 €·30 j** | Volume global réel mais **concurrence** + besoin d’un outil différenciant (ex. brief anti-scam / docs lecture seule) et d’un runtime (Docker/Poetry — hors infra live actuelle → docs + design d’abord). Un flux micro-paiements répétés peut agréger vers ~200 € **si** demande ; non garanti. |
-| **Risques / scams** | Mechs non revus par Olas (KYA = preuve de domaine, pas d’identité humaine) ; gas / ops multi-chaîne ; fee DAO à retrait ; pas de court de litige documenté (comparateur externe). |
-| **Sources (≥2)** | olas.network/mech-marketplace · build.olas.network/monetize · olas.network/blog/kya · theagenteconomy.si · marketplace.olas.network API |
-| **Verdict** | **GO** — canal agent-natif le plus crédible (volume + docs + permissionless). Fiche Day-0 : [`pilots/olas-mech.md`](pilots/olas-mech.md) — **GO docs / NO spend live** (Docker + bridge) ; cap proposé ≤ 5 € gas Gnosis si unblocked. |
+| **Maturité** | **Live** — turnover lifetime ~**111 215 $** (21-nov-2026, page officielle = « Total Task Payments ») ; **~$34 / j** de croissance depuis août (~+3,4 k$ / ~99 j). **13** DAA Mechs ; ~**97 %** des requests = économie **Predict**. A2A millions ≠ dollars. |
+| **Volume / fit 200 €·30 j** | Micropaiements typiques ~**0,01 $**/job (RNWY). Agréger ~200 € exige un volume que le marché **récent** ne soutient pas pour un nouvel outil hors Predict. Runtime Docker obligatoire — hors infra actuelle. |
+| **Risques / scams** | Mechs non revus (KYA = domaine, pas identité) ; concentration demande/opérateurs ; fee DAO 15 % au claim ; pas de litige documenté ; turnover marketing ≠ revenu entrant. |
+| **Sources (≥2)** | olas.network/mech-marketplace · agent-economies/mech · blog 20M tx · theagenteconomy.si · rnwy.com (indep.) · [`agent-markets-verification.md`](agent-markets-verification.md) |
+| **Verdict** | **WATCH** pour earn 30 j — rails **CONFIRMÉS**, earn niche **non prouvé**. Fiche Day-0 : [`pilots/olas-mech.md`](pilots/olas-mech.md) — **GO docs / NO spend** ; cap ≤ 5 € gas si unblocked. |
 
 ---
 
@@ -56,11 +61,11 @@
 | **Rails de paiement** | USDC en escrow dans le smart contract Job ; split 95/5 (sans evaluator) ou 90/5/5 (avec). Chaînes multi (Base, etc.). |
 | **Escrow ?** | **Oui** — « every job includes built-in escrow » ; release à `completed`, refund à `rejected` ([concepts](https://os.virtuals.io/acp/concepts)). |
 | **ToS / politique agent** | [ACP Developer Agreement](https://app.virtuals.io/acp_developer_agreement.pdf) (2025-09-09) : « The ACP feature enables Users … to access and use **AI Agents** developed and operated by Developers » ; listing après **graduation** Sandbox→production. Terms of Use plateforme : [app.virtuals.io/terms-of-use](https://app.virtuals.io/terms-of-use). |
-| **Maturité** | **Live** — >18 mois de production revendiqués ; >2 000 agents ; contrats ACP Core Base listés dans docs. app.virtuals.io HTTP 200. |
-| **Volume / fit 200 €·30 j** | Fit **moyen** : une offre type « brief due-diligence / docs » à 50–250 USDC × 1–3 jobs = objectif. Frein : graduation manuelle Virtuals + éventuel compte app. **Interdit pour nous :** jobs *Fund-Transfer* (gestion de fonds client) — hors règles AGENTS. |
-| **Risques / scams** | Graduation gate (déliste possible) ; rejet client = 0 pay ; risque de jobs demandant garde de fonds → kill immédiat ; tokenisation agent optionnelle = distraction hors scope. |
-| **Sources (≥2)** | EconomyOS docs · ACP Developer Agreement PDF · GitHub Virtual-Protocol/acp-node-v2 · theagenteconomy.si |
-| **Verdict** | **GO** — escrow USDC + politique agent explicite. Prioriser offre **service-only** (docs / research) alignée V-11 ; sandbox d’abord. |
+| **Maturité** | **Live** — docs : >18 mois / « >2 000 agents » (claim vendor) ; scan UI : **2,55 M** jobs, **$4,53 M** revenue ; API acpx : dizaines de k agents enregistrés. **aGDP ($481 M) ≠ revenue** (fees). |
+| **Volume / fit 200 €·30 j** | Fit **moyen** si graduation OK. Prix **live modal** research/DD ≈ **1–25 USDC** (stratcheck 1–1,5 ; Keryx DD 20 ; scraping 25–40). **50–250 USDC** = exception (bootstrap/security), pas le défaut. Frein : graduation + app. **Interdit :** *Fund-Transfer*. |
+| **Risques / scams** | Graduation / ungraduation ; rejet = 0 pay ; concentration revenus sur agents trading ; jobs garde de fonds → kill ; tokenisation = hors scope. |
+| **Sources (≥2)** | EconomyOS docs · app.virtuals.io/acp/scan · acpx.virtuals.io · Fundstrat · theagenteconomy.si · ChainWard (Ethy) · [`agent-markets-verification.md`](agent-markets-verification.md) |
+| **Verdict** | **GO** — seul des trois avec **preuves de payout** service + escrow USDC. Offre **service-only** V-11 à **5–25 USDC** ; sandbox d’abord. |
 
 ---
 
@@ -73,11 +78,11 @@
 | **Rails de paiement** | Crédits / USDC via tokens Skyfire ; charge après verify+deliver ; settlement garanti pour token valide (docs seller). |
 | **Escrow ?** | Hold sur wallet acheteur à la création du token pay ; charge seller jusqu’au max du token (pas un escrow job classique freelance). |
 | **ToS / politique agent** | Services Agreement : Access Authorizations pour « you and your **Associated Agents** » ([ToS](https://skyfire.xyz/terms-of-service/)). Directory : registry de services qui acceptent les AI agents comme clients de premier rang ([discovery](https://docs.skyfire.xyz/docs/service-discovery)). |
-| **Maturité** | **Live** — sortie beta 2025 ; partenaires (Apify, Forter, Fetch.ai, etc.) BusinessWire ; case Akamai 2,5 M tx agentiques (nov. 2026). Docs HTTP 200. |
-| **Volume / fit 200 €·30 j** | Fit **moyen** si on expose un MCP/API utile (ex. due-diligence lecture seule, résumé sources) à prix unitaire. Besoin : backend joignable + **review seller ~48 h**. Pas un board « mission 300 € » unique — plutôt volume micropaiements. |
-| **Risques / scams** | KYB/KYA côté seller possible ; dépendance infra hébergement ; crédits non récupérables une fois présentés (ToS). |
-| **Sources (≥2)** | docs.skyfire.xyz · BusinessWire launch · Akamai blog · skyfire ToS |
-| **Verdict** | **GO** — pile identité+paiement crédible pour **vendre** un service à d’autres agents. Complète Olas/Virtuals (rail plutôt que bazaar jobs). |
+| **Maturité** | **Live** — directory API **84** services (probe 21-nov) ; Apify + BuildShip listés ; Akamai 2,5 M = **KYA** (identité), pas P&L sellers. Docs HTTP 200. |
+| **Volume / fit 200 €·30 j** | Fit **faible** pour nouvel entrant : microprix directory (souvent ≪ 0,05 $) ; **aucune** preuve publique qu’un nouveau seller reçoive du trafic payant. Review ~48 h (docs seules). Backend public requis. |
+| **Risques / scams** | KYB/KYA seller possible ; hébergement ; crédits non récupérables (ToS) ; confondre partenaires merchant avec demande buyer. |
+| **Sources (≥2)** | docs.skyfire.xyz · api.skyfire.xyz/directory/services · docs.apify.com/integrations/skyfire · Akamai blog · [`agent-markets-verification.md`](agent-markets-verification.md) |
+| **Verdict** | **WATCH** — rail identité/paiement **CONFIRMÉ** ; **NOT VIABLE** comme earn primaire 30 j sans preuve de trafic. |
 
 ---
 
@@ -192,10 +197,10 @@
 
 ## Implications vecteurs / pilote
 
-1. **V-06** : pivoter les 2 canaux Day-1 hors Free-Work/LaborX vers **Virtuals ACP (provider)** + **Skyfire seller** (ou Olas Mech quand infra OK). Garder Free-Work seulement si email humain un jour — sinon abandon soft.
-2. **V-04** : Opire reste WATCH opportuniste ; ajouter **Olas Mech** / bounties agent escrowés (pas OnlyDust mort).
-3. **V-11** : offre naturelle sur ACP + Mech + Skyfire MCP (brief anti-scam lecture seule).
-4. **Diversification** : paniers crypto/préservation inchangés ; cash services = GO agent markets, pas boards KYC.
+1. **V-06** : pivoter Day-1 hors Free-Work/LaborX vers **Virtuals ACP (provider)** en priorité. Skyfire = rail optionnel (WATCH). Olas = docs/dry-run tant qu’infra bloquée.
+2. **V-04** : Opire WATCH ; Olas Mech = WATCH earn / GO docs (pilote Phase 2 NO).
+3. **V-11** : offre naturelle surtout sur **ACP** (prix 5–25 USDC) ; Mech/Skyfire seulement si demande/trafic prouvés.
+4. **Diversification** : paniers crypto/préservation inchangés ; cash services = ACP d’abord, pas boards KYC.
 
 ## Prochaines actions (docs only)
 
@@ -208,6 +213,7 @@
 
 | Hypothèse | Sources | Verdict |
 |-----------|---------|---------|
-| « Des markets paient vraiment des agents » | Olas turnover page · Akamai/Skyfire · ACP docs | **Partiellement vrai** — Olas/Skyfire/Virtuals les plus solides |
+| « Des markets paient vraiment des agents » | Olas turnover · ACP scan/API + ChainWard · Skyfire/Akamai KYA | **Partiellement vrai** — **ACP** a des payouts service prouvés ; Olas = micropaiements Predict ; Skyfire KYA ≠ seller P&L |
+| « Les 3 GO shortlist = earn 200 €/30 j » | [`agent-markets-verification.md`](agent-markets-verification.md) | **Rejeté** — seuls rails ACP tiennent pour earn ; Olas/Skyfire → WATCH |
 | « Les boards x402 Base = cash facile » | Colony 0 $ · nullpath mort · GetAgentic 502 | **Faux** pour Day-1 |
 | « Opire scale agents » | API 3 bounties / 162 $ · no escrow | **Rejeté** comme moteur 2× |
