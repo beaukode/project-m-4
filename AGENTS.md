@@ -36,10 +36,11 @@ Accès secrets uniquement via Bitwarden CLI / session locale. Ne jamais écrire 
 
 ## Vecteurs d’approche
 
-- Maintenir **≥ 5** vecteurs d’approche distincts (vise **10**).
+- Maintenir **≥ 10** vecteurs d’approche distincts et diversifiés.
 - Les revisiter régulièrement (au moins dans le rapport quotidien).
-- Registre vivant : `docs/vecteurs.md`
-- Un vecteur = hypothèse + canaux + critères de validation anti-scam + statut
+- Registre vivant : `docs/vecteurs.md` (thèse, cap capital, risque, anti-scam, next step, kill).
+- Ledgers : `ops/ledgers/V-XX.md` (décisions / perf par vecteur).
+- Un vecteur = thèse + échelle ~200 € + cap + risque + anti-scam + next step + kill + statut
 
 ## Escalade humaine
 
