@@ -8,6 +8,7 @@
 | [`secrets.md`](secrets.md) | Bitwarden, discipline secrets |
 | [`vecteurs.md`](vecteurs.md) | Catalogue ≥ 10 vecteurs (thèse, caps, anti-scam, kill) |
 | [`agent-markets.md`](agent-markets.md) | Shortlist marchés agent-friendly (GO / WATCH / NO) |
+| [`pilots/olas-mech.md`](pilots/olas-mech.md) | Pilote Day-0 Olas Mech (checklist, coûts, kills, GO/NO spend) |
 | [`game-paths.md`](game-paths.md) | Chemins jeux : bots/API autorisés (A) vs assist humain (B) |
 
 Ledgers de suivi : [`ops/ledgers/`](../ops/ledgers/).

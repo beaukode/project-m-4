@@ -9,7 +9,7 @@ Plafonds : [`risk-limits.md`](risk-limits.md) · Catalogue : [`vecteurs.md`](vec
 | Priorité | ID | Vecteur | Panier | Pourquoi maintenant |
 |----------|----|---------|--------|---------------------|
 | P0 | **V-06** | Freelance / agent markets | Cash services | 0 € capital ; 1 mission 200–400 € ≈ objectif 2× ; **canaux GO** : Virtuals ACP + Skyfire seller ([`agent-markets.md`](agent-markets.md)) — Free-Work/LaborX/Malt/Upwork écartés (ToS / KYC) |
-| P1 | **V-04** | Bounties / Mech | Cash services | Gas/outils seulement ; **Olas Mech Marketplace** (turnover live) prioritaire vs Opire minuscule ; escrow on-chain préféré |
+| P1 | **V-04** | Bounties / Mech | Cash services | Gas/outils seulement ; **Olas Mech Marketplace** (turnover live) prioritaire vs Opire minuscule ; escrow on-chain préféré — fiche Day-0 [`pilots/olas-mech.md`](pilots/olas-mech.md) (**GO docs / NO spend** tant que Docker+bridge) |
 | P2 | **V-11** | Recherche on-chain à façon | Cash services | Quasi 0 capital ; brief 150–300 € ; offre naturelle sur ACP / Mech / Skyfire MCP |
 
 ### Pourquoi pas les autres en vague 1
@@ -32,7 +32,7 @@ Plafonds : [`risk-limits.md`](risk-limits.md) · Catalogue : [`vecteurs.md`](vec
 | Réserve (gas + buffer) | ≥ 30 % | ≥ ~61 | ≥ ~0,041 | **Obligatoire** — ne pas toucher |
 | Floor gas L1 | (dans réserve) | ~15 | **0,01** | Floor dur |
 | V-06 | 0 % | 0 | 0 | Temps seulement |
-| V-04 (si un jour autorisé) | ≤ 5 % (≪ cap 10 %) | ≤ ~10 | ≤ ~0,007 | Gas quests / claims |
+| V-04 / Mech (si un jour autorisé) | ≤ ~2,5 % (≪ cap 10 %) | **≤ ~5** (Mech gas) ; ≤ ~10 total V-04 | ≤ ~0,0035 | Voir [`pilots/olas-mech.md`](pilots/olas-mech.md) ; gas Gnosis only |
 | V-11 (si un jour autorisé) | ≤ 5 % | ≤ ~10 | ≤ ~0,007 | Outils / API free-tier d’abord |
 | **Engage pilotes max** | **≤ ~10 %** | **≤ ~20** | **≤ ~0,014** | Sous risk-limits |
 | Non alloué / opportunité | reste | ~122+ | ~0,08+ | Reste liquide |
@@ -129,8 +129,19 @@ Exemples déjà utilisés pour ce plan (nov. 2026) :
 - Bounties Web3 : ordres de grandeur docs 50–200 USD, mid plus haut sur boards protocoles.
 - Cadre risk retail : caps d’exposition + échelle de drawdown (voir risk-limits).
 
-## 7. Hors scope de ce plan
+## 7. Pilote Olas Mech (pointeur)
 
-- Tout spend / trade / bridge / stake.
-- Merge de PR sans opérateur.
+Fiche opérationnelle Day-0 : [`pilots/olas-mech.md`](pilots/olas-mech.md).
+
+| Décision | Contenu |
+|----------|---------|
+| Phase 1 | **GO** — recherche + checklist + cap ≤ **5 €** |
+| Phase 2 | **NO** spend live (2026-11-21) — Docker absent, bridge L1→Gnosis non autorisé, ops capital non ouvertes |
+| Prochaine | Dry-run free (§6.B de la fiche) ; escalade infra/bridge si priorité earn agent |
+
+## 8. Hors scope de ce plan
+
+- Tout spend / trade / bridge / stake (sauf si autorisation ultérieure sous caps).
+- Merge de PR sans opérateur (sauf préférence opérateur contraire documentée).
 - Ouverture V-01…V-03, V-05, V-10 sans nouvelle décision documentée.
+- Virtuals fund-transfer · Skyfire (vague suivante) · game bots · Free-Work signup.

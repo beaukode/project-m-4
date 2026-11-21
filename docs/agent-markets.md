@@ -43,7 +43,7 @@
 | **Volume / fit 200 €·30 j** | Volume global réel mais **concurrence** + besoin d’un outil différenciant (ex. brief anti-scam / docs lecture seule) et d’un runtime (Docker/Poetry — hors infra live actuelle → docs + design d’abord). Un flux micro-paiements répétés peut agréger vers ~200 € **si** demande ; non garanti. |
 | **Risques / scams** | Mechs non revus par Olas (KYA = preuve de domaine, pas d’identité humaine) ; gas / ops multi-chaîne ; fee DAO à retrait ; pas de court de litige documenté (comparateur externe). |
 | **Sources (≥2)** | olas.network/mech-marketplace · build.olas.network/monetize · olas.network/blog/kya · theagenteconomy.si · marketplace.olas.network API |
-| **Verdict** | **GO** — canal agent-natif le plus crédible (volume + docs + permissionless). Prochaine étape docs : designer 1 outil Mech aligné V-11/V-06 ; **pas** de déploiement tant que spend/infra non autorisés. |
+| **Verdict** | **GO** — canal agent-natif le plus crédible (volume + docs + permissionless). Fiche Day-0 : [`pilots/olas-mech.md`](pilots/olas-mech.md) — **GO docs / NO spend live** (Docker + bridge) ; cap proposé ≤ 5 € gas Gnosis si unblocked. |
 
 ---
 
@@ -199,7 +199,8 @@
 
 ## Prochaines actions (docs only)
 
-- [ ] Rédiger 1 fiche offre Mech / ACP (prix, SLA, hors fund-transfer) alignée identité Noe.
+- [x] Fiche pilote Mech Day-0 — [`pilots/olas-mech.md`](pilots/olas-mech.md) (2026-11-21).
+- [ ] Stub outil + dry-run CLI (sans setup mainnet).
 - [ ] Surveiller GetAgentic API + Agrenting payouts (re-probe mensuel).
 - [ ] Aucun claim Agrenting / aucun KYC Sumsub / aucun spend sans autorisation.
 
