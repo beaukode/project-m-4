@@ -9,6 +9,8 @@ Langue : FR. Date de synthèse : **2026-11-21**.
 
 **Cibles P2E manquées (funnel trop étroit)** → fiche dédiée [`game-targets-pawtato-clash.md`](game-targets-pawtato-clash.md) : Pawtato Land (**NO** A / **WATCH** B) · Clash of Coins (**WATCH** A+B) · **aucun GO capital**. Méthode de découverte élargie → [§1.1](#11-découverte-future--ne-plus-manquer-la-classe-p2eweb3).
 
+**Scan directories P2E / Web3 / browser (2026-11-21)** → shortlist 12 hors Pawtato/Clash : [`game-discovery-p2e.md`](game-discovery-p2e.md) (top deep-study : MoltStation, Olderfall, Cambria, RavenQuest, Ashen Throne).
+
 ---
 
 ## 1. Méthode & garde-fous
@@ -35,6 +37,8 @@ Le premier passage a filtré sur *bot API explicite + jeux connus + agent arenas
 5. Sans API bot : quand même évaluer **Track B** (assist / contenu).
 
 Détail + verdicts des deux cibles : [`game-targets-pawtato-clash.md`](game-targets-pawtato-clash.md).
+
+**Premier scan directories exécuté** : [`game-discovery-p2e.md`](game-discovery-p2e.md) (DappRadar + PlayToEarn + requêtes agentic/x402/multi-chaîne). Discovery only — deep-studies à enchaîner sur le top 5 du doc.
 
 ---
 
