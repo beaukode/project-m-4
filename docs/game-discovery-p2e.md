@@ -53,21 +53,31 @@ Légende priorité : **deep-study now** · **later** · **skip**
 
 ---
 
-## 3. Deep-studies (top 5) — **fait**
+## 3. Deep-studies — **fait (tous)**
 
-Fiche : [`game-deep-study-top5.md`](game-deep-study-top5.md) (2026-11-21, **0 spend**).
+| Vague | Fiche | Périmètre |
+|-------|-------|-----------|
+| Top 5 | [`game-deep-study-top5.md`](game-deep-study-top5.md) | #1–#5 (réutilisé ; refresh spot-check OK) |
+| **Full pass** | [`game-deep-study-all.md`](game-deep-study-all.md) | **12 shortlist + 11 filtrés + 2 pointeurs** = **25** |
 
-| # | Jeu | A | B | Note 1 ligne |
-|---|-----|---|---|--------------|
-| 1 | MoltStation | **WATCH** | **NO** | API+payout OK ; 0 claims + MOLTS illiquide |
-| 2 | Olderfall | **NO** | **WATCH** | USDC N3MUS réel ; bots non ; EV temps |
-| 3 | Cambria | **NO** | **WATCH** | USDC Risk Pool clair ; **kill spend** Energy |
-| 4 | RavenQuest | **NO** | **WATCH** | QUEST −99 % ATH ; bots ToS NO |
-| 5 | Ashen Throne | **WATCH** (MCP) | **WATCH→GO** | F2P + payouts on-chain + MCP officiel |
+| # | Jeu | Verdict full | Note 1 ligne |
+|---|-----|--------------|--------------|
+| 1 | MoltStation | **DEFER** | API+payout OK ; 0 claims + MOLTS illiquide |
+| 2 | Olderfall | **TRACK B** | USDC N3MUS réel ; bots non ; EV temps |
+| 3 | Cambria | **TRACK B** | USDC Risk Pool ; **kill spend** Energy |
+| 4 | RavenQuest | **TRACK B** | QUEST −99 % ATH ; bots ToS NO |
+| 5 | Ashen Throne | **GO** (temps) | F2P + payouts on-chain + MCP officiel |
+| 6 | Photo Finish Live | **TRACK B** | DERBY→USDC ; bots ToS NO ; wager |
+| 7 | Parallel TCG | **NO** | NFT gate >> 200 € ; bots NO |
+| 8 | Reworth Games | **DEFER** | USDC Base ; payouts non prouvés |
+| 9 | SolFarmer | **NO** | ScamAdviser 0 ; bots ban ; treasury |
+| 10 | ClawArcade | **DEFER** | Agent API OK ; micro-pools ; 0 preuve payout |
+| 11 | Cryptrix | **NO** | Stake EV− ; site **404** |
+| 12 | Arcade / x402 chance | **NO** | Gambling / house EV− |
 
-**Pilotes recommandés (temps)** : #1 Ashen Throne · #2 MoltStation smoke API. Aucun GO capital.
+**Pilotes recommandés (temps)** : #1 Ashen · #2 MoltStation smoke · #3 ClawArcade (après tx) · #4 Olderfall B · #5 Reworth probe. **Aucun GO capital.**
 
-Ne pas abandonner #2–#5 seulement parce que le ramp-up > 30 j — classer vs autres agents / vecteurs temps.
+Ne pas abandonner vecteurs lents seulement parce que le ramp-up > 30 j — classer vs autres agents / vecteurs temps.
 
 ---
 
@@ -80,6 +90,7 @@ Ne pas abandonner #2–#5 seulement parce que le ramp-up > 30 j — classer vs a
 | Pas de ledger capital | Discovery only | Notes deep-study → `ops/ledgers/V-13.md` (fait) |
 | Multi-chaîne inclus | Préf opérateur | Restreindre L1 si prefs changent |
 | Deep-study top 5 livré | Voir `game-deep-study-top5.md` | Réviser si EV live change |
+| Deep-study **all** livré | Voir `game-deep-study-all.md` (25 titres) | Réviser si prod/payouts changent |
 
 ---
 
