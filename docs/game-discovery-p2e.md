@@ -53,15 +53,19 @@ Légende priorité : **deep-study now** · **later** · **skip**
 
 ---
 
-## 3. Prochains deep-studies (top 5)
+## 3. Deep-studies (top 5) — **fait**
 
-Ordre recommandé pour la vague suivante (docs ToS + cashout + anti-scam ≥3 sources ; **toujours 0 spend** jusqu’à GO explicite) :
+Fiche : [`game-deep-study-top5.md`](game-deep-study-top5.md) (2026-11-21, **0 spend**).
 
-1. **MoltStation** — seul path Track A « API + payout Base » nouveau ; comparer ToS/rewards à Clash.
-2. **Olderfall** — F2P + USDC tournois ; vérifier enregistrement N3MUS, KYC, bot ToS, EV temps.
-3. **Cambria** — documenter Risk Pool, caps withdraw, fit ≤ caps V-13 / risk-limits ; kill si EV stake.
-4. **RavenQuest** — coût Withdraw Pass, liquidité QUEST, temps Legacy 15 vs objectif.
-5. **Ashen Throne** — vérifier logs on-chain, fréquence cups, taille prize vs effort.
+| # | Jeu | A | B | Note 1 ligne |
+|---|-----|---|---|--------------|
+| 1 | MoltStation | **WATCH** | **NO** | API+payout OK ; 0 claims + MOLTS illiquide |
+| 2 | Olderfall | **NO** | **WATCH** | USDC N3MUS réel ; bots non ; EV temps |
+| 3 | Cambria | **NO** | **WATCH** | USDC Risk Pool clair ; **kill spend** Energy |
+| 4 | RavenQuest | **NO** | **WATCH** | QUEST −99 % ATH ; bots ToS NO |
+| 5 | Ashen Throne | **WATCH** (MCP) | **WATCH→GO** | F2P + payouts on-chain + MCP officiel |
+
+**Pilotes recommandés (temps)** : #1 Ashen Throne · #2 MoltStation smoke API. Aucun GO capital.
 
 Ne pas abandonner #2–#5 seulement parce que le ramp-up > 30 j — classer vs autres agents / vecteurs temps.
 
@@ -73,8 +77,9 @@ Ne pas abandonner #2–#5 seulement parce que le ramp-up > 30 j — classer vs a
 |----------|----------|------------|
 | 12 candidats (pas 15) | Filtre earn explicite + anti-scam a éliminé volume DappRadar « token only » | Ajouter une vague 2 directory si opérateur veut + volume |
 | Skip x402 chance / Arcade Cafe | Gambling EV négative attendue | Réouvrir seulement si house-LP non-wager documenté |
-| Pas de ledger capital | Discovery only | Ouvrir `ops/ledgers/V-13.md` notes après deep-study |
+| Pas de ledger capital | Discovery only | Notes deep-study → `ops/ledgers/V-13.md` (fait) |
 | Multi-chaîne inclus | Préf opérateur | Restreindre L1 si prefs changent |
+| Deep-study top 5 livré | Voir `game-deep-study-top5.md` | Réviser si EV live change |
 
 ---
 
