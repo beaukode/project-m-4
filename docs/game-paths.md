@@ -7,6 +7,8 @@ Langue : FR. Date de synthèse : **2026-11-21**.
 
 **Recommandation globale** → voir [§5](#5-recommandation-agent-4).
 
+**Cibles P2E manquées (funnel trop étroit)** → fiche dédiée [`game-targets-pawtato-clash.md`](game-targets-pawtato-clash.md) : Pawtato Land (**NO** A / **WATCH** B) · Clash of Coins (**WATCH** A+B) · **aucun GO capital**. Méthode de découverte élargie → [§1.1](#11-découverte-future--ne-plus-manquer-la-classe-p2eweb3).
+
 ---
 
 ## 1. Méthode & garde-fous
@@ -18,8 +20,21 @@ Langue : FR. Date de synthèse : **2026-11-21**.
 | Interdits | Bots « human-like » d’évasion, auto-clickers sur jeux où bots sont bannis, memory reads / ESP |
 | Capital | Fit évalué vs ~200 € / 30 j / ETH L1 — sans engager de fonds ici |
 | Kill soft | Tout doute ToS → **NO** ou **WATCH** ; jamais « ça passe tant que non détecté » |
+| Funnel | **Pas seulement** APIs bots / titres AAA / arènes agents — scanner aussi P2E browser / Web3 MMORPG / Base–Sui gaming dirs (voir §1.1) |
 
 Légende verdict Track A : **GO** · **WATCH** · **NO**
+
+### 1.1 Découverte future — ne plus manquer la classe P2E/Web3
+
+Le premier passage a filtré sur *bot API explicite + jeux connus + agent arenas* → rate **Pawtato** et **Clash of Coins**. Désormais :
+
+1. **Directories** : DappRadar Gaming, CoinGecko P2E, LootRadar, leaderboards Base App, listes Sui/Solana P2E, suggestions opérateur.
+2. **Keywords** : `play to earn browser`, `web3 mmorpg`, `nft land`, `agentic gaming`, `x402 game`, `optional web3`, `AI agents play`.
+3. **Signaux** : `/llms.txt`, OpenAPI, MCP, scholarship, activity points, withdraw marketplace.
+4. **Filtres A4** : ToS bots → anti-scam ≥2 → cashout crypto → chaîne vs L1 → fit 200 €/30 j → KYC → spend.
+5. Sans API bot : quand même évaluer **Track B** (assist / contenu).
+
+Détail + verdicts des deux cibles : [`game-targets-pawtato-clash.md`](game-targets-pawtato-clash.md).
 
 ---
 
@@ -40,6 +55,10 @@ Légende verdict Track A : **GO** · **WATCH** · **NO**
 | Path of Exile / GW2 TP | API lecture ; bots interdits | RMT / automation ban | N/A | **NO** | — |
 | Torn City API | Read-only + scripts API OK | Pas d’automation d’actions non-API | Assist seulement → Track B | **NO** (bots play) | — |
 | Chess.com | Bots/engines interdits vs humains | Prix tournois = fair play strict | N/A | **NO** | — |
+| Pawtato Land (Sui) | Non (sauf orderbook) | Marketplace → TATO withdraw | Mauvais (NFT gate, liq. fine, hors L1) | **NO** | modéré (GameFi) |
+| Clash of Coins (Base) | Oui (Agentic + x402 officiels) | Points / tournois / OWB ; shop API = spend | Mauvais sans EV prouvée (Risk-to-Earn, OWB −95 % ATH) | **WATCH** | élevé (token) |
+
+Fiches : [`game-targets-pawtato-clash.md`](game-targets-pawtato-clash.md).
 
 ### 2.2 Détails & citations (Track A)
 
@@ -97,6 +116,18 @@ Légende verdict Track A : **GO** · **WATCH** · **NO**
 
 - [Fair Play Policy](https://www.chess.com/legal/fair-play) : *« Do not use chess engines, software of any kind, bots… that analyze positions during play »* vs autres utilisateurs.
 
+#### A8 — Pawtato Land — **NO** (bots) · détail → [fiche](game-targets-pawtato-clash.md#1-pawtato-land-pawtatogg)
+
+- Rules : *« No Botting or Automation »* ; exception orderbook only ([docs rules](https://docs.pawtato.gg/pawtato-land/gameplay/rules)).
+- Earn = sell → TATO ; Lands/Heroes secondary ; chaîne Sui ; liq. TATO fine (sources secondaires tide / bitgamble).
+- Track B : **WATCH** (humain + plans) ; capital 2×/30 j : non.
+
+#### A9 — Clash of Coins — **WATCH** (bots officiels seulement) · détail → [fiche](game-targets-pawtato-clash.md#2-clash-of-coins-clashofcoinscom)
+
+- ToS interdit bots *not expressly authorized* ; Agentic Mode + x402 = autorisés éditeur ([terms](https://clashofcoins.com/terms/), [llms.txt](https://clashofcoins.com/llms.txt)).
+- Earn = activity points / Risk-to-Earn / OWB Base ; API shop = **dépense** USDC.
+- Anti-scam : CMC + DexScreener + rapport on-chain (concentration / liq. fine) → **pas GO capital**.
+
 ---
 
 ## 3. Track B — humain + assist IA (sans jouer à sa place)
@@ -153,6 +184,11 @@ Légende verdict Track A : **GO** · **WATCH** · **NO**
 - **Lichess Board API** : clients tiers OK mais *« Engine assistance… forbidden »* pour comptes humains ; analyse **après** partie OK.
 - **Assist OK** : préparation d’ouvertures / drills hors partie ; analyse post-game.
 
+#### B7 — Pawtato / Clash of Coins (humain)
+
+- **Pawtato** : gameplay manuel obligatoire → assist = plans craft/quest/économie **hors** auto-click ; **WATCH** temps opérateur, pas moteur 2×.
+- **Clash** : modèle « commander » + chat agents officiels = Track A/B hybride **autorisé** ; assist stratégie carte / tournois OK **sans** client hack. Contenu (V-07) possible. **Pas** de spend pass tant que non autorisé.
+
 ### 3.3 Patterns produit pour Agent 4 (Track B)
 
 | Pattern | Monetisable ? | ToS-safe si… | Lien vecteurs |
@@ -171,6 +207,9 @@ Légende verdict Track A : **GO** · **WATCH** · **NO**
 | A Lichess bots | Très faible | ~0 € | Prix minuscules |
 | A Second Life | Faible→moyenne (si KYC + skill) | temps + éventuel premium | KYC Tilia, courbe, fiat≠ETH |
 | A Arènes crypto | Négative attendue (EV stake) | stake USDC/alt | Scam/gambling/chaîne |
+| A Pawtato bots | Nulle (ToS) | — | Ban |
+| A Clash Agentic | Inconnue / souvent négative si Risk-to-Earn | passes / USDC shop | OWB + KYC possible |
+| B Pawtato / Clash assist | Faible (temps) | 0 € si F2P | Hors L1 / EV floue |
 | B Assist + contenu | Indirecte (via V-07/V-08) | ≤ outils 5–10 € | Temps opérateur |
 | B Tournois humains + IA live | **Interdit** sur la plupart des jeux | — | Ban / ToS |
 
@@ -182,10 +221,11 @@ Risques transverses : ban compte, malware « tools », arnaques RMT, confusion b
 
 **Poursuivre B (léger), pas A capital maintenant.**
 
-1. **Track A** : aucun **GO** solide pour l’objectif ETH ~2× / 30 j. Lichess = ToS OK mais économie trop faible. Second Life = **WATCH** (nécessite KYC humain + temps). Arènes crypto agents = **NO** (risque NAV + anti-scam + hors L1).
-2. **Track B** : **oui**, comme **complément** des vecteurs temps/contenu (V-06 / V-07 / V-08) : plans, checklists, reviews post-partie, outils API read-only — **jamais** d’automation d’inputs ni overlays compétitifs gris.
+1. **Track A** : aucun **GO** solide pour l’objectif ETH ~2× / 30 j. Lichess = ToS OK mais économie trop faible. Second Life = **WATCH** (nécessite KYC humain + temps). Arènes crypto agents = **NO**. **Pawtato** bots = **NO** (ToS). **Clash** Agentic = **WATCH** (autorisé éditeur, pas GO capital).
+2. **Track B** : **oui**, comme **complément** des vecteurs temps/contenu (V-06 / V-07 / V-08) : plans, checklists, reviews post-partie, outils API read-only — **jamais** d’automation d’inputs ni overlays compétitifs gris. Pawtato/Clash = **WATCH** assist seulement.
 3. **Ni A ni B comme pilote capital** tant que spend non autorisé ; ne pas déplacer le focus hors vague 1 (V-06, V-04, V-11).
-4. Stub catalogue : **V-13** (assist jeux / APIs autorisées) en `recherche` — voir [`vecteurs.md`](vecteurs.md).
+4. Stub catalogue : **V-13** (assist jeux / APIs autorisées) en `recherche` — voir [`vecteurs.md`](vecteurs.md) ; cibles P2E → [`game-targets-pawtato-clash.md`](game-targets-pawtato-clash.md).
+5. **Découverte** : appliquer §1.1 (directories P2E + keywords) à chaque revue jeux.
 
 **Décision autonome** : ne pas ouvrir de ledger d’allocation capital jeux ; documenter seulement. Annulation = retirer V-13 ou passer en `abandonné` si opérateur refuse le panier jeux.
 
@@ -212,5 +252,6 @@ Risques transverses : ban compte, malware « tools », arnaques RMT, confusion b
 | 15 | https://support.faceit.com/hc/en-us/articles/360015788779-What-is-deemed-to-be-a-cheat | FACEIT |
 | 16 | https://developer.riotgames.com/docs/valorant | Riot overlays |
 | 17 | https://us.blizzard.com/en-us/company/about/termsofuse.html | Blizzard EULA |
+| 18 | [`game-targets-pawtato-clash.md`](game-targets-pawtato-clash.md) | Pawtato + Clash (index sources 1–19 dans la fiche) |
 
 *Les URLs ont été consultées pour cette synthèse (2026-11-21). Re-vérifier avant tout passage `prêt` / `actif`.*
