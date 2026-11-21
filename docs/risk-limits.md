@@ -36,6 +36,7 @@ Alignés sur [`vecteurs.md`](vecteurs.md). **Non cumulatifs à 100 %** — le pl
 | V-10 | Domaines | 25 % (≤3 actifs) | ~50 | 21 j sans offre / trademark |
 | V-11 | Recherche on-chain | 5 % | ~10 | Demande de shill **ou** 14 j sans intérêt |
 | V-12 | Modération / community | 0 % | 0 | Rôle exigeant garde de fonds |
+| V-13 | Jeux assist / API autorisée | 5 % outils | ~10 | Automation ToS / arène non triangulée / 21 j sans livrable |
 
 ## 3. Kill switches (pertes / drawdown)
 

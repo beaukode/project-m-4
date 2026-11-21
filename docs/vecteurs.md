@@ -27,6 +27,7 @@ Classes de risque : `faible` · `modéré` · `élevé` (toujours borné au capi
 | V-10 | Domaines / actifs numériques | ops | ≤ 25 % (~50 €) | modéré | idée | [ops/ledgers/V-10.md](../ops/ledgers/V-10.md) |
 | V-11 | Recherche on-chain à façon | crypto-web | ≤ 5 % (~10 €) | faible | recherche (pilote P2) | [ops/ledgers/V-11.md](../ops/ledgers/V-11.md) |
 | V-12 | Modération / community ops | web | 0 € capital | faible | idée | [ops/ledgers/V-12.md](../ops/ledgers/V-12.md) |
+| V-13 | Jeux : assist humain / API autorisée | web-jeux | ≤ 5 % outils (~10 €) | faible–modéré | recherche | [ops/ledgers/V-13.md](../ops/ledgers/V-13.md) |
 
 Caps **non cumulatifs à 100 %** : on n’alloue jamais tout le capital à un seul panier ; le total engagé à un instant T doit rester **≤ 70 %** du NAV dédié (réserve gas + opportunité).
 
@@ -212,6 +213,21 @@ Caps **non cumulatifs à 100 %** : on n’alloue jamais tout le capital à un se
 
 ---
 
+## V-13 — Jeux : assist humain / API autorisée
+
+| Champ | Contenu |
+|-------|---------|
+| **ID** | `V-13` |
+| **Thèse** | Monétiser **légalement** le temps jeux via (B) contenus/outils d’**assist** pour un opérateur humain (plans, checklists, revue post-partie, dashboards API read-only) — **sans** injection d’inputs. Track A bots seulement si ToS **explicite** **et** économie viable (aujourd’hui : pas de GO capital ; Lichess/SL en WATCH). Détail : [`game-paths.md`](game-paths.md). |
+| **Pourquoi ~200 €** | Capita presque nul ; 1 pack contenu ou 1 mission coach post-VOD peut contribuer au 2× via fiat→ETH. **Pas** un moteur stake/gambling. |
+| **Cap capital** | ≤ **5 %** (~10 €) outils ; **0 €** stake tournois/arènes crypto tant que non autorisé + triangulation. |
+| **Risque** | `faible`–`modéré` (ban si dérive ToS ; revenu lent ; KYC si Second Life cashout) |
+| **Anti-scam** | Citer ToS/API officiels ; jamais de « bot indétectable » ; pas de dépôt arènes non triangulées ; LindeX officiel seulement pour SL. |
+| **Prochaine étape** | 1 livrable Track B safe (ex. checklist pré-match hors client **ou** brief post-VOD sample) lié V-07/V-08 ; **ne pas** financer bandforband/PIVArena/etc. |
+| **Kill** | Toute automation d’inputs / overlay compétitif gris **ou** pression vers RMT / arène non triangulée **ou** 21 j sans livrable utile après démarrage actif. |
+
+---
+
 ## Corrélation & diversification
 
 | Panier | Vecteurs | Rôle |
@@ -219,7 +235,7 @@ Caps **non cumulatifs à 100 %** : on n’alloue jamais tout le capital à un se
 | Préservation | V-01, V-05 | NAV stable / apprentissage on-chain |
 | Asymétrie crypto | V-02, V-03 | Upside non linéaire borné |
 | Cash services | V-04, V-06, V-11, V-12 | Moteur principal vers 2× |
-| Produits / attention | V-07, V-08, V-09 | Leviers web à faible capital |
+| Produits / attention | V-07, V-08, V-09, V-13 | Leviers web / jeux légitimes à faible capital |
 | Actifs digitaux | V-10 | Ticket spéculatif borné |
 
 Règle : au moins **3 paniers** représentés dans le plan de semaine ; ne pas empiler V-01+V-02+V-05+V-03 au-delà du cap global 70 %.
