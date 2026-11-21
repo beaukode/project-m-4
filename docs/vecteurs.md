@@ -21,12 +21,12 @@ Classes de risque : `faible` · `modéré` · `élevé` (toujours borné au capi
 | V-03 | Écarts de frais / info-arb | crypto | ≤ 15 % (~30 €) | modéré | idée | [ops/ledgers/V-03.md](../ops/ledgers/V-03.md) |
 | V-04 | Bounties / grants (+ Mech) | travail | ≤ 10 % gas (~20 €) ; pilote Mech ≤ 5 € | faible | triangulé (Mech) / recherche (pilote P1) · [`pilots/olas-mech`](pilots/olas-mech.md) | [ops/ledgers/V-04.md](../ops/ledgers/V-04.md) |
 | V-05 | LP prudent paires majeures | crypto | ≤ 20 % (~40 €) | modéré | idée | [ops/ledgers/V-05.md](../ops/ledgers/V-05.md) |
-| V-06 | Freelance / agent markets | web | 0 € capital (temps) | faible | recherche (pilote P0) · pivot agent-markets | [ops/ledgers/V-06.md](../ops/ledgers/V-06.md) |
+| V-06 | Freelance / agent markets | web | 0 € capital (temps) | faible | recherche (pilote P0) · ACP Day-0 [`pilots/virtuals-acp`](pilots/virtuals-acp.md) | [ops/ledgers/V-06.md](../ops/ledgers/V-06.md) |
 | V-07 | Contenu niche monétisé | web | ≤ 5 % outils (~10 €) | faible | idée | [ops/ledgers/V-07.md](../ops/ledgers/V-07.md) |
 | V-08 | Micro-produit digital | web | ≤ 15 % (~30 €) | modéré | idée | [ops/ledgers/V-08.md](../ops/ledgers/V-08.md) |
 | V-09 | Affiliation déclarée | web | 0–5 % (~10 €) | faible | idée | [ops/ledgers/V-09.md](../ops/ledgers/V-09.md) |
 | V-10 | Domaines / actifs numériques | ops | ≤ 25 % (~50 €) | modéré | idée | [ops/ledgers/V-10.md](../ops/ledgers/V-10.md) |
-| V-11 | Recherche on-chain à façon | crypto-web | ≤ 5 % (~10 €) | faible | recherche (pilote P2) | [ops/ledgers/V-11.md](../ops/ledgers/V-11.md) |
+| V-11 | Recherche on-chain à façon | crypto-web | ≤ 5 % (~10 €) | faible | recherche (pilote P2) · offerings ACP 5–25 USDC | [ops/ledgers/V-11.md](../ops/ledgers/V-11.md) |
 | V-12 | Modération / community ops | web | 0 € capital | faible | idée | [ops/ledgers/V-12.md](../ops/ledgers/V-12.md) |
 | V-13 | Jeux : assist humain / API autorisée | web-jeux | ≤ 5 % outils (~10 €) | faible–modéré | recherche | [ops/ledgers/V-13.md](../ops/ledgers/V-13.md) |
 
@@ -119,8 +119,8 @@ Caps **non cumulatifs à 100 %** : on n’alloue jamais tout le capital à un se
 | **Cap capital** | **0 €** de capital marché ; éventuels outils ≤ 5 %. |
 | **Risque** | `faible` (impayés, mauvaise scope) — risque **canal** si board KYC/personne physique. |
 | **Anti-scam** | Client identifiable ; acompte ou plateforme escrow connue ; pas de « pay to apply » ; pas de chèque / crypto étrange en prépaiement inverse ; **pas** LaborX automation ; pas Malt/Upwork (prefs). |
-| **Prochaine étape** | Publier 1 offre claire sur **2 canaux GO** de [`agent-markets.md`](agent-markets.md) : **Virtuals ACP** (provider, service-only) + **Skyfire seller** (MCP/API) ; Olas Mech quand runtime autorisé. Free-Work seulement si email humain. Viser 3 conversations / 1 job funded en 7–14 j. |
-| **Kill** | 14 j sans lead qualifié malgré outreach documenté **et** pivot vers V-04/V-07/V-11 ; ou client exigeant paiement hors escrow sans historique ; ou canal exigeant KYC personne / forbidding bots. |
+| **Prochaine étape** | Exécuter fiche [`pilots/virtuals-acp.md`](pilots/virtuals-acp.md) : préparation free §5.B ; puis sandbox→graduation dès compte Virtuals humain. Skyfire/Olas = secondaires (WATCH earn). Free-Work seulement si email humain. |
+| **Kill** | 14 j post-graduation Shown sans job funded **ou** Fund-Transfer / garde de fonds **ou** client hors escrow ; ou canal KYC personne / forbidding bots. |
 
 ---
 
@@ -194,8 +194,8 @@ Caps **non cumulatifs à 100 %** : on n’alloue jamais tout le capital à un se
 | **Cap capital** | ≤ **5 %** (~10 €) outils d’explorateur / API free-tier. |
 | **Risque** | `faible` (scope, responsabilité — disclaimer clair) |
 | **Anti-scam** | Client réel ; pas de travail pour pump groups ; sources publiques citées ; disclaimer « pas un conseil financier ». |
-| **Prochaine étape** | Rédiger 1 brief sample public (protocole blue-chip) ; proposer le format + prix sur **Virtuals ACP** + **Skyfire/Olas** (pas LaborX/Free-Work) — voir [`agent-markets.md`](agent-markets.md). |
-| **Kill** | Demande de « shill report » payé **ou** 14 j sans intérêt après sample **et** réallocation temps vers V-04/V-06. |
+| **Prochaine étape** | Sample public stETH + lister offerings ACP A/B (**5–25 USDC**, service-only) per [`pilots/virtuals-acp.md`](pilots/virtuals-acp.md). Pas LaborX/Free-Work. |
+| **Kill** | Demande de « shill report » payé **ou** 14 j sans intérêt après sample/listing **et** réallocation temps vers V-04/V-06. |
 
 ---
 
