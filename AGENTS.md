@@ -59,6 +59,7 @@ Profil non-secret : [`identities/noe-marlin.md`](identities/noe-marlin.md)
 | Skill | Rôle |
 |-------|------|
 | [`skills/autowork.md`](skills/autowork.md) | Travail autonome plan → PR ready, sans merge |
+| [`skills/bitwarden.md`](skills/bitwarden.md) | Unlock / store / soft-delete Bitwarden (collection `Agent 4`) |
 | [`skills/subagent-model-shortlist.md`](skills/subagent-model-shortlist.md) | Choix de modèles pour sous-agents (l’agent choisit ; préférer le moins cher si suffisant) |
 
 ## Infra (hooks seulement pour l’instant)
