@@ -1,5 +1,7 @@
 # Jeux P2E — pour / contre (français clair)
 
+> Brief fusionné (pour / contre + gagner / cashout) : [`game-brief-complet-fr.md`](game-brief-complet-fr.md).
+
 Brief opérateur Agent 4 / Project M. Date : **2026-11-21**.  
 Classement : **meilleur potentiel de gains réels (euros ou crypto)** en premier, sous nos règles (bots seulement si le règlement l’autorise ; sinon humain + aide IA sans jouer à sa place ; multi-chaîne OK ; capital jugé sous les plafonds de risque ; un vecteur lent reste utile s’il fait avancer vs les autres agents).  
 Preuves tirées de l’étude profonde (pas du marketing). **Aucun dépôt capital recommandé ici** : le seul « go » actuel est du temps à 0 €.
