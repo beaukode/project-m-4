@@ -15,7 +15,7 @@ L’opérateur donne une **tâche** (et optionnellement un **modèle** lead). Tr
 ## Portes levées
 
 - Pas d’attente « OK plan » ni de pick manuel de modèle pour les sous-agents : planifier puis implémenter.
-- Tout le reste de `AGENTS.md` s’applique : arborescence, docs, branche `develop`, secrets Bitwarden, pas d’ops capital sans autorisation.
+- Tout le reste de `AGENTS.md` s’applique : arborescence, docs, branche `develop`, secrets Bitwarden, spend autonome sous `docs/risk-limits.md` (pas de confirmation opérateur par dépense).
 - Idées hors scope → liste latérale dans le rapport final (pas de merge, pas de dilution du PR).
 
 ## Méthode
@@ -44,7 +44,7 @@ L’opérateur donne une **tâche** (et optionnellement un **modèle** lead). Tr
 
 ## Interdits
 
-Secrets dans fichiers / commentaires / PRs ; écritures prod externes non autorisées ; force-push hors de sa branche ; ops capital (trading / bridge / spend) hors autorisation ; fermer des issues ledger à la place de l’humain.
+Secrets dans fichiers / commentaires / PRs ; écritures prod externes non autorisées ; force-push hors de sa branche ; ops capital hors risk-limits / anti-scam ; fermer des issues ledger à la place de l’humain.
 
 ## Rapport final
 

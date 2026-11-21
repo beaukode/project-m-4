@@ -15,8 +15,9 @@ Procédure CLI complète (unlock, store, naming, soft-delete) : [`skills/bitward
 | Item | Usage |
 |------|--------|
 | `WALLET-01 Wallet de départ L1` | Portefeuille ETH L1 de départ (~200 € dédiés) |
+| *(à créer au besoin)* `WALLET-0N …` | Tout wallet multi-chaîne (L2, Sui, Solana, BTC, Gnosis, Base, …) — **même collection** |
 
-Pour un wallet : mettre l’**adresse publique** dans `login.username` (citable) ; la clé / seed uniquement dans `login.password` (jamais citée).
+Pour un wallet : mettre l’**adresse publique** dans `login.username` (citable) ; la clé / seed uniquement dans `login.password` (jamais citée). Multi-chaîne = OK ; **jamais** de clé hors Bitwarden / soft-delete.
 
 ## Discipline
 

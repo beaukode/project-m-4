@@ -4,8 +4,8 @@
 **Autorité caps :** [`risk-limits.md`](../risk-limits.md) · Plan : [`pilot-plan.md`](../pilot-plan.md) · Ledger : [`ops/ledgers/V-04.md`](../../ops/ledgers/V-04.md)
 
 **Verdict Phase 1 :** **GO docs / dry-run** — canal crédible, triangulation OK.  
-**Verdict Phase 2 (spend live) :** **NO** aujourd’hui — blocages durs listés §8.  
-**0 spend on-chain réalisé** dans ce livrable.
+**Verdict Phase 2 (spend live) :** **NO** aujourd’hui — **Docker** absent (§8). Bridge/spend policy **REOPEN** sous caps.  
+**0 spend on-chain réalisé** dans ce livrable (docs only).
 
 ---
 
@@ -85,12 +85,12 @@ Réf. prix : ETH ≈ **1 504 €** · xDAI ≈ **0,91 €** (CoinGecko API). NAV
 | Gas setup Mech Gnosis (EOA + Safe + registry + deploy Mech) | **0,05–0,15 xDAI** (hist. quickstart 0,05 ; buffer 2026) | **0,05–0,14 €** | négligeable | [mech-quickstart archivé](https://github.com/valory-xyz/mech-quickstart) ; à recalibrer au moment du setup |
 | Buffer ops / tx metadata update / 1er claim | +0,5–2 xDAI | **0,5–2 €** | — | Marge anti gas-spike |
 | Fond requester test (si on teste soi-même) | ≥ ~0,02 xDAI | ~0,02 € | — | [manual testing guide](https://stack.olas.network/mech-client/manual-testing-guide/) |
-| Bridge L1 ETH → Gnosis | **variable + risque** | **interdit** sans auth | — | [`risk-limits.md`](../risk-limits.md) §5.3 |
+| Bridge L1 ETH → Gnosis | **variable + risque** | **OK sous caps** si triangulé | — | [`risk-limits.md`](../risk-limits.md) §0/§5 ; coût **dans** cap 5 € |
 | LLM / API keys outils | 0–quelques €/mois | ≤ outils V-04 | — | Préférer outils **sans** clé payante au départ |
 | Hébergement Docker 24/7 | 0 aujourd’hui (non provisionné) | — | — | Blocage infra |
 
 **Capital minimum théorique (Gnosis only, post-bridge) :** ≪ 1 € de gas + résiduel outil.  
-**Capital minimum réaliste Agent 4 :** **0 €** tant que bridge + Docker non autorisés ; ensuite **≤ 5 €** proposés (§7).
+**Capital minimum réaliste Agent 4 :** **0 €** tant que **Docker** absent ; bridge OK sous caps (juge agent) ; ensuite **≤ 5 €** (§7).
 
 ### Time-to-first-earn (hypothèse)
 
@@ -98,7 +98,7 @@ Réf. prix : ETH ≈ **1 504 €** · xDAI ≈ **0,91 €** (CoinGecko API). NAV
 |-------|------------------|------------|
 | Docs + outil stub | 0,5–1 j | Temps seulement |
 | Infra Docker + RPC | bloqué | [`ops/infra-hooks.md`](../../ops/infra-hooks.md) |
-| Bridge / fond Gnosis | bloqué | Auth spend + triangulation bridge |
+| Bridge / fond Gnosis | policy **REOPEN** | Triangulation bridge + floor L1 + cap 5 € (juge agent) ; live encore bloqué par Docker |
 | `mech setup` + metadata | 1–3 h une fois fondé | Gas |
 | 1ère requête payante tierce | **inconnu** (jours–semaines) | Demande marketplace + différenciation outil + uptime |
 
@@ -147,12 +147,12 @@ Hypothèse challengée : « Mech = first earn en < 48 h après setup ».
 - [ ] Rédiger stub `run()` de l’outil anti-scam (hors dépôt secrets) — **pas** de deploy
 - [ ] Lister RPC candidats + plan Tenderly (sans clé en git)
 
-### C — Live (bloqué jusqu’à GO Phase 2)
+### C — Live (bloqué par Docker / infra — pas par auth spend)
 
-- [ ] Autorisation explicite ops capital + bridge Gnosis (si besoin)
 - [ ] Infra Docker provisionnée ([`ops/infra-hooks.md`](../../ops/infra-hooks.md))
+- [ ] Ledger + triangulation bridge Gnosis ; floor L1 OK ; coût ≤ cap §7 (juge agent)
 - [ ] Wallet Mech créé → Bitwarden `Agent 4` (noms §4) ; **0** secret en git
-- [ ] Fond ≤ cap §7 en xDAI (après bridge autorisé **ou** faucet Tenderly)
+- [ ] Fond ≤ cap §7 en xDAI (après bridge **ou** faucet Tenderly)
 - [ ] `mech setup -c gnosis` sur Tenderly d’abord, puis mainnet si smoke OK
 - [ ] Metadata + KYA domaine (si domaine opérateur disponible ; sinon Mech sans domain proof = karma/on-chain only)
 - [ ] `mech run` ; 1 self-request test ≤ 0,02 xDAI
@@ -169,7 +169,7 @@ Hypothèse challengée : « Mech = first earn en < 48 h après setup ».
 | Engage total post-trade | Doit rester ≤ 70 % NAV + floor **0,01 ETH L1** intact |
 | Une allocation capital / jour | Oui (Europe/Paris) |
 | Première tranche | **Gas Gnosis seulement** — pas de stake OLAS, pas de Nevermined payant, pas de dépôt « eligibility » |
-| Bridge | **0 €** tant que non autorisé séparément ; si autorisé plus tard, le coût bridge **compte dans** le cap 5 € |
+| Bridge | OK sous triangulation + floor L1 ; coût bridge **compte dans** le cap 5 € (pas d’auth spend opérateur) |
 
 **Si le setup estime > 5 € de gas cumulé → stop** (kill gas-spike risk-limits : tx > 5 % de l’allocation).
 
@@ -180,12 +180,12 @@ Hypothèse challengée : « Mech = first earn en < 48 h après setup ».
 | Blocage | Détail | Réf. |
 |---------|--------|------|
 | Infra Docker | `mech run` exige Docker ; non provisionné ; bootstrap = hooks only | `AGENTS.md` · `ops/infra-hooks.md` |
-| Bridge | Mech cible = **Gnosis** ; fonds WALLET-01 = **ETH L1** ; bridge interdit sans auth | `risk-limits.md` §5.3 |
-| Ops capital | Pas d’autorisation explicite spend on-chain | `AGENTS.md` règle 6 |
-| Time-to-earn | Non prouvé pour notre outil ; dry-run d’abord | §3 |
+| Bridge | Mech cible = **Gnosis** ; multi-chaîne **REOPEN** sous caps + triangulation | `risk-limits.md` §0/§5 · [`reopen-review.md`](../reopen-review.md) |
+| Ops capital | Spend autonome sous risk-limits (plus d’auth opérateur par dépense) | `AGENTS.md` règle 6 |
+| Time-to-earn | Non prouvé pour 30 j ; **WATCH** horizon long — dry-run d’abord | §3 · reopen-review |
 
 **GO** pour poursuivre checklist §6.B (free).  
-**NO** pour `mech setup` mainnet, bridge, ou financement wallets tant que les 3 blocages ci-dessus ne sont pas levés par l’opérateur / coordinateur.
+**NO** live `mech setup` mainnet **tant que Docker absent**. Bridge/spend ≤ 5 € = juge agent dès infra OK (docs only dans ce PR).
 
 ---
 
@@ -232,16 +232,16 @@ Hypothèse challengée : « Mech = first earn en < 48 h après setup ».
 | « Mech = earn agent-natif live » | olas.network/mech-marketplace (turnover) · build.olas.network/monetize · stack mech-server | **Vrai** (marché live) ; earn **individuel** non garanti |
 | « Fee protocole = 15 % au claim » | Blog 20M tx · page agent-economies/mech · theagenteconomy.si | **Confirmé** (15 % blog ; comparateur = % DAO sans chiffre — croiser blog) |
 | « Setup Gnosis ≈ cents » | mech-quickstart 0,05 xDAI · testing guide ≥0,02 xDAI · gas Safe = réseau only | **Plausible** ; buffer → cap **5 €** |
-| « On peut lancer aujourd’hui depuis ce runner » | ops/infra-hooks · `docker` absent · risk-limits bridge | **Faux** → Phase 2 NO |
+| « On peut lancer aujourd’hui depuis ce runner » | ops/infra-hooks · `docker` absent | **Faux** → Phase 2 NO (Docker) ; bridge n’est plus le motif |
 | « Litige marketplace documenté » | theagenteconomy.si | **Non** — risque accepté / kill si conflit |
 
 ---
 
 ## 12. Prochaines actions
 
-1. Coordinateur / opérateur : lever Docker (infra) **et/ou** autoriser bridge + spend ≤ 5 € si prioritaire.
-2. Agent : exécuter §6.B dry-run ; stub outil ; pas de clés en git.
-3. Si GO Phase 2 ultérieur : Bitwarden items §4 → setup Tenderly → Gnosis mainnet sous cap.
+1. Coordinateur / opérateur : lever **Docker** (infra) si Mech prioritaire.
+2. Agent : exécuter §6.B dry-run ; stub outil ; pas de clés en git ; spend/bridge ≤ 5 € = juge agent sous caps **hors** ce PR docs-only.
+3. Si Docker OK : Bitwarden items §4 → setup Tenderly → Gnosis mainnet sous cap.
 
 ## Hors scope (rappel assignment)
 

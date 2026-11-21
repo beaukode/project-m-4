@@ -1,7 +1,7 @@
 # Cibles manquées — Pawtato Land & Clash of Coins
 
-Étude approfondie (Agent 4 / Project M). **Aucun spend / ops capital.**  
-Langue : FR. Date : **2026-11-21**.  
+Étude approfondie (Agent 4 / Project M). **Docs only dans ce fichier** (0 spend ici).  
+Langue : FR. Date : **2026-11-21** · repass prefs : [`reopen-review.md`](reopen-review.md).  
 Contexte : le funnel jeux initial (API bots explicites + titres connus + arènes agents crypto) a manqué cette classe **P2E / Web3 browser MMORPG**. Méthode corrigée → [§4](#4-méthode-de-découverte-future) + [`game-paths.md`](game-paths.md) §1.
 
 **Préférence** : bots seulement si ToS/API **explicitement** autorisés ; sinon humain + assist IA **sans** injection d’inputs.
@@ -12,10 +12,10 @@ Contexte : le funnel jeux initial (API bots explicites + titres connus + arènes
 
 | Cible | Chaîne | Track A (bots) | Track B (humain+assist) | Fit ~200 € → 2×/30 j |
 |-------|--------|---------------|-------------------------|---------------------|
-| [Pawtato Land](https://pawtato.gg/) | Sui (+ TATO aussi Solana via Wormhole) | **NO** | **WATCH** | Faible (NFT gate, liquidité fine, hors L1) |
+| [Pawtato Land](https://pawtato.gg/) | Sui (+ TATO aussi Solana via Wormhole) | **KEEP CLOSED** (A) | **WATCH** | Faible (NFT gate, liquidité fine) — Sui **n’est plus** un kill |
 | [Clash of Coins](https://clashofcoins.com/) | Base (OWB ERC-20) | **WATCH** | **WATCH** | Faible→négatif attendu si stake/pass (EV floue, Risk-to-Earn, token spéculatif) |
 
-**Aucun GO capital.** Pas de nouveau vecteur d’allocation ; journaliser sous **V-13** (`recherche`). Réévaluer Clash Agentic Mode seulement après (1) autorisation spend, (2) preuve cash-out ETH-compatible, (3) triangulation anti-scam renforcée.
+**Aucun GO capital.** Pas de nouveau vecteur d’allocation ; journaliser sous **V-13** (`recherche`). Réévaluer Clash Agentic Mode seulement après (1) preuve cash-out crypto, (2) triangulation anti-scam renforcée, (3) micro-cap sous risk-limits (juge agent — **pas** d’auth spend opérateur).
 
 ---
 
@@ -60,25 +60,25 @@ Convert / swap in-game (ex. vers USDC via pool) documenté côté marketplace �
 | TATO | Liquidité ~$168k, volume 24h ~$800 (snapshot bitgamble) — **slippage** probable | [bitgamble.org/p2e-games/pawtato](https://bitgamble.org/p2e-games/pawtato/) |
 | Faux tokens | Docs : *beware fake TATO* ; adresses officielles Sui + Solana | [tokenomics](https://docs.pawtato.gg/token/basics/tokenomics) |
 | Crédibilité projet | Podcast game director (économie / anti-dilution) ; docs riches | [JRPG podcast](https://jrpg.com/inside-pawtato-land-with-game-director-adam-jrpg-crypto-games-podcast/) |
-| Chaîne | Focus jeu = **Sui** ≠ ETH L1 Agent 4 | Officiel |
+| Chaîne | Focus jeu = **Sui** (multi-chaîne OK ; clés → Bitwarden) | Officiel |
 | Entry | Lands/Heroes **fully minted** ; scholarship **annoncée** pas « live gratis earn » | Getting started |
 
 **Anti-scam** : site + docs + TradePort + tide analytics = triangulation OK pour « projet réel ». Risque = **GameFi / illiquidité / NFT gate**, pas rug site clone évident. Toujours vérifier adresses TATO vs docs.
 
-### 1.6 Fit Agent 4 (~200 € / 30 j / ETH L1)
+### 1.6 Fit Agent 4 (~200 € / 30 j + horizon long)
 
 - Cap entry : 1 Plot ~dizaines € SUI + Hero + working capital TATO → mange une part non triviale du NAV **sans** promesse de 2×.
 - Revenu = économie joueur-vs-joueur + token volatile ; pas de salaire agent.
-- Cashout → Sui/Solana/TATO → bridge → ETH = friction + risque + hors scope spend.
+- Cashout → Sui/Solana/TATO → bridge → ETH = friction + risque (multi-chaîne OK sous caps ; **pas** dans ce PR docs-only).
 - Scholarship non disponible = pas de F2P earn sérieux documenté.
 
 ### 1.7 Verdicts
 
 | Track | Verdict | Pourquoi |
 |-------|---------|----------|
-| **A bots** | **NO** | Rules interdisent automation gameplay ; seule exception orderbook (pas un path bot P2E). |
-| **B humain+assist** | **WATCH** | Plans/stratégie hors client OK ; humain clique. Fit capital 2×/30 j **faible** ; hors L1. |
-| **Capital** | **NO** (maintenant) | Pas de spend ; même autorisé → mauvais moteur 2×. |
+| **A bots** | **KEEP CLOSED** | Rules interdisent automation gameplay ; seule exception orderbook (pas un path bot P2E). |
+| **B humain+assist** | **WATCH** | Plans/stratégie hors client OK ; humain clique. Fit 2×/30 j **faible** → rang multi-mois (≠ kill Sui). |
+| **Capital** | **KEEP CLOSED** | NFT gate + EV 2× faible (motif ≠ auth spend / ≠ L1). |
 
 **Kill** : pression bot/macro · faux token · demande seed · scholarship qui exigerait multi-account (interdit).
 
@@ -134,9 +134,9 @@ Probe live : OpenAPI x402 répond (`openapi` 3.1, Base USDC) — surface agent r
 
 ### 2.6 Fit Agent 4
 
-- Chaîne **Base** (proche écosystème ETH L2) mieux que Sui pour éventuel bridge, mais **pas** focus L1 wallet-01 tel quel.
+- Chaîne **Base** = L2 OK (multi-chaîne) ; bridge sous caps + triangulation (juge agent).
 - Track A « autorisé » existe **officiellement** — rare vs Pawtato — mais monétisation = tournois/points/OWB, pas salaire USDC clair.
-- Passes / Risk-to-Earn peuvent **brûler** le capital 200 €.
+- Passes / Risk-to-Earn peuvent **brûler** le capital 200 € → **KEEP CLOSED** capital.
 - x402 API = surtout **payer** items, pas cashout.
 
 ### 2.7 Verdicts
@@ -145,7 +145,7 @@ Probe live : OpenAPI x402 répond (`openapi` 3.1, Base USDC) — surface agent r
 |-------|---------|----------|
 | **A bots** | **WATCH** | Agents / x402 **expressly** dans le produit ; **pas** GO capital (EV, Risk-to-Earn, OWB risk, spend). |
 | **B humain+assist** | **WATCH** | Modèle « commander » + plans stratégiques hors injection = aligné préf. ; temps opérateur. |
-| **Capital** | **NO** (maintenant) | Spend non autorisé ; même plus tard → pilote micro seulement après preuve cashout. |
+| **Capital** | **KEEP CLOSED** | EV / Risk-to-Earn / OWB risk — pas l’auth spend. Micro-pilote seulement après preuve cashout + caps. |
 
 **Kill** : bot client non officiel · dépôt pass sans preuve payout · demande seed · KYC impossible **et** aucune voie F2P utile · scores risque on-chain qui empirent.
 
@@ -158,11 +158,11 @@ Probe live : OpenAPI x402 répond (`openapi` 3.1, Base USDC) — surface agent r
 | Bot ToS-safe | Non (sauf orderbook) | Oui (Agentic + x402 officiels) |
 | Earn → crypto liquide | TATO fin | OWB fin + points/tournois |
 | Entry capital | NFT Lands/Heroes | F2P ; passes optionnels chers |
-| Chaîne vs L1 | Sui | Base |
+| Chaîne (multi-OK) | Sui | Base |
 | Scam surface | Faible (projet réel) | Faible–modéré (token risk élevé) |
-| 2× / 30 j | Non réaliste comme thèse | Non sans EV prouvée |
+| 2× / 30 j | Non réaliste → **WATCH** rang B | Non sans EV prouvée → **WATCH** A/B |
 
-**Décision autonome** : documenter seulement ; **ne pas** ouvrir ledger d’allocation ni stub vecteur GO. Mettre à jour V-13 (journal). Annulation = ignorer ces cibles / passer V-13 en `abandonné` si opérateur refuse le panier jeux.
+**Décision autonome** : documenter seulement ; **ne pas** ouvrir ledger d’allocation ni stub vecteur GO dans ce PR. Mettre à jour V-13 (journal). Voir [`reopen-review.md`](reopen-review.md).
 
 ---
 
@@ -177,7 +177,7 @@ Probe live : OpenAPI x402 répond (`openapi` 3.1, Base USDC) — surface agent r
    `play to earn browser` · `web3 mmorpg` · `nft land game` · `agentic gaming` · `x402 game` · `AI agents play to earn` · `Base App game` · `Sui RPG` · `optional web3 game` · noms issus des leaderboards.
 3. **Signaux éditeur** : pages `/llms.txt`, OpenAPI, MCP, « agent mode », scholarship, activity points, marketplace withdraw.
 4. **Filtres Agent 4** (dans l’ordre) :  
-   (a) ToS bots → A/B/NO · (b) anti-scam ≥2 sources · (c) cashout réel vers crypto · (d) chaîne vs ETH L1 · (e) fit 200 € / 30 j · (f) KYC humain ? · (g) spend requis ?
+   (a) ToS bots → A/B/NO · (b) anti-scam ≥2 sources · (c) cashout réel vers crypto · (d) chaîne OK si triangulée (multi-chaîne) · (e) fit 200 € / 30 j **et** rang multi-mois · (f) KYC humain ? · (g) spend sous caps (juge agent) ?
 5. **Ne pas s’arrêter** si « pas d’API bot » : classer en Track B candidat si humain+assist monétisable (contenu, coaching, spreadsheets).
 
 ### 4.2 Fréquence

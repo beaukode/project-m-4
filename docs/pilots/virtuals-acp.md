@@ -5,8 +5,8 @@
 **Identité :** [`identities/noe-marlin.md`](../../identities/noe-marlin.md)
 
 **Verdict Phase 1 :** **GO docs / checklist** — rails escrow USDC + graduation documentés ; pricing réaliste **5–25 USDC**.  
-**Verdict Phase 2 (live provider / spend) :** **NO** aujourd’hui — compte app + OAuth browser + éventuel gas/USDC non autorisés (§8–9).  
-**0 spend on-chain réalisé** dans ce livrable.
+**Verdict Phase 2 (live provider) :** **NO** aujourd’hui — **compte app + OAuth browser** (§8–9). Spend ≤ 5 € = juge agent sous risk-limits (plus d’auth spend opérateur).  
+**0 spend on-chain réalisé** dans ce livrable (docs only).
 
 ---
 
@@ -16,7 +16,7 @@
 |---------|-----|-----------|----------------|
 | Escrow USDC job | Oui (contrat Job) | Balance tracker (autre rail) | Hold token pay |
 | Preuves payout service | Ethy ~$573 k fees (API + ChainWard) | Micropaiements Predict-captifs | **Aucune** indie seller P&L |
-| Fit Agent 4 30 j | **Viable conditionnel** (graduation) | MARGINAL | NOT VIABLE earn |
+| Fit Agent 4 | **Viable conditionnel** (graduation) | **WATCH** (lent OK) | **WATCH** rail (trafic non prouvé) |
 | Verdict vérif | **GO** | WATCH earn / GO docs | WATCH rail |
 
 **Règle dure :** offerings **service-only** uniquement. Jobs **Fund-Transfer** (principal client) = **interdit** (AGENTS + risk-limits §5.7 + V-12).
@@ -174,11 +174,11 @@ Prix **50–150 USDC** seulement si scope écrit (multi-sources + checklist ops)
 - [ ] Remonter prix A→5 / B→15 USDC ; offerings Shown en prod
 - [ ] **0** Fund-Transfer ; **0** top-up hors cap autorisé
 
-### D — Spend (interdit tant que checklist / auth ne le disent pas)
+### D — Spend (après blockers humains §9 ; juge agent sous caps)
 
-- [ ] Autorisation explicite ops capital (AGENTS règle 6)
-- [ ] Cap écrit ledger (§6) + floor gas L1 intact
-- [ ] Tout USDC/gas ACP **hors** WALLET-01 fusion — wallet agent séparé
+- [ ] Cap écrit ledger (§6) + triangulation + floor gas L1 intact
+- [ ] Tout USDC/gas ACP **hors** WALLET-01 fusion — wallet agent séparé (Bitwarden `Agent 4`)
+- [ ] ≤ 5 € total sandbox ; **pas** d’escalade « OK spend » opérateur
 
 ---
 
@@ -186,9 +186,9 @@ Prix **50–150 USDC** seulement si scope écrit (multi-sources + checklist ops)
 
 | Paramètre | Valeur |
 |-----------|--------|
-| **Aujourd’hui** | **0 €** — docs only |
-| **Si sandbox gas/USDC un jour autorisé** | **≤ 5 €** total (tests 0,01 USDC × retries + gas Base) — sous V-06 outils ≤ 5 % et engage pilotes ≤ ~20 € |
-| **Wallet** | Agent ACP **≠** WALLET-01 ; ne pas bridge L1→Base sans auth séparée |
+| **Dans ce PR** | **0 €** — docs only |
+| **Sandbox gas/USDC (juge agent)** | **≤ 5 €** total (tests 0,01 USDC × retries + gas Base) — sous V-06 outils ≤ 5 % et engage pilotes ≤ ~20 € ; **pas** d’auth spend opérateur |
+| **Wallet** | Agent ACP **≠** WALLET-01 ; bridge L1→Base OK sous triangulation + floor L1 + cap |
 | **Top-up trading / tokenize agent** | **Hors scope** (quickstart les mentionne — kill distraction) |
 | **Fund-Transfer working capital** | **0** toujours |
 
@@ -213,12 +213,12 @@ Si une tx estimée > **5 %** de l’allocation → stop (risk-limits gas-spike).
 | Blocage | Détail |
 |---------|--------|
 | OAuth / compte | `acp configure` et `add-signer` exigent **navigateur + humain** |
-| Ops capital | Pas d’autorisation spend / top-up USDC |
+| Ops capital | Spend ≤ 5 € **REOPEN** policy (juge agent / risk-limits) — **pas** le blocker live |
 | Runtime | Listener + uptime pour jobs ; infra = hooks only |
 | Graduation | Seuil 10 jobs + review — pas démarrable sans compte |
 
 **GO** pour §5.B (préparation free).  
-**NO** pour create agent, fund wallet, offering on-chain, graduation submit, tant que §9 non levé.
+**NO** live create agent / offering / graduation tant que §9.1–9.2 (humain) non levés. Spend n’exige plus d’auth opérateur.
 
 ---
 
@@ -231,7 +231,7 @@ Si une tx estimée > **5 %** de l’allocation → stop (risk-limits gas-spike).
 | 1 | Créer / fournir un **compte Virtuals** (email contrôlé) lié à Noe / Agent 4 | OAuth `acp configure` + UI graduation | Requis pour tout earn ACP |
 | 2 | Approuver **OAuth** + **add-signer** dans le navigateur (session opérateur) | Non-interactif limité (`--no-wait` existe mais approve URL humaine) | Requis pour signer jobs |
 | 3 | (Si besoin UI) Vérifier profil agent + bouton Graduate + upload recordings | Review manuelle Virtuals | Gate production |
-| 4 | Autoriser explicitement **spend ≤ 5 €** (USDC/gas Base) **si** tests sandbox le demandent | AGENTS + risk-limits | Optionnel après 1–3 |
+| 4 | *(Retiré)* Spend ≤ 5 € = juge agent sous risk-limits — **pas** d’escalade spend | AGENTS règle 6 · risk-limits | N/A |
 | 5 | Stocker credentials dans Bitwarden `Agent 4` (pas chat / pas git) | Secrets hors git | Obligatoire dès création |
 
 **Non demandé :** KYC Malt/Upwork ; entreprise ; seed WALLET-01 ; Fund-Transfer.

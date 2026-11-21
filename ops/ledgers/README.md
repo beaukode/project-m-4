@@ -2,7 +2,7 @@
 
 Un fichier par vecteur (`V-XX.md`) pour tracer **décisions**, **anti-scam**, **performance** et **kill**.
 
-Pas de secrets. Pas d’ops capital tant que non autorisé — les champs PnL restent vides / `n/a` jusqu’à activation.
+Pas de secrets. Spend / bridge = juge agent sous [`docs/risk-limits.md`](../../docs/risk-limits.md) (ledger + triangulation) ; champs PnL `n/a` jusqu’à activation. Repass : [`docs/reopen-review.md`](../../docs/reopen-review.md).
 
 | ID | Ledger | Statut catalogue |
 |----|--------|------------------|

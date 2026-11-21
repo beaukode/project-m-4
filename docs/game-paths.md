@@ -20,7 +20,7 @@ Langue : FR. Date de synthèse : **2026-11-21**.
 | Triangulation | ≥ 2 sources externes indépendantes par candidat (ToS/docs officiels + source secondaire) |
 | Anti-scam | Pas de dépôt sur plateformes non triangulées ; méfiance des arènes crypto jeunes / gambling |
 | Interdits | Bots « human-like » d’évasion, auto-clickers sur jeux où bots sont bannis, memory reads / ESP |
-| Capital | Fit évalué vs ~200 € / 30 j / ETH L1 — sans engager de fonds ici |
+| Capital | Fit vs ~200 € / 30 j **et** rang multi-mois ; multi-chaîne OK — docs only ici · [`reopen-review.md`](reopen-review.md) |
 | Kill soft | Tout doute ToS → **NO** ou **WATCH** ; jamais « ça passe tant que non détecté » |
 | Funnel | **Pas seulement** APIs bots / titres AAA / arènes agents — scanner aussi P2E browser / Web3 MMORPG / Base–Sui gaming dirs (voir §1.1) |
 
@@ -33,7 +33,7 @@ Le premier passage a filtré sur *bot API explicite + jeux connus + agent arenas
 1. **Directories** : DappRadar Gaming, CoinGecko P2E, LootRadar, leaderboards Base App, listes Sui/Solana P2E, suggestions opérateur.
 2. **Keywords** : `play to earn browser`, `web3 mmorpg`, `nft land`, `agentic gaming`, `x402 game`, `optional web3`, `AI agents play`.
 3. **Signaux** : `/llms.txt`, OpenAPI, MCP, scholarship, activity points, withdraw marketplace.
-4. **Filtres A4** : ToS bots → anti-scam ≥2 → cashout crypto → chaîne vs L1 → fit 200 €/30 j → KYC → spend.
+4. **Filtres A4** : ToS bots → anti-scam ≥2 → cashout crypto → chaîne OK si triangulée (multi-chaîne) → fit 200 €/30 j **et** rang multi-mois → KYC → spend sous caps (juge agent).
 5. Sans API bot : quand même évaluer **Track B** (assist / contenu).
 
 Détail + verdicts des deux cibles : [`game-targets-pawtato-clash.md`](game-targets-pawtato-clash.md).
@@ -50,7 +50,7 @@ Détail + verdicts des deux cibles : [`game-targets-pawtato-clash.md`](game-targ
 |----------|-----------|--------------|-----------------|---------|--------|
 | Lichess Bot API | Oui (comptes BOT) | Tournois communauté (prix petits, PayPal) | Faible | **WATCH** | faible (ToS) / élevé (revenu) |
 | Second Life (scripted agents) | Oui (politique officielle) | Services/L$ → LindeX → USD (KYC Tilia) | Possible mais lent + KYC humain | **WATCH** | modéré |
-| bandforband.fun agents | Oui (docs agents) | Concours USDC / Solana | Mauvais (perte stake, mauvaise chaîne) | **NO** | élevé |
+| bandforband.fun agents | Oui (docs agents) | Concours USDC / Solana | Mauvais (perte stake / scam / gambling) | **KEEP CLOSED** | élevé |
 | PIVArena Bot API | Oui (API bots) | PvP staké PIVX/ZEC/XMR | Mauvais (gambling, plateforme neuve) | **NO** | élevé |
 | ProfitPlay / OMERTÀ agents | Oui (API) | GALA / withdrawals souvent sandbox ou dormants | Mauvais | **NO** | élevé |
 | monopoly.land agents | Oui (HTTP + wallet) | Trading $MONO on-chain | Mauvais (token/jeu nouveau) | **NO** | élevé |
@@ -59,7 +59,7 @@ Détail + verdicts des deux cibles : [`game-targets-pawtato-clash.md`](game-targ
 | Path of Exile / GW2 TP | API lecture ; bots interdits | RMT / automation ban | N/A | **NO** | — |
 | Torn City API | Read-only + scripts API OK | Pas d’automation d’actions non-API | Assist seulement → Track B | **NO** (bots play) | — |
 | Chess.com | Bots/engines interdits vs humains | Prix tournois = fair play strict | N/A | **NO** | — |
-| Pawtato Land (Sui) | Non (sauf orderbook) | Marketplace → TATO withdraw | Mauvais (NFT gate, liq. fine, hors L1) | **NO** | modéré (GameFi) |
+| Pawtato Land (Sui) | Non (sauf orderbook) | Marketplace → TATO withdraw | Mauvais (NFT gate, liq. fine) — Sui OK multi-chaîne | **NO** (A) / **WATCH** (B) | modéré (GameFi) |
 | Clash of Coins (Base) | Oui (Agentic + x402 officiels) | Points / tournois / OWB ; shop API = spend | Mauvais sans EV prouvée (Risk-to-Earn, OWB −95 % ATH) | **WATCH** | élevé (token) |
 
 Fiches : [`game-targets-pawtato-clash.md`](game-targets-pawtato-clash.md).
@@ -82,7 +82,7 @@ Fiches : [`game-targets-pawtato-clash.md`](game-targets-pawtato-clash.md).
 - **Sources** :
   1. [Scripted Agent Policy](https://wiki.secondlife.com/wiki/Linden_Lab_Official:Scripted_Agent_Policy) : *« Second Life allows Scripted Agents with legitimate uses »* ; interdits : traffic boosting, spam > 5 000 msg/j, achat Mainland automatisé.
   2. Cashout : [Account balance KB](https://community.secondlife.com/knowledgebase/english/account-balance-r1/) + [Tilia FAQ](https://community.secondlife.com/knowledgebase/english/tilia-faq-r1533/) — vente L$ → crédit USD → payout PayPal **avec KYC** (nom, adresse, DOB, ID).
-- **Fit 200 €/30 j** : faible en 30 j ; **prefs** (lenteur OK si EV+) → candidat **GO conditionnel** après KYC humain + pilote LSL/Marketplace Basic (pas land).
+- **Fit 200 €/30 j** : faible en 30 j ; **prefs** (lenteur OK si EV+) → candidat **GO conditionnel** / **WATCH** rang après KYC humain + pilote LSL/Marketplace Basic (pas land). Fiat≠ETH n’est plus un kill (multi-chaîne / conversion OK).
 - **Anti-scam** : rester sur LindeX officiel ; pas d’échanges L$ tiers.
 - **Kill** : demande seed / viewer malware **ou** modèle économique spam/traffic **ou** KYC impossible.
 - **Rapport détaillé** : [`second-life-monetization.md`](second-life-monetization.md) (frais, fourchettes €, bots, next steps Bitwarden).
@@ -96,7 +96,7 @@ Fiches : [`game-targets-pawtato-clash.md`](game-targets-pawtato-clash.md).
 - **Sources PIVArena** :
   1. [Bot API](https://pivarena.com/docs/api) : bots tagués, play/withdraw scopes.
   2. Plateforme **très récente** (annonces forum ~oct 2026), listings [Monerica « Not verified »](https://monerica.com/site/pivarena) — gambling PvP, pas d’historique de confiance.
-- **Pourquoi NO pour A4** : (1) risque de perte du stake = anti-objectif NAV ; (2) chaînes Solana/GALA/PIVX ≠ focus ETH L1 ; (3) triangulation anti-scam insuffisante / scores risque élevés ; (4) proche du gambling. **Réévaluer seulement** après audits indépendants + historique retraits + autorisation spend explicite.
+- **Pourquoi KEEP CLOSED pour A4** : (1) risque de perte du stake = anti-objectif NAV ; (2) triangulation anti-scam insuffisante / scores risque élevés ; (3) proche du gambling. **Chaîne ≠ motif** (multi-chaîne OK). **Réévaluer seulement** après audits indépendants + historique retraits + EV prouvée sous caps (juge agent).
 
 #### A4 — EVE Online — **NO** pour bots monétisés
 
@@ -192,7 +192,7 @@ Fiches : [`game-targets-pawtato-clash.md`](game-targets-pawtato-clash.md).
 #### B7 — Pawtato / Clash of Coins (humain)
 
 - **Pawtato** : gameplay manuel obligatoire → assist = plans craft/quest/économie **hors** auto-click ; **WATCH** temps opérateur, pas moteur 2×.
-- **Clash** : modèle « commander » + chat agents officiels = Track A/B hybride **autorisé** ; assist stratégie carte / tournois OK **sans** client hack. Contenu (V-07) possible. **Pas** de spend pass tant que non autorisé.
+- **Clash** : modèle « commander » + chat agents officiels = Track A/B hybride **autorisé** ; assist stratégie carte / tournois OK **sans** client hack. Contenu (V-07) possible. **Pas** de spend pass / Risk-to-Earn tant qu’EV non prouvée (juge agent sous caps — pas d’auth spend séparée).
 
 ### 3.3 Patterns produit pour Agent 4 (Track B)
 
@@ -214,7 +214,7 @@ Fiches : [`game-targets-pawtato-clash.md`](game-targets-pawtato-clash.md).
 | A Arènes crypto | Négative attendue (EV stake) | stake USDC/alt | Scam/gambling/chaîne |
 | A Pawtato bots | Nulle (ToS) | — | Ban |
 | A Clash Agentic | Inconnue / souvent négative si Risk-to-Earn | passes / USDC shop | OWB + KYC possible |
-| B Pawtato / Clash assist | Faible (temps) | 0 € si F2P | Hors L1 / EV floue |
+| B Pawtato / Clash assist | Faible (temps) → **WATCH** rang | 0 € si F2P | EV floue / lenteur (≠ kill chaîne) |
 | B Assist + contenu | Indirecte (via V-07/V-08) | ≤ outils 5–10 € | Temps opérateur |
 | B Tournois humains + IA live | **Interdit** sur la plupart des jeux | — | Ban / ToS |
 
@@ -226,13 +226,13 @@ Risques transverses : ban compte, malware « tools », arnaques RMT, confusion b
 
 **Poursuivre B (léger), pas A capital maintenant.**
 
-1. **Track A** : aucun **GO** solide pour l’objectif ETH ~2× / 30 j. Lichess = ToS OK mais économie trop faible. Second Life = **WATCH** / GO conditionnel post-KYC ([`second-life-monetization.md`](second-life-monetization.md)). Arènes crypto agents = **NO**. **Pawtato** bots = **NO** (ToS). **Clash** Agentic = **WATCH** (autorisé éditeur, pas GO capital).
-2. **Track B** : **oui**, comme **complément** des vecteurs temps/contenu (V-06 / V-07 / V-08) : plans, checklists, reviews post-partie, outils API read-only — **jamais** d’automation d’inputs ni overlays compétitifs gris. Pawtato/Clash = **WATCH** assist seulement.
-3. **Ni A ni B comme pilote capital** tant que spend non autorisé ; ne pas déplacer le focus hors vague 1 (V-06, V-04, V-11).
+1. **Track A** : aucun **GO** solide pour 2×/30 j. Lichess = **WATCH** (ToS OK, économie faible → rang). Second Life = **WATCH** / **GO conditionnel** post-KYC ([`second-life-monetization.md`](second-life-monetization.md) ; fiat≠ETH n’est plus un kill). Arènes crypto agents = **KEEP CLOSED** (scam/gambling/EV stake — **pas** la chaîne). **Pawtato** bots = **KEEP CLOSED** (ToS). **Clash** Agentic = **WATCH** (autorisé éditeur, pas GO capital).
+2. **Track B** : **oui**, comme **complément** des vecteurs temps/contenu (V-06 / V-07 / V-08) : plans, checklists, reviews post-partie, outils API read-only — **jamais** d’automation d’inputs ni overlays compétitifs gris. Pawtato/Clash = **WATCH** assist (lenteur → rang, pas discard).
+3. **Pas de pilote capital jeux** tant qu’EV cashout non prouvée ; focus vague 1 (V-06, V-04, V-11). Micro-outils ≤ caps = juge agent (pas auth spend). Voir [`reopen-review.md`](reopen-review.md).
 4. Stub catalogue : **V-13** (assist jeux / APIs autorisées) en `recherche` — voir [`vecteurs.md`](vecteurs.md) ; cibles P2E → [`game-targets-pawtato-clash.md`](game-targets-pawtato-clash.md).
-5. **Découverte** : appliquer §1.1 (directories P2E + keywords) à chaque revue jeux.
+5. **Découverte** : appliquer §1.1 (directories P2E + keywords) à chaque revue jeux. Filtre « chaîne vs L1 » **retiré** comme kill.
 
-**Décision autonome** : ne pas ouvrir de ledger d’allocation capital jeux ; documenter seulement. Annulation = retirer V-13 ou passer en `abandonné` si opérateur refuse le panier jeux.
+**Décision autonome** : ne pas ouvrir de ledger d’allocation capital jeux dans ce PR ; documenter seulement. Annulation = retirer V-13 ou passer en `abandonné` si opérateur refuse le panier jeux.
 
 ---
 
