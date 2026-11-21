@@ -63,42 +63,46 @@ Kill individuels du catalogue restent applicables immédiatement (scam, seed, ga
 
 ## 4. Checklist Jour 1 (sans spend)
 
-À cocher dans le rapport du jour et/ou les ledgers. **Aucune tx, aucun achat, aucun bridge.**
+À cocher dans le rapport du jour et/ou les ledgers. **Aucune tx, aucun achat, aucun bridge.**  
+**Exécution Agent 4 :** 2026-11-21 — détail [`reports/daily/2026-11-21.md`](../reports/daily/2026-11-21.md) + ledgers V-06/V-04/V-11.
 
 ### Transversal
 
-- [ ] Relire [`AGENTS.md`](../AGENTS.md), [`risk-limits.md`](risk-limits.md), [`secrets.md`](secrets.md)
-- [ ] Confirmer NAV approximatif (etherscan lecture seule) **sans** exposer de clé
-- [ ] Bitwarden collection `Agent 4` : item WALLET-01 accessible ; soft-delete discipline OK
-- [ ] Ouvrir / mettre à jour ledgers `ops/ledgers/V-06.md`, `V-04.md`, `V-11.md` (statut → `recherche`)
-- [ ] Noter 1 hypothèse du jour + ≥ 2 sources web externes (règle challenge)
+- [x] Relire [`AGENTS.md`](../AGENTS.md), [`risk-limits.md`](risk-limits.md), [`secrets.md`](secrets.md)
+- [x] Confirmer NAV approximatif (etherscan lecture seule) **sans** exposer de clé
+- [x] Bitwarden collection `Agent 4` : item WALLET-01 accessible ; soft-delete discipline OK
+- [x] Ouvrir / mettre à jour ledgers `ops/ledgers/V-06.md`, `V-04.md`, `V-11.md` (statut → `recherche`)
+- [x] Noter 1 hypothèse du jour + ≥ 2 sources web externes (règle challenge)
 
 ### V-06 — Freelance
 
-- [ ] Rédiger 1 offre claire (stack, délai, prix cible 200–400 € ou TJM)
-- [ ] Choisir 2 canaux légitimes (pas de « pay to apply »)
-- [ ] Lister 5 cibles / mots-clés de recherche
-- [ ] Anti-scam : template escrow / acompte
+- [x] Rédiger 1 offre claire (stack, délai, prix cible 200–400 € ou TJM)
+- [x] Choisir 2 canaux légitimes (pas de « pay to apply ») — Free-Work + Freelance-informatique
+- [x] Lister 5 cibles / mots-clés de recherche
+- [x] Anti-scam : template escrow / acompte
+- [ ] Publier l’offre / ouvrir les comptes — **bloqué** : email (et KYC Malt/Upwork si retenus) → escalade
 
 ### V-04 — Bounties
 
-- [ ] Inventorier 5 bounties ouvertes (Gitcoin / boards protocoles / docs) — liens officiels seulement
-- [ ] Trianguler org + historique de paiement pour chacune
-- [ ] Estimer €/h ; écarter si frais d’entrée
-- [ ] Préparer 1 draft de soumission (texte) **sans** claim on-chain
+- [x] Inventorier 5 bounties / boards (scrutés + triangulation) — liens officiels seulement
+- [x] Trianguler org + liveness / paiement pour chacune (plusieurs ❌ : OnlyDust fermé, Algora 404, etc.)
+- [x] Estimer €/h ; écarter si frais d’entrée ou hors éthique
+- [x] Préparer 1 draft de soumission (texte) **sans** claim on-chain
+- [ ] Soumettre / claim — **non** (0 spend ; GitHub humain ; pipeline mid-size plus mince — hypothèse H1 rejetée)
 
 ### V-11 — Recherche
 
-- [ ] Choisir 1 protocole blue-chip pour sample
-- [ ] Outline brief (sources publiques, disclaimer « pas un conseil financier »)
-- [ ] Définir prix + format (1–2 pages)
-- [ ] Identifier 2 canaux de proposition
+- [x] Choisir 1 protocole blue-chip pour sample — Lido / stETH
+- [x] Outline brief (sources publiques, disclaimer « pas un conseil financier »)
+- [x] Définir prix + format (1–2 pages, 180–250 €)
+- [x] Identifier 2 canaux de proposition — LaborX + Free-Work
+- [ ] Publier sample public + propositions — **bloqué** comptes / rédaction J2
 
 ### Fin de J1
 
-- [ ] Rapport `reports/daily/YYYY-MM-DD.md` (même si avant le créneau 07:00 suivant)
-- [ ] Aucune clé / adresse privée / seed dans git
-- [ ] PR / notes : confirmer **0 spend**
+- [x] Rapport `reports/daily/2026-11-21.md` (même si avant le créneau 07:00 suivant)
+- [x] Aucune clé / adresse privée / seed dans git
+- [x] PR / notes : confirmer **0 spend**
 
 ## 5. Semaine 1–2 (aperçu, toujours sous autorisation)
 
