@@ -4,6 +4,9 @@ Maintenir **≥ 10** vecteurs distincts et **peu corrélés**. Revisiter au moin
 
 **Objectif catalogue** : approches légales diversifiées visant **≥ 2× ~200 € ETH** en **30 jours**. Aucun déploiement de capital dans ce document — recherche et cadrage seulement.
 
+**Caps dures & pilotes** : [`risk-limits.md`](risk-limits.md) · [`pilot-plan.md`](pilot-plan.md) (vague 1 : V-06, V-04, V-11).  
+Avant validate/reject d’une thèse : **recherche web externe** + triangulation (voir `AGENTS.md` règle 7).
+
 Statuts : `idée` · `recherche` · `triangulé` · `prêt` · `actif` · `pause` · `abandonné`
 
 Classes de risque : `faible` · `modéré` · `élevé` (toujours borné au capital dédié ; jamais de levier excessif)
@@ -15,14 +18,14 @@ Classes de risque : `faible` · `modéré` · `élevé` (toujours borné au capi
 | V-01 | Yield L1 conservateur | crypto | ≤ 40 % (~80 €) | faible | idée | [ops/ledgers/V-01.md](../ops/ledgers/V-01.md) |
 | V-02 | Points / airdrop légitimes | crypto | ≤ 25 % (~50 €) | modéré | idée | [ops/ledgers/V-02.md](../ops/ledgers/V-02.md) |
 | V-03 | Écarts de frais / info-arb | crypto | ≤ 15 % (~30 €) | modéré | idée | [ops/ledgers/V-03.md](../ops/ledgers/V-03.md) |
-| V-04 | Bounties / grants crypto | travail | ≤ 10 % gas (~20 €) | faible | idée | [ops/ledgers/V-04.md](../ops/ledgers/V-04.md) |
+| V-04 | Bounties / grants crypto | travail | ≤ 10 % gas (~20 €) | faible | recherche (pilote P1) | [ops/ledgers/V-04.md](../ops/ledgers/V-04.md) |
 | V-05 | LP prudent paires majeures | crypto | ≤ 20 % (~40 €) | modéré | idée | [ops/ledgers/V-05.md](../ops/ledgers/V-05.md) |
-| V-06 | Freelance web / ops | web | 0 € capital (temps) | faible | idée | [ops/ledgers/V-06.md](../ops/ledgers/V-06.md) |
+| V-06 | Freelance web / ops | web | 0 € capital (temps) | faible | recherche (pilote P0) | [ops/ledgers/V-06.md](../ops/ledgers/V-06.md) |
 | V-07 | Contenu niche monétisé | web | ≤ 5 % outils (~10 €) | faible | idée | [ops/ledgers/V-07.md](../ops/ledgers/V-07.md) |
 | V-08 | Micro-produit digital | web | ≤ 15 % (~30 €) | modéré | idée | [ops/ledgers/V-08.md](../ops/ledgers/V-08.md) |
 | V-09 | Affiliation déclarée | web | 0–5 % (~10 €) | faible | idée | [ops/ledgers/V-09.md](../ops/ledgers/V-09.md) |
 | V-10 | Domaines / actifs numériques | ops | ≤ 25 % (~50 €) | modéré | idée | [ops/ledgers/V-10.md](../ops/ledgers/V-10.md) |
-| V-11 | Recherche on-chain à façon | crypto-web | ≤ 5 % (~10 €) | faible | idée | [ops/ledgers/V-11.md](../ops/ledgers/V-11.md) |
+| V-11 | Recherche on-chain à façon | crypto-web | ≤ 5 % (~10 €) | faible | recherche (pilote P2) | [ops/ledgers/V-11.md](../ops/ledgers/V-11.md) |
 | V-12 | Modération / community ops | web | 0 € capital | faible | idée | [ops/ledgers/V-12.md](../ops/ledgers/V-12.md) |
 
 Caps **non cumulatifs à 100 %** : on n’alloue jamais tout le capital à un seul panier ; le total engagé à un instant T doit rester **≤ 70 %** du NAV dédié (réserve gas + opportunité).

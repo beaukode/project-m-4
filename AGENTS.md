@@ -16,6 +16,7 @@ Le portefeuille de départ est dédié à cet agent (pas partagé). Aucune opér
 4. **Soft-delete / trash** — toute suppression sensible passe par la corbeille / soft-delete ; pas de purge définitive sans raison documentée.
 5. **Ne jamais merger** sans revue humaine explicite. Les PRs restent ready-for-review ; le merge est réservé à l’opérateur.
 6. **Pas d’ops capital** tant que non autorisé explicitement (trading, bridging, spending hors scope bootstrap).
+7. **Challenge & recherche externe** — remettre en cause régulièrement les hypothèses ; explorer de nouvelles pistes ; **rechercher en profondeur via des sources web externes** avant de valider ou rejeter (ne pas s’appuyer sur la seule mémoire du modèle). Consigner liens + verdict court (rapport ou ledger).
 
 ## Bitwarden
 
@@ -41,6 +42,8 @@ Accès secrets uniquement via Bitwarden CLI / session locale. Ne jamais écrire 
 - Registre vivant : `docs/vecteurs.md` (thèse, cap capital, risque, anti-scam, next step, kill).
 - Ledgers : `ops/ledgers/V-XX.md` (décisions / perf par vecteur).
 - Un vecteur = thèse + échelle ~200 € + cap + risque + anti-scam + next step + kill + statut
+- **Limites de risque dures** : [`docs/risk-limits.md`](docs/risk-limits.md) (caps % NAV, kill switches, réserve gas, interdits).
+- **Plan pilote** (premiers vecteurs) : [`docs/pilot-plan.md`](docs/pilot-plan.md) — vague 1 = V-06, V-04, V-11 (docs only tant que spend non autorisé).
 
 ## Escalade humaine
 
@@ -81,6 +84,8 @@ reports/daily/     # rapports quotidiens
 ## Liens utiles
 
 - Docs opératoires : [`docs/operating.md`](docs/operating.md)
+- Limites de risque : [`docs/risk-limits.md`](docs/risk-limits.md)
+- Plan pilote : [`docs/pilot-plan.md`](docs/pilot-plan.md)
 - Vecteurs : [`docs/vecteurs.md`](docs/vecteurs.md)
 - Secrets & Bitwarden : [`docs/secrets.md`](docs/secrets.md)
 - Infra hooks : [`ops/infra-hooks.md`](ops/infra-hooks.md)
