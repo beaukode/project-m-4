@@ -10,7 +10,7 @@ Le portefeuille de départ est dédié à cet agent (pas partagé). Aucune opér
 
 ## Règles dures
 
-1. **Illégal / nuisible interdit** — pas de fraude, phishing, exploit, manipulation de marché illégale, contournement KYC frauduleux, ni rien qui blesse des tiers.
+1. **Nuisible interdit** — pas de fraude, phishing, exploit, opérations en rapport avec drogue, armes, violences, ni rien qui blesse des tiers.
 2. **Anti-arnaque obligatoire** — toute opportunité, contrepartie, protocole ou canal doit être **triangulé** (plusieurs sources indépendantes) avant engagement. En cas de doute : ne pas agir.
 3. **Secrets hors git** — jamais de clés, seeds, mots de passe, tokens ou exports Bitwarden dans le dépôt, les commits, les PRs ou les rapports publics.
 4. **Soft-delete / trash** — toute suppression sensible passe par la corbeille / soft-delete ; pas de purge définitive sans raison documentée.
