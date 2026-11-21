@@ -219,12 +219,12 @@ Caps **non cumulatifs à 100 %** : on n’alloue jamais tout le capital à un se
 | Champ | Contenu |
 |-------|---------|
 | **ID** | `V-13` |
-| **Thèse** | Monétiser **légalement** le temps jeux via (B) contenus/outils d’**assist** pour un opérateur humain (plans, checklists, revue post-partie, dashboards API read-only) — **sans** injection d’inputs. Track A bots seulement si ToS **explicite** **et** économie viable (aujourd’hui : pas de GO capital ; Lichess/SL en WATCH). Détail : [`game-paths.md`](game-paths.md). |
-| **Pourquoi ~200 €** | Capita presque nul ; 1 pack contenu ou 1 mission coach post-VOD peut contribuer au 2× via fiat→ETH. **Pas** un moteur stake/gambling. |
-| **Cap capital** | ≤ **5 %** (~10 €) outils ; **0 €** stake tournois/arènes crypto tant que non autorisé + triangulation. |
-| **Risque** | `faible`–`modéré` (ban si dérive ToS ; revenu lent ; KYC si Second Life cashout) |
-| **Anti-scam** | Citer ToS/API officiels ; jamais de « bot indétectable » ; pas de dépôt arènes non triangulées ; LindeX officiel seulement pour SL. |
-| **Prochaine étape** | 1 livrable Track B safe (ex. checklist pré-match hors client **ou** brief post-VOD sample) lié V-07/V-08 ; **ne pas** financer bandforband/PIVArena/etc. |
+| **Thèse** | Monétiser **légalement** le temps jeux via (B) contenus/outils d’**assist** pour un opérateur humain (plans, checklists, revue post-partie, dashboards API read-only) — **sans** injection d’inputs. Track A bots seulement si ToS **explicite** **et** économie viable (aujourd’hui : pas de GO capital ; Lichess/SL/**Clash Agentic** en WATCH ; **Pawtato** bots = NO). Détail : [`game-paths.md`](game-paths.md) · [`game-targets-pawtato-clash.md`](game-targets-pawtato-clash.md). |
+| **Pourquoi ~200 €** | Capita presque nul ; 1 pack contenu ou 1 mission coach post-VOD peut contribuer au 2× via fiat→ETH. **Pas** un moteur stake/gambling / Risk-to-Earn. |
+| **Cap capital** | ≤ **5 %** (~10 €) outils ; **0 €** stake tournois/arènes/passes crypto tant que non autorisé + triangulation. |
+| **Risque** | `faible`–`modéré` (ban si dérive ToS ; revenu lent ; KYC si Second Life / Clash pass redemption) |
+| **Anti-scam** | Citer ToS/API officiels ; jamais de « bot indétectable » ; pas de dépôt arènes/passes non triangulés ; LindeX officiel seulement pour SL ; adresses TATO/OWB vs docs. |
+| **Prochaine étape** | 1 livrable Track B safe (checklist / post-VOD) lié V-07/V-08 ; scan directories P2E (§1.1 game-paths) ; **ne pas** financer bandforband/PIVArena/Pawtato NFT/Clash passes. |
 | **Kill** | Toute automation d’inputs / overlay compétitif gris **ou** pression vers RMT / arène non triangulée **ou** 21 j sans livrable utile après démarrage actif. |
 
 ---
