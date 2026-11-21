@@ -23,7 +23,7 @@ Plafonds : [`risk-limits.md`](risk-limits.md) · Catalogue : [`vecteurs.md`](vec
 | V-07 / V-08 / V-09 | Vague 2 / **re-rang** | Conversion plus lente : **ne pas abandonner** pour lenteur seule ; priorité basse vs cash services. |
 | V-10 | Différé (EV) | Illiquidité + ticket spéculatif ; motif ≠ chaîne. |
 | V-12 | Backup | Si V-06/V-04 saturés sans lead ; 0 capital. |
-| Jeux (V-13) | Voir [`reopen-review.md`](reopen-review.md) | Multi-chaîne OK ; kills restent ToS / scam / EV négative — pas « hors L1 ». |
+| Jeux (V-13) | Voir [`reopen-review.md`](reopen-review.md) · pilote Ashen [`pilots/ashen-throne.md`](pilots/ashen-throne.md) | Multi-chaîne OK ; kills restent ToS / scam / EV négative — pas « hors L1 ». Day-0 Ashen = 0 € (MCP/Cup smoke). |
 
 **Hypothèse challengée** : « diversifier dès J0 dans 3 paniers dont DeFi ».  
 **Verdict** : à ~200 €, cash services d’abord pour upside temps ; DeFi / multi-chaîne sous caps quand idle + triangulation — **sans** attendre une auth spend opérateur.
