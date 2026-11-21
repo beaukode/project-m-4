@@ -11,7 +11,9 @@ Langue : FR. Date de synthèse : **2026-11-21**.
 
 **Scan directories P2E / Web3 / browser (2026-11-21)** → shortlist 12 hors Pawtato/Clash : [`game-discovery-p2e.md`](game-discovery-p2e.md).
 
-**Deep-study top 5 (2026-11-21)** → [`game-deep-study-top5.md`](game-deep-study-top5.md) : MoltStation A=WATCH · Olderfall B=WATCH · Cambria B=WATCH (NO spend) · RavenQuest B=WATCH · Ashen Throne B=WATCH→GO + MCP. **Aucun GO capital** ; pilotes temps : Ashen → MoltStation smoke. Day-0 Ashen : [`pilots/ashen-throne.md`](pilots/ashen-throne.md).
+**Deep-study top 5 (2026-11-21)** → [`game-deep-study-top5.md`](game-deep-study-top5.md) : MoltStation A=WATCH · Olderfall B=WATCH · Cambria B=WATCH (NO spend) · RavenQuest B=WATCH · Ashen Throne B=WATCH→GO + MCP.
+
+**Deep-study all (2026-11-21)** → [`game-deep-study-all.md`](game-deep-study-all.md) : **25** titres (12 shortlist + 11 filtrés + 2 pointeurs). Vocabulaire GO / TRACK B / NO / DEFER. **Aucun GO capital** ; pilotes temps : Ashen → MoltStation smoke → ClawArcade (après tx). Day-0 Ashen : [`pilots/ashen-throne.md`](pilots/ashen-throne.md).
 
 ---
 
@@ -40,7 +42,7 @@ Le premier passage a filtré sur *bot API explicite + jeux connus + agent arenas
 
 Détail + verdicts des deux cibles : [`game-targets-pawtato-clash.md`](game-targets-pawtato-clash.md).
 
-**Premier scan directories exécuté** : [`game-discovery-p2e.md`](game-discovery-p2e.md) (DappRadar + PlayToEarn + requêtes agentic/x402/multi-chaîne). Discovery only — deep-studies à enchaîner sur le top 5 du doc.
+**Premier scan directories exécuté** : [`game-discovery-p2e.md`](game-discovery-p2e.md) (DappRadar + PlayToEarn + requêtes agentic/x402/multi-chaîne). Deep-studies : top 5 + **full pass** → [`game-deep-study-all.md`](game-deep-study-all.md).
 
 ---
 
@@ -63,11 +65,14 @@ Détail + verdicts des deux cibles : [`game-targets-pawtato-clash.md`](game-targ
 | Chess.com | Bots/engines interdits vs humains | Prix tournois = fair play strict | N/A | **NO** | — |
 | Pawtato Land (Sui) | Non (sauf orderbook) | Marketplace → TATO withdraw | Mauvais (NFT gate, liq. fine) — Sui OK multi-chaîne | **NO** (A) / **WATCH** (B) | modéré (GameFi) |
 | Clash of Coins (Base) | Oui (Agentic + x402 officiels) | Points / tournois / OWB ; shop API = spend | Mauvais sans EV prouvée (Risk-to-Earn, OWB −95 % ATH) | **WATCH** | élevé (token) |
-| MoltStation (Base) | Oui (agent API + Rewards V2) | Score → $MOLTS claim | Faible (0 claims, liq. morte) | **WATCH** | élevé (ghost eco) |
-| Ashen Throne MCP | Oui (MCP officiel ; pas bots non autorisés) | Cups USDC/USDG (+ $THRONE lock) | Faible € ; F2P | **WATCH** | modéré (alpha) |
-| Olderfall / Cambria / RavenQuest | Non (bots bannis / absents) | USDC / Risk Pool / QUEST | Voir deep-study | **NO** A | — |
+| MoltStation (Base) | Oui (agent API + Rewards V2) | Score → $MOLTS claim | Faible (0 claims, liq. morte) | **DEFER** / WATCH | élevé (ghost eco) |
+| Ashen Throne MCP | Oui (MCP officiel ; pas bots non autorisés) | Cups USDC/USDG (+ $THRONE lock) | Faible € ; F2P | **GO** temps / WATCH capital | modéré (alpha) |
+| ClawArcade (Solana) | Oui (WS agent API) | Tournois SOL micro | Faible (0 preuve payout) | **DEFER** | élevé (jeune) |
+| Cryptrix / Arcade x402 | Oui (agent) mais stake/wager | USDC rooms / chance | Négatif | **NO** | élevé (gambling) |
+| Olderfall / Cambria / RavenQuest / Photo Finish / Reworth | Non (bots bannis / absents) | USDC / Risk / QUEST / DERBY | Voir full study | **NO** A · B variable | — |
+| Parallel / SolFarmer | Non | PRIME / SOL treasury | Mauvais | **NO** | élevé |
 
-Fiches : [`game-targets-pawtato-clash.md`](game-targets-pawtato-clash.md) · [`game-deep-study-top5.md`](game-deep-study-top5.md).
+Fiches : [`game-targets-pawtato-clash.md`](game-targets-pawtato-clash.md) · [`game-deep-study-top5.md`](game-deep-study-top5.md) · [`game-deep-study-all.md`](game-deep-study-all.md).
 
 ### 2.2 Détails & citations (Track A)
 
@@ -199,15 +204,19 @@ Fiches : [`game-targets-pawtato-clash.md`](game-targets-pawtato-clash.md) · [`g
 - **Pawtato** : gameplay manuel obligatoire → assist = plans craft/quest/économie **hors** auto-click ; **WATCH** temps opérateur, pas moteur 2×.
 - **Clash** : modèle « commander » + chat agents officiels = Track A/B hybride **autorisé** ; assist stratégie carte / tournois OK **sans** client hack. Contenu (V-07) possible. **Pas** de spend pass / Risk-to-Earn tant qu’EV non prouvée (juge agent sous caps — pas d’auth spend séparée).
 
-#### B8 — Top 5 discovery (humain / MCP)
+#### B8 — Discovery full pass (humain / MCP)
 
-Détail : [`game-deep-study-top5.md`](game-deep-study-top5.md).
+Détail : [`game-deep-study-all.md`](game-deep-study-all.md) · top 5 : [`game-deep-study-top5.md`](game-deep-study-top5.md).
 
-- **Ashen Throne** : MCP officiel read/act-confirmé = assist **autorisé** ; bots non-MCP = ToS NO. Cups F2P + log on-chain. **WATCH→GO** léger (0 €).
-- **Olderfall** : plans loadout / tournoi N3MUS hors client ; pas de bot. **WATCH**.
-- **Cambria** : plans extraction / Risk Pool ; **jamais** Energy spend sans GO. **WATCH**.
-- **RavenQuest** : guides Fame/Legacy ; bots ToS NO. **WATCH** faible.
-- **MoltStation** : browser humain = practice sans rewards → Track B **NO** ; path = Track A agent.
+- **Ashen Throne** : MCP officiel read/act-confirmé = assist **autorisé** ; bots non-MCP = ToS NO. Cups F2P + log on-chain. **GO** temps (0 €).
+- **Olderfall** : plans loadout / tournoi N3MUS hors client ; pas de bot. **TRACK B**.
+- **Cambria** : plans extraction / Risk Pool ; **jamais** Energy spend sans EV. **TRACK B**.
+- **RavenQuest** : guides Fame/Legacy ; bots ToS NO. **TRACK B** faible.
+- **MoltStation** : browser humain = practice sans rewards → Track B **NO** ; path = Track A agent (**DEFER**).
+- **Photo Finish** : DERBY→USDC ; bots ToS NO ; wager → **TRACK B** manuel seulement.
+- **Reworth** : F2P USDC Base si payouts prouvés → **DEFER**.
+- **Pixels / WoD / Sport.fun** : grind token / Pro USDC ; bots NO → **TRACK B** faible.
+- **Parallel / SolFarmer / Sandbox / RollerCoin** : bots ban + EV/trust → **NO** (ou contenu V-07 opportuniste).
 
 ### 3.3 Patterns produit pour Agent 4 (Track B)
 
@@ -230,8 +239,10 @@ Détail : [`game-deep-study-top5.md`](game-deep-study-top5.md).
 | A Pawtato bots | Nulle (ToS) | — | Ban |
 | A Clash Agentic | Inconnue / souvent négative si Risk-to-Earn | passes / USDC shop | OWB + KYC possible |
 | A MoltStation | Faible tant que 0 claims | gas Base | MOLTS illiquide |
+| A ClawArcade | Faible (micro-pools) | ~0 € | Preuve payout manquante |
 | B Pawtato / Clash assist | Faible (temps) → **WATCH** rang | 0 € si F2P | EV floue / lenteur (≠ kill chaîne) |
 | B Ashen MCP / Olderfall | Faible € (prix petits) / EV ladder | 0 € F2P | Temps alliance / ranks |
+| B Photo Finish / Reworth | Wager / payouts non prouvés | DERBY ou 0 | Géo / custody |
 | B Cambria Risk | Négative si unskilled | Energy USDC | Kill spend (EV / risk — juge agent) |
 | B Assist + contenu | Indirecte (via V-07/V-08) | ≤ outils 5–10 € | Temps opérateur |
 | B Tournois humains + IA live | **Interdit** sur la plupart des jeux | — | Ban / ToS |
@@ -244,12 +255,12 @@ Risques transverses : ban compte, malware « tools », arnaques RMT, confusion b
 
 **Poursuivre B (léger), pas A capital maintenant.**
 
-1. **Track A** : aucun **GO** solide pour 2×/30 j. Lichess = **WATCH** (ToS OK, économie faible → rang). Second Life = **WATCH** / **GO conditionnel** post-KYC ([`second-life-monetization.md`](second-life-monetization.md) ; fiat≠ETH n’est plus un kill). Arènes crypto agents = **KEEP CLOSED** (scam/gambling/EV stake — **pas** la chaîne). **Pawtato** bots = **KEEP CLOSED** (ToS). **Clash** Agentic = **WATCH** (autorisé éditeur, pas GO capital). **MoltStation** = **WATCH** (API OK, économie 0 claims).
-2. **Track B** : **oui**, comme **complément** des vecteurs temps/contenu (V-06 / V-07 / V-08) : plans, checklists, reviews post-partie, outils API read-only / MCP officiel — **jamais** d’automation d’inputs ni overlays compétitifs gris. Pawtato/Clash/Olderfall = **WATCH** assist (lenteur → rang, pas discard). Ashen Throne = **WATCH→GO** léger (MCP).
-3. **Pas de pilote capital jeux** tant qu’EV cashout / ToS / anti-scam non OK (juge agent sous risk-limits — **pas** d’auth spend opérateur). Focus vague 1 (V-06, V-04, V-11). Micro-outils ≤ caps = juge agent. Voir [`reopen-review.md`](reopen-review.md) · [`game-deep-study-top5.md`](game-deep-study-top5.md).
-4. Stub catalogue : **V-13** en `recherche` — [`vecteurs.md`](vecteurs.md) ; cibles → [`game-targets-pawtato-clash.md`](game-targets-pawtato-clash.md) · deep-study → [`game-deep-study-top5.md`](game-deep-study-top5.md).
+1. **Track A** : aucun **GO capital** pour 2×/30 j. Lichess = **WATCH**. Second Life = **WATCH** / **GO conditionnel** post-KYC ([`second-life-monetization.md`](second-life-monetization.md)). Arènes stake/gambling = **NO**. **Pawtato** bots = **NO**. **Clash** Agentic = **DEFER**. **MoltStation** / **ClawArcade** = **DEFER** (API OK, économie non prouvée). **Cryptrix** / Arcade x402 = **NO**.
+2. **Track B** : **oui**, complément V-06 / V-07 / V-08. Ashen Throne = **GO** temps (MCP). Olderfall / Photo Finish / Pawtato / Clash / Reworth = **TRACK B** ou **DEFER**. Parallel / SolFarmer / Sandbox / RollerCoin = **NO**.
+3. **Pas de pilote capital jeux** tant qu’EV / ToS / anti-scam non OK (juge agent). Focus vague 1 (V-06, V-04, V-11). Voir [`reopen-review.md`](reopen-review.md) · [`game-deep-study-all.md`](game-deep-study-all.md).
+4. Stub catalogue : **V-13** en `recherche` — [`vecteurs.md`](vecteurs.md) ; full matrix → [`game-deep-study-all.md`](game-deep-study-all.md).
 5. **Découverte** : appliquer §1.1 à chaque revue jeux. Filtre « chaîne vs L1 » **retiré** comme kill.
-6. **Pilotes temps (0 €)** si capacité : Ashen Throne (MCP) puis MoltStation smoke API — Cambria Energy / RavenQuest pass / Olderfall NFT seulement si EV + caps OK (juge agent).
+6. **Pilotes temps (0 €)** : Ashen → MoltStation smoke → ClawArcade (après 1 tx payout) → Olderfall B / Reworth probe. Cambria Energy / RQ pass / Parallel NFT / Photo Finish wager / SolFarmer dépôt = **NO** sans EV.
 
 **Décision autonome** : ne pas ouvrir de ledger d’allocation capital jeux dans ce PR ; documenter seulement. Annulation = retirer V-13 ou passer en `abandonné` si opérateur refuse le panier jeux.
 
@@ -277,5 +288,6 @@ Risques transverses : ban compte, malware « tools », arnaques RMT, confusion b
 | 16 | https://developer.riotgames.com/docs/valorant | Riot overlays |
 | 17 | https://us.blizzard.com/en-us/company/about/termsofuse.html | Blizzard EULA |
 | 18 | [`game-targets-pawtato-clash.md`](game-targets-pawtato-clash.md) | Pawtato + Clash (index sources 1–19 dans la fiche) |
+| 19 | [`game-deep-study-all.md`](game-deep-study-all.md) | Full matrix 25 titres + sources |
 
 *Les URLs ont été consultées pour cette synthèse (2026-11-21). Re-vérifier avant tout passage `prêt` / `actif`.*
