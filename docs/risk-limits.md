@@ -66,9 +66,9 @@ Avant toute autorisation de spend :
 
 | Pilote | Cap engage | Notes |
 |--------|------------|-------|
-| V-06 | 0 € marché | Temps ; outils ≤ 5 % si un jour autorisé |
+| V-06 / ACP | 0 € marché ; si tests sandbox un jour : ≤ **5 €** USDC/gas Base ([`pilots/virtuals-acp.md`](pilots/virtuals-acp.md)) | Temps d’abord ; **0 spend** tant que NO Phase 2 |
 | V-04 / Mech | ≤ **5 €** gas Gnosis (fiche [`pilots/olas-mech.md`](pilots/olas-mech.md)) ; ≤ 10 € V-04 total | Sous le cap 10 % ; **0 spend** tant que NO Phase 2 |
-| V-11 | ≤ 10 € outils/API | Sous le cap 5 % |
+| V-11 | ≤ 10 € outils/API | Sous le cap 5 % ; prix offre ACP = **5–25 USDC** (pas engage capital) |
 | **Total pilotes** | **≤ ~20 €** | ≪ 70 % ; le reste reste liquide |
 
 ## 5. Interdits absolus à cette taille de capital (~200 €)

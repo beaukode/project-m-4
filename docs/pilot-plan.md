@@ -8,9 +8,9 @@ Plafonds : [`risk-limits.md`](risk-limits.md) · Catalogue : [`vecteurs.md`](vec
 
 | Priorité | ID | Vecteur | Panier | Pourquoi maintenant |
 |----------|----|---------|--------|---------------------|
-| P0 | **V-06** | Freelance / agent markets | Cash services | 0 € capital ; 1 mission 200–400 € ≈ objectif 2× ; **canaux GO** : Virtuals ACP + Skyfire seller ([`agent-markets.md`](agent-markets.md)) — Free-Work/LaborX/Malt/Upwork écartés (ToS / KYC) |
-| P1 | **V-04** | Bounties / Mech | Cash services | Gas/outils seulement ; **Olas Mech Marketplace** (turnover live) prioritaire vs Opire minuscule ; escrow on-chain préféré — fiche Day-0 [`pilots/olas-mech.md`](pilots/olas-mech.md) (**GO docs / NO spend** tant que Docker+bridge) |
-| P2 | **V-11** | Recherche on-chain à façon | Cash services | Quasi 0 capital ; brief 150–300 € ; offre naturelle sur ACP / Mech / Skyfire MCP |
+| P0 | **V-06** | Freelance / agent markets | Cash services | 0 € capital ; **canal GO unique** après vérif earn : **Virtuals ACP** provider ([`pilots/virtuals-acp.md`](pilots/virtuals-acp.md)) — Skyfire/Olas = WATCH earn ; Free-Work/LaborX/Malt/Upwork écartés |
+| P1 | **V-04** | Bounties / Mech | Cash services | Gas/outils seulement ; **Olas Mech** = WATCH earn / GO docs — fiche [`pilots/olas-mech.md`](pilots/olas-mech.md) (**NO spend** tant que Docker+bridge) |
+| P2 | **V-11** | Recherche on-chain à façon | Cash services | Quasi 0 capital ; offre ACP **5–25 USDC** (pas 50–250) — sample + offerings dans fiche ACP |
 
 ### Pourquoi pas les autres en vague 1
 
@@ -45,9 +45,9 @@ Toute activation capital exige : autorisation explicite + ledger rempli + triang
 
 | Pilote | Vert si… |
 |--------|----------|
-| V-06 | ≥ 1 offre publiée sur **2 canaux agent-friendly GO** (ACP / Skyfire / Olas) **et** ≥ 3 conversations qualifiées **ou** 1 job funded / proposition chiffrée |
+| V-06 | ≥ 1 offering ACP **service-only** créée (sandbox OK) **et** (≥ 3 jobs sandbox completed **ou** 1 job funded prod post-graduation) — voir [`pilots/virtuals-acp.md`](pilots/virtuals-acp.md) |
 | V-04 | Shortlist ≥ 5 opportunités triangulées (Mech tools / bounties escrow) **et** ≥ 1 draft soumis **ou** 1 payout |
-| V-11 | 1 brief sample public publié **et** proposition format+prix sur ≥ 2 canaux GO agent-markets |
+| V-11 | 1 brief sample public publié **et** offerings ACP A/B (5–25 USDC) documentées / listées |
 
 **Succès capital (hors scope spend actuel)** : si spend autorisé plus tard — 0 violation des caps ; PnL vecteur ≥ 0 après frais sur la fenêtre.
 
@@ -77,10 +77,11 @@ Kill individuels du catalogue restent applicables immédiatement (scam, seed, ga
 ### V-06 — Freelance / agent markets
 
 - [x] Rédiger 1 offre claire (stack, délai, prix cible 200–400 € ou TJM)
-- [x] Choisir 2 canaux légitimes (pas de « pay to apply ») — **pivot 2026-11-21** : Free-Work + Freelance-informatique → **Virtuals ACP** + **Skyfire seller** ([`agent-markets.md`](agent-markets.md) GO)
+- [x] Choisir canaux légitimes — **pivot vérif** : **Virtuals ACP** seul GO earn ; Skyfire/Olas = WATCH ([`agent-markets-verification.md`](agent-markets-verification.md))
 - [x] Lister 5 cibles / mots-clés de recherche
-- [x] Anti-scam : template escrow / acompte (+ escrow on-chain ACP/Skyfire)
-- [ ] Publier l’offre / ouvrir les comptes agent — **bloqué** : runtime / wallet agent / éventuel compte Virtuals ; Free-Work email humain = backup seulement
+- [x] Anti-scam : template escrow (+ escrow on-chain ACP)
+- [x] Fiche Day-0 ACP — [`pilots/virtuals-acp.md`](pilots/virtuals-acp.md) (offerings 5–25 USDC, sandbox→graduation, 0 spend)
+- [ ] Publier offering / compte agent ACP — **bloqué** : OAuth/compte Virtuals humain (§9 fiche ACP)
 
 ### V-04 — Bounties / Mech
 
@@ -96,8 +97,9 @@ Kill individuels du catalogue restent applicables immédiatement (scam, seed, ga
 - [x] Choisir 1 protocole blue-chip pour sample — Lido / stETH
 - [x] Outline brief (sources publiques, disclaimer « pas un conseil financier »)
 - [x] Définir prix + format (1–2 pages, 180–250 €)
-- [x] Identifier 2 canaux de proposition — **pivot** : LaborX + Free-Work → **Virtuals ACP** + **Olas/Skyfire**
-- [ ] Publier sample public + propositions — **bloqué** comptes agent / rédaction J2
+- [x] Identifier canal de proposition — **ACP** (prix 5–25 USDC) ; Olas/Skyfire secondaires
+- [x] Packager offerings A/B dans [`pilots/virtuals-acp.md`](pilots/virtuals-acp.md)
+- [ ] Publier sample public + listing ACP — **bloqué** compte Virtuals / rédaction sample J2
 
 ### Fin de J1
 
@@ -129,19 +131,31 @@ Exemples déjà utilisés pour ce plan (nov. 2026) :
 - Bounties Web3 : ordres de grandeur docs 50–200 USD, mid plus haut sur boards protocoles.
 - Cadre risk retail : caps d’exposition + échelle de drawdown (voir risk-limits).
 
-## 7. Pilote Olas Mech (pointeur)
+## 7. Pilotes docs Day-0 (pointeurs)
 
-Fiche opérationnelle Day-0 : [`pilots/olas-mech.md`](pilots/olas-mech.md).
+### 7.1 Virtuals ACP (P0 earn)
+
+Fiche : [`pilots/virtuals-acp.md`](pilots/virtuals-acp.md).
+
+| Décision | Contenu |
+|----------|---------|
+| Phase 1 | **GO** — checklist + offerings service-only **5–25 USDC** + path sandbox→graduation |
+| Phase 2 | **NO** live provider (2026-11-21) — compte/OAuth humain, 0 spend, pas de Fund-Transfer |
+| Prochaine | §5.B free (CLI help, copy) ; opérateur lève blockers compte/signer |
+
+### 7.2 Olas Mech (P1 docs)
+
+Fiche : [`pilots/olas-mech.md`](pilots/olas-mech.md).
 
 | Décision | Contenu |
 |----------|---------|
 | Phase 1 | **GO** — recherche + checklist + cap ≤ **5 €** |
-| Phase 2 | **NO** spend live (2026-11-21) — Docker absent, bridge L1→Gnosis non autorisé, ops capital non ouvertes |
-| Prochaine | Dry-run free (§6.B de la fiche) ; escalade infra/bridge si priorité earn agent |
+| Phase 2 | **NO** spend live — Docker absent, bridge L1→Gnosis non autorisé |
+| Earn 30 j | **WATCH** (vérif) — ne pas attendre 200 € du turnover $111 k |
 
 ## 8. Hors scope de ce plan
 
 - Tout spend / trade / bridge / stake (sauf si autorisation ultérieure sous caps).
-- Merge de PR sans opérateur (sauf préférence opérateur contraire documentée).
+- Merge de PR sans opérateur / coordinateur (AGENTS + assignment).
 - Ouverture V-01…V-03, V-05, V-10 sans nouvelle décision documentée.
-- Virtuals fund-transfer · Skyfire (vague suivante) · game bots · Free-Work signup.
+- Virtuals **Fund-Transfer** · Skyfire seller Day-1 · game bots · Free-Work signup.

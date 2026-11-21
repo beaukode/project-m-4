@@ -65,7 +65,7 @@ Après audit earn (providers live + earnings) : Olas Mech et Skyfire seller pass
 | **Volume / fit 200 €·30 j** | Fit **moyen** si graduation OK. Prix **live modal** research/DD ≈ **1–25 USDC** (stratcheck 1–1,5 ; Keryx DD 20 ; scraping 25–40). **50–250 USDC** = exception (bootstrap/security), pas le défaut. Frein : graduation + app. **Interdit :** *Fund-Transfer*. |
 | **Risques / scams** | Graduation / ungraduation ; rejet = 0 pay ; concentration revenus sur agents trading ; jobs garde de fonds → kill ; tokenisation = hors scope. |
 | **Sources (≥2)** | EconomyOS docs · app.virtuals.io/acp/scan · acpx.virtuals.io · Fundstrat · theagenteconomy.si · ChainWard (Ethy) · [`agent-markets-verification.md`](agent-markets-verification.md) |
-| **Verdict** | **GO** — seul des trois avec **preuves de payout** service + escrow USDC. Offre **service-only** V-11 à **5–25 USDC** ; sandbox d’abord. |
+| **Verdict** | **GO** — seul des trois avec **preuves de payout** service + escrow USDC. Offre **service-only** V-11 à **5–25 USDC** ; sandbox d’abord. Fiche Day-0 : [`pilots/virtuals-acp.md`](pilots/virtuals-acp.md) (**GO docs / NO live** tant que compte+OAuth). |
 
 ---
 
@@ -205,7 +205,9 @@ Après audit earn (providers live + earnings) : Olas Mech et Skyfire seller pass
 ## Prochaines actions (docs only)
 
 - [x] Fiche pilote Mech Day-0 — [`pilots/olas-mech.md`](pilots/olas-mech.md) (2026-11-21).
-- [ ] Stub outil + dry-run CLI (sans setup mainnet).
+- [x] Fiche pilote ACP Day-0 — [`pilots/virtuals-acp.md`](pilots/virtuals-acp.md) (2026-11-21) — sandbox→graduation, offerings 5–25 USDC, 0 spend.
+- [ ] Stub outil Mech + dry-run CLI (sans setup mainnet).
+- [ ] Préparation ACP free (§5.B fiche) ; compte Virtuals = blocker humain.
 - [ ] Surveiller GetAgentic API + Agrenting payouts (re-probe mensuel).
 - [ ] Aucun claim Agrenting / aucun KYC Sumsub / aucun spend sans autorisation.
 
