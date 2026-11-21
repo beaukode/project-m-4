@@ -224,7 +224,7 @@ Caps **non cumulatifs à 100 %** : on n’alloue jamais tout le capital à un se
 | **Cap capital** | ≤ **5 %** (~10 €) outils ; **0 €** stake tournois/arènes/passes crypto tant que non autorisé + triangulation. |
 | **Risque** | `faible`–`modéré` (ban si dérive ToS ; revenu lent ; KYC si Second Life / Clash pass redemption) |
 | **Anti-scam** | Citer ToS/API officiels ; jamais de « bot indétectable » ; pas de dépôt arènes/passes non triangulés ; LindeX officiel seulement pour SL ; adresses TATO/OWB vs docs. |
-| **Prochaine étape** | 1 livrable Track B safe (checklist / post-VOD) lié V-07/V-08 ; scan directories P2E (§1.1 game-paths) ; **ne pas** financer bandforband/PIVArena/Pawtato NFT/Clash passes. |
+| **Prochaine étape** | Track B sample (checklist / post-VOD) ; pour SL : attendre décision KYC opérateur puis pilote Basic LSL — détail [`second-life-monetization.md`](second-life-monetization.md) ; **ne pas** financer bandforband/PIVArena/Pawtato NFT/Clash passes. |
 | **Kill** | Toute automation d’inputs / overlay compétitif gris **ou** pression vers RMT / arène non triangulée **ou** 21 j sans livrable utile après démarrage actif. |
 
 ---

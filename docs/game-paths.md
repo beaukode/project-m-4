@@ -78,9 +78,10 @@ Fiches : [`game-targets-pawtato-clash.md`](game-targets-pawtato-clash.md).
 - **Sources** :
   1. [Scripted Agent Policy](https://wiki.secondlife.com/wiki/Linden_Lab_Official:Scripted_Agent_Policy) : *« Second Life allows Scripted Agents with legitimate uses »* ; interdits : traffic boosting, spam > 5 000 msg/j, achat Mainland automatisé.
   2. Cashout : [Account balance KB](https://community.secondlife.com/knowledgebase/english/account-balance-r1/) + [Tilia FAQ](https://community.secondlife.com/knowledgebase/english/tilia-faq-r1533/) — vente L$ → crédit USD → payout PayPal **avec KYC** (nom, adresse, DOB, ID).
-- **Fit 200 €/30 j** : possible en théorie (shop/service) mais **ramp-up** + **KYC humain** (escalade opérateur) + hors ETH L1 direct.
+- **Fit 200 €/30 j** : faible en 30 j ; **prefs** (lenteur OK si EV+) → candidat **GO conditionnel** après KYC humain + pilote LSL/Marketplace Basic (pas land).
 - **Anti-scam** : rester sur LindeX officiel ; pas d’échanges L$ tiers.
 - **Kill** : demande seed / viewer malware **ou** modèle économique spam/traffic **ou** KYC impossible.
+- **Rapport détaillé** : [`second-life-monetization.md`](second-life-monetization.md) (frais, fourchettes €, bots, next steps Bitwarden).
 
 #### A3 — Arènes agents crypto (bandforband, PIVArena, ProfitPlay, monopoly.land, OMERTÀ) — **NO** (Agent 4 maintenant)
 
@@ -205,7 +206,7 @@ Fiches : [`game-targets-pawtato-clash.md`](game-targets-pawtato-clash.md).
 | Path | Probabilité d’aider le 2× en 30 j | Capital exposé | Blocages |
 |------|-----------------------------------|----------------|----------|
 | A Lichess bots | Très faible | ~0 € | Prix minuscules |
-| A Second Life | Faible→moyenne (si KYC + skill) | temps + éventuel premium | KYC Tilia, courbe, fiat≠ETH |
+| A Second Life | Faible en 30 j ; moyenne multi-mois (si KYC + LSL) | temps ; Premium borderline cap V-13 | KYC Tilia humain ; détail [`second-life-monetization.md`](second-life-monetization.md) |
 | A Arènes crypto | Négative attendue (EV stake) | stake USDC/alt | Scam/gambling/chaîne |
 | A Pawtato bots | Nulle (ToS) | — | Ban |
 | A Clash Agentic | Inconnue / souvent négative si Risk-to-Earn | passes / USDC shop | OWB + KYC possible |
@@ -221,7 +222,7 @@ Risques transverses : ban compte, malware « tools », arnaques RMT, confusion b
 
 **Poursuivre B (léger), pas A capital maintenant.**
 
-1. **Track A** : aucun **GO** solide pour l’objectif ETH ~2× / 30 j. Lichess = ToS OK mais économie trop faible. Second Life = **WATCH** (nécessite KYC humain + temps). Arènes crypto agents = **NO**. **Pawtato** bots = **NO** (ToS). **Clash** Agentic = **WATCH** (autorisé éditeur, pas GO capital).
+1. **Track A** : aucun **GO** solide pour l’objectif ETH ~2× / 30 j. Lichess = ToS OK mais économie trop faible. Second Life = **WATCH** / GO conditionnel post-KYC ([`second-life-monetization.md`](second-life-monetization.md)). Arènes crypto agents = **NO**. **Pawtato** bots = **NO** (ToS). **Clash** Agentic = **WATCH** (autorisé éditeur, pas GO capital).
 2. **Track B** : **oui**, comme **complément** des vecteurs temps/contenu (V-06 / V-07 / V-08) : plans, checklists, reviews post-partie, outils API read-only — **jamais** d’automation d’inputs ni overlays compétitifs gris. Pawtato/Clash = **WATCH** assist seulement.
 3. **Ni A ni B comme pilote capital** tant que spend non autorisé ; ne pas déplacer le focus hors vague 1 (V-06, V-04, V-11).
 4. Stub catalogue : **V-13** (assist jeux / APIs autorisées) en `recherche` — voir [`vecteurs.md`](vecteurs.md) ; cibles P2E → [`game-targets-pawtato-clash.md`](game-targets-pawtato-clash.md).
