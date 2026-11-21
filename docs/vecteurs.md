@@ -220,12 +220,12 @@ Caps **non cumulatifs à 100 %** : on n’alloue jamais tout le capital à un se
 | Champ | Contenu |
 |-------|---------|
 | **ID** | `V-13` |
-| **Thèse** | Monétiser **légalement** le temps jeux via (B) contenus/outils d’**assist** pour un opérateur humain (plans, checklists, revue post-partie, dashboards API read-only) — **sans** injection d’inputs. Track A bots seulement si ToS **explicite** **et** économie viable (aujourd’hui : pas de GO capital ; Lichess/SL/**Clash Agentic** en WATCH ; **Pawtato** bots = NO). Détail : [`game-paths.md`](game-paths.md) · [`game-targets-pawtato-clash.md`](game-targets-pawtato-clash.md). |
+| **Thèse** | Monétiser **légalement** le temps jeux via (B) contenus/outils d’**assist** pour un opérateur humain (plans, checklists, revue post-partie, dashboards API read-only / **MCP officiel**) — **sans** injection d’inputs non autorisée. Track A bots seulement si ToS **explicite** **et** économie viable (aujourd’hui : pas de GO capital ; Lichess/SL/**Clash**/**MoltStation**/**Ashen MCP** en WATCH ; **Pawtato**/Olderfall/Cambria/RavenQuest bots = NO). Détail : [`game-paths.md`](game-paths.md) · [`game-targets-pawtato-clash.md`](game-targets-pawtato-clash.md) · [`game-deep-study-top5.md`](game-deep-study-top5.md). |
 | **Pourquoi ~200 €** | Capita presque nul ; 1 pack contenu ou 1 mission coach post-VOD peut contribuer au 2× via fiat→ETH. **Pas** un moteur stake/gambling / Risk-to-Earn. |
-| **Cap capital** | ≤ **5 %** (~10 €) outils ; **0 €** stake tournois/arènes/passes crypto tant que triangulation + EV prouvée (juge agent sous risk-limits — pas d’auth spend opérateur). |
+| **Cap capital** | ≤ **5 %** (~10 €) outils ; **0 €** stake tournois/arènes/passes/Energy crypto tant que triangulation + EV prouvée (juge agent sous risk-limits — pas d’auth spend opérateur). |
 | **Risque** | `faible`–`modéré` (ban si dérive ToS ; revenu lent ; KYC si Second Life / Clash pass redemption) |
-| **Anti-scam** | Citer ToS/API officiels ; jamais de « bot indétectable » ; pas de dépôt arènes/passes non triangulés ; LindeX officiel seulement pour SL ; adresses TATO/OWB vs docs. |
-| **Prochaine étape** | Track B sample (checklist / post-VOD) ; pour SL : attendre décision KYC opérateur puis pilote Basic LSL — détail [`second-life-monetization.md`](second-life-monetization.md) ; **ne pas** financer bandforband/PIVArena/Pawtato NFT/Clash passes. |
+| **Anti-scam** | Citer ToS/API officiels ; jamais de « bot indétectable » ; pas de dépôt arènes/passes/Energy non triangulés ; LindeX officiel seulement pour SL ; adresses TATO/OWB/MOLTS/QUEST vs docs. |
+| **Prochaine étape** | Pilotes temps 0 € : Ashen Throne (MCP) puis MoltStation smoke API ; Track B sample ; SL : attendre décision KYC opérateur puis pilote Basic LSL ([`second-life-monetization.md`](second-life-monetization.md)) ; **ne pas** financer bandforband/PIVArena/Pawtato NFT/Clash passes/Cambria Energy/RQ pass sans EV. |
 | **Kill** | Toute automation d’inputs / overlay compétitif gris **ou** pression vers RMT / arène non triangulée **ou** 21 j sans livrable utile après démarrage actif. |
 
 ---
