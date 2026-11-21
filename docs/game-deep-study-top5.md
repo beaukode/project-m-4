@@ -18,7 +18,7 @@ Source shortlist : [`game-discovery-p2e.md`](game-discovery-p2e.md). Préférenc
 | 4 | [RavenQuest](https://ravenquest.io/) | Immutable zkEVM | **NO** | **WATCH** | Faible (grind + QUEST −99 % ATH) | Non |
 | 5 | [Ashen Throne](https://ashenthrone.com/) | Base / Robinhood Chain | **WATCH** (MCP officiel) | **WATCH→GO** léger | Faible € (prix petits) mais F2P + rails vérifiés | **#1** F2P + MCP |
 
-**Aucun GO capital** (raisons EV / ToS / liquidité — pas « attendre auth opérateur »). Recommandation pilote (temps / 0 €) : **Ashen Throne** puis **MoltStation** (lecture API + docs ; gas/claim seulement si EV prouvée sous caps V-13, juge agent). Journal : [`ops/ledgers/V-13.md`](../ops/ledgers/V-13.md).
+**Aucun GO capital** (raisons EV / ToS / liquidité — pas « attendre auth opérateur »). Recommandation pilote (temps / 0 €) : **Ashen Throne** puis **MoltStation** (lecture API + docs ; gas/claim seulement si EV prouvée sous caps V-13, juge agent). Journal : [`ops/ledgers/V-13.md`](../ops/ledgers/V-13.md). Pilote Day-0 Ashen : [`pilots/ashen-throne.md`](pilots/ashen-throne.md).
 
 ---
 

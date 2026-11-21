@@ -29,7 +29,7 @@ Classes de risque : `faible` · `modéré` · `élevé` (toujours borné au capi
 | V-10 | Domaines / actifs numériques | ops | ≤ 25 % (~50 €) | modéré | idée | [ops/ledgers/V-10.md](../ops/ledgers/V-10.md) |
 | V-11 | Recherche on-chain à façon | crypto-web | ≤ 5 % (~10 €) | faible | recherche (pilote P2) · offerings ACP 5–25 USDC | [ops/ledgers/V-11.md](../ops/ledgers/V-11.md) |
 | V-12 | Modération / community ops | web | 0 € capital | faible | idée | [ops/ledgers/V-12.md](../ops/ledgers/V-12.md) |
-| V-13 | Jeux : assist humain / API autorisée | web-jeux | ≤ 5 % outils (~10 €) | faible–modéré | recherche | [ops/ledgers/V-13.md](../ops/ledgers/V-13.md) |
+| V-13 | Jeux : assist humain / API autorisée | web-jeux | ≤ 5 % outils (~10 €) | faible–modéré | recherche (Ashen Day-0) · [`pilots/ashen-throne`](pilots/ashen-throne.md) | [ops/ledgers/V-13.md](../ops/ledgers/V-13.md) |
 
 Caps **non cumulatifs à 100 %** : on n’alloue jamais tout le capital à un seul panier ; le total engagé à un instant T doit rester **≤ 70 %** du NAV dédié (réserve gas + opportunité).
 
@@ -225,7 +225,7 @@ Caps **non cumulatifs à 100 %** : on n’alloue jamais tout le capital à un se
 | **Cap capital** | ≤ **5 %** (~10 €) outils ; **0 €** stake tournois/arènes/passes/Energy crypto tant que triangulation + EV prouvée (juge agent sous risk-limits — pas d’auth spend opérateur). |
 | **Risque** | `faible`–`modéré` (ban si dérive ToS ; revenu lent ; KYC si Second Life / Clash pass redemption) |
 | **Anti-scam** | Citer ToS/API officiels ; jamais de « bot indétectable » ; pas de dépôt arènes/passes/Energy non triangulés ; LindeX officiel seulement pour SL ; adresses TATO/OWB/MOLTS/QUEST vs docs. |
-| **Prochaine étape** | Pilotes temps 0 € : Ashen Throne (MCP) puis MoltStation smoke API ; Track B sample ; SL : attendre décision KYC opérateur puis pilote Basic LSL ([`second-life-monetization.md`](second-life-monetization.md)) ; **ne pas** financer bandforband/PIVArena/Pawtato NFT/Clash passes/Cambria Energy/RQ pass sans EV. |
+| **Prochaine étape** | Ashen Phase 2 : compte F2P + MCP read ([`pilots/ashen-throne.md`](pilots/ashen-throne.md)) ; puis MoltStation smoke API ; Track B sample ; SL : attendre décision KYC opérateur puis pilote Basic LSL ([`second-life-monetization.md`](second-life-monetization.md)) ; **ne pas** financer bandforband/PIVArena/Pawtato NFT/Clash passes/Cambria Energy/RQ pass / VIP Ashen / $THRONE sans EV. |
 | **Kill** | Toute automation d’inputs / overlay compétitif gris **ou** pression vers RMT / arène non triangulée **ou** 21 j sans livrable utile après démarrage actif. |
 
 ---

@@ -11,7 +11,7 @@ Langue : FR. Date de synthèse : **2026-11-21**.
 
 **Scan directories P2E / Web3 / browser (2026-11-21)** → shortlist 12 hors Pawtato/Clash : [`game-discovery-p2e.md`](game-discovery-p2e.md).
 
-**Deep-study top 5 (2026-11-21)** → [`game-deep-study-top5.md`](game-deep-study-top5.md) : MoltStation A=WATCH · Olderfall B=WATCH · Cambria B=WATCH (NO spend) · RavenQuest B=WATCH · Ashen Throne B=WATCH→GO + MCP. **Aucun GO capital** ; pilotes temps : Ashen → MoltStation smoke.
+**Deep-study top 5 (2026-11-21)** → [`game-deep-study-top5.md`](game-deep-study-top5.md) : MoltStation A=WATCH · Olderfall B=WATCH · Cambria B=WATCH (NO spend) · RavenQuest B=WATCH · Ashen Throne B=WATCH→GO + MCP. **Aucun GO capital** ; pilotes temps : Ashen → MoltStation smoke. Day-0 Ashen : [`pilots/ashen-throne.md`](pilots/ashen-throne.md).
 
 ---
 

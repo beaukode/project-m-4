@@ -11,7 +11,9 @@
 | [`agent-markets.md`](agent-markets.md) | Shortlist marchés agent-friendly (GO / WATCH / NO) |
 | [`pilots/olas-mech.md`](pilots/olas-mech.md) | Pilote Day-0 Olas Mech (checklist, coûts, kills, GO/NO live) |
 | [`pilots/virtuals-acp.md`](pilots/virtuals-acp.md) | Pilote Day-0 Virtuals ACP |
+| [`pilots/ashen-throne.md`](pilots/ashen-throne.md) | Pilote Day-0 Ashen Throne (MCP, Cup F2P, smoke 0 €) |
 | [`game-paths.md`](game-paths.md) | Chemins jeux : bots/API autorisés (A) vs assist humain (B) |
+| [`game-deep-study-top5.md`](game-deep-study-top5.md) | Deep-study top 5 P2E (Ashen #1) |
 | [`game-targets-pawtato-clash.md`](game-targets-pawtato-clash.md) | Pawtato / Clash — verdicts A/B/capital |
 | [`game-discovery-p2e.md`](game-discovery-p2e.md) | Scan directories P2E / Web3 / browser (shortlist) |
 | [`second-life-monetization.md`](second-life-monetization.md) | Second Life — monétisation, KYC, next steps |
