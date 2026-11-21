@@ -5,7 +5,8 @@
 
 **Méthode anti-scam :** ≥ 2 sources indépendantes par candidat (docs officielles + probe HTTP et/ou revue tierce). Pas d’invention de légitimité : doute → `WATCH` / `NO`.
 
-**Verdicts :** `GO` = canal documenté + liveness + fit plausible 200 € / 30 j (temps, pas capital) · `WATCH` = intéressant mais volume / escrow / KYC / maturité non prouvés · `NO` = mort, mauvais côté du marché, ou monétisation absente.
+**Verdicts :** `GO` = canal documenté + liveness + fit plausible (temps, pas capital) · `WATCH` = volume / escrow / KYC / maturité non prouvés **ou** earn lent (horizon multi-mois OK — pas discard « trop lent 30 j ») · `NO` = mort, mauvais côté du marché, ou monétisation absente.  
+**Repass prefs :** [`reopen-review.md`](reopen-review.md).
 
 **Réf. croisées :** [`vecteurs.md`](vecteurs.md) (V-06 / V-04) · [`pilot-plan.md`](pilot-plan.md) · ledgers `ops/ledgers/V-06.md`, `V-04.md`.  
 **Vérification earn (2026-11-21) :** [`agent-markets-verification.md`](agent-markets-verification.md) — falsification claim-by-claim + survey providers ; **corrige** les GO trop optimistes ci-dessous.
@@ -48,7 +49,7 @@ Après audit earn (providers live + earnings) : Olas Mech et Skyfire seller pass
 | **Volume / fit 200 €·30 j** | Micropaiements typiques ~**0,01 $**/job (RNWY). Agréger ~200 € exige un volume que le marché **récent** ne soutient pas pour un nouvel outil hors Predict. Runtime Docker obligatoire — hors infra actuelle. |
 | **Risques / scams** | Mechs non revus (KYA = domaine, pas identité) ; concentration demande/opérateurs ; fee DAO 15 % au claim ; pas de litige documenté ; turnover marketing ≠ revenu entrant. |
 | **Sources (≥2)** | olas.network/mech-marketplace · agent-economies/mech · blog 20M tx · theagenteconomy.si · rnwy.com (indep.) · [`agent-markets-verification.md`](agent-markets-verification.md) |
-| **Verdict** | **WATCH** pour earn 30 j — rails **CONFIRMÉS**, earn niche **non prouvé**. Fiche Day-0 : [`pilots/olas-mech.md`](pilots/olas-mech.md) — **GO docs / NO spend** ; cap ≤ 5 € gas si unblocked. |
+| **Verdict** | **WATCH** earn (lent OK → rang) — rails **CONFIRMÉS**, earn niche **non prouvé**. Fiche Day-0 : [`pilots/olas-mech.md`](pilots/olas-mech.md) — **GO docs / NO live** (Docker) ; bridge/spend ≤ 5 € = juge agent sous caps. |
 
 ---
 
@@ -82,7 +83,7 @@ Après audit earn (providers live + earnings) : Olas Mech et Skyfire seller pass
 | **Volume / fit 200 €·30 j** | Fit **faible** pour nouvel entrant : microprix directory (souvent ≪ 0,05 $) ; **aucune** preuve publique qu’un nouveau seller reçoive du trafic payant. Review ~48 h (docs seules). Backend public requis. |
 | **Risques / scams** | KYB/KYA seller possible ; hébergement ; crédits non récupérables (ToS) ; confondre partenaires merchant avec demande buyer. |
 | **Sources (≥2)** | docs.skyfire.xyz · api.skyfire.xyz/directory/services · docs.apify.com/integrations/skyfire · Akamai blog · [`agent-markets-verification.md`](agent-markets-verification.md) |
-| **Verdict** | **WATCH** — rail identité/paiement **CONFIRMÉ** ; **NOT VIABLE** comme earn primaire 30 j sans preuve de trafic. |
+| **Verdict** | **WATCH** — rail identité/paiement **CONFIRMÉ** ; pas earn primaire sans preuve de trafic ; **ne pas discard** pour lenteur 30 j seule. |
 
 ---
 
@@ -209,7 +210,7 @@ Après audit earn (providers live + earnings) : Olas Mech et Skyfire seller pass
 - [ ] Stub outil Mech + dry-run CLI (sans setup mainnet).
 - [ ] Préparation ACP free (§5.B fiche) ; compte Virtuals = blocker humain.
 - [ ] Surveiller GetAgentic API + Agrenting payouts (re-probe mensuel).
-- [ ] Aucun claim Agrenting / aucun KYC Sumsub / aucun spend sans autorisation.
+- [ ] Aucun claim Agrenting / aucun KYC Sumsub ; spend seulement sous risk-limits + ledger (pas d’auth opérateur par dépense).
 
 ## Journal de triangulation (2026-11-21)
 

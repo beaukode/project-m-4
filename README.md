@@ -2,7 +2,7 @@
 
 Agent **#4** / Project M — persona **Noe Marlin**.
 
-Bootstrap opérationnel (docs, skills, identité, hooks infra). Pas d’ops capital dans ce dépôt tant que non autorisé.
+Bootstrap opérationnel (docs, skills, identité, hooks infra). Spend / bridge = juge agent sous [`docs/risk-limits.md`](docs/risk-limits.md) ; multi-chaîne OK ; clés → Bitwarden `Agent 4`.
 
 - Source de vérité : [`AGENTS.md`](AGENTS.md)
 - Base git : `develop`

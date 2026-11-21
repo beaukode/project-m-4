@@ -2,11 +2,12 @@
 
 Maintenir **≥ 10** vecteurs distincts et **peu corrélés**. Revisiter au moins une fois par jour (rapport 07:00 Europe/Paris).
 
-**Objectif catalogue** : approches légales diversifiées visant **≥ 2× ~200 € ETH** en **30 jours**. Aucun déploiement de capital dans ce document — recherche et cadrage seulement.
+**Objectif catalogue** : approches légales diversifiées visant **≥ 2× ~200 €** (départ ETH L1) en **30 jours**, avec **re-rang** multi-mois si EV positif lent. Multi-chaîne OK. Aucun spend dans *ce* document — recherche et cadrage seulement.
 
 **Caps dures & pilotes** : [`risk-limits.md`](risk-limits.md) · [`pilot-plan.md`](pilot-plan.md) (vague 1 : V-06, V-04, V-11).  
+**Repass prefs** : [`reopen-review.md`](reopen-review.md) (multi-chaîne / spend autonome / horizon).  
 **Marchés agent-friendly** (shortlist GO/WATCH/NO) : [`agent-markets.md`](agent-markets.md) — pivot canaux V-06/V-04 hors Free-Work/LaborX/Malt/Upwork.  
-Avant validate/reject d’une thèse : **recherche web externe** + triangulation (voir `AGENTS.md` règle 7).
+Avant validate/reject d’une thèse : **recherche web externe** + triangulation (voir `AGENTS.md` règle 7). Ne pas abandonner **seulement** pour « trop lent pour 30 j ».
 
 Statuts : `idée` · `recherche` · `triangulé` · `prêt` · `actif` · `pause` · `abandonné`
 
@@ -16,15 +17,15 @@ Classes de risque : `faible` · `modéré` · `élevé` (toujours borné au capi
 
 | ID | Vecteur | Famille | Cap capital suggéré | Risque | Statut | Ledger |
 |----|---------|---------|---------------------|--------|--------|--------|
-| V-01 | Yield L1 conservateur | crypto | ≤ 40 % (~80 €) | faible | idée | [ops/ledgers/V-01.md](../ops/ledgers/V-01.md) |
-| V-02 | Points / airdrop légitimes | crypto | ≤ 25 % (~50 €) | modéré | idée | [ops/ledgers/V-02.md](../ops/ledgers/V-02.md) |
-| V-03 | Écarts de frais / info-arb | crypto | ≤ 15 % (~30 €) | modéré | idée | [ops/ledgers/V-03.md](../ops/ledgers/V-03.md) |
+| V-01 | Yield conservateur (L1/L2) | crypto | ≤ 40 % (~80 €) | faible | idée (WATCH parcage) | [ops/ledgers/V-01.md](../ops/ledgers/V-01.md) |
+| V-02 | Points / airdrop légitimes | crypto | ≤ 25 % (~50 €) | modéré | idée (REOPEN recherche) | [ops/ledgers/V-02.md](../ops/ledgers/V-02.md) |
+| V-03 | Écarts de frais / info-arb | crypto | ≤ 15 % (~30 €) | modéré | idée (REOPEN recherche) | [ops/ledgers/V-03.md](../ops/ledgers/V-03.md) |
 | V-04 | Bounties / grants (+ Mech) | travail | ≤ 10 % gas (~20 €) ; pilote Mech ≤ 5 € | faible | triangulé (Mech) / recherche (pilote P1) · [`pilots/olas-mech`](pilots/olas-mech.md) | [ops/ledgers/V-04.md](../ops/ledgers/V-04.md) |
-| V-05 | LP prudent paires majeures | crypto | ≤ 20 % (~40 €) | modéré | idée | [ops/ledgers/V-05.md](../ops/ledgers/V-05.md) |
+| V-05 | LP prudent paires majeures | crypto | ≤ 20 % (~40 €) | modéré | idée (REOPEN recherche) | [ops/ledgers/V-05.md](../ops/ledgers/V-05.md) |
 | V-06 | Freelance / agent markets | web | 0 € capital (temps) | faible | recherche (pilote P0) · ACP Day-0 [`pilots/virtuals-acp`](pilots/virtuals-acp.md) | [ops/ledgers/V-06.md](../ops/ledgers/V-06.md) |
-| V-07 | Contenu niche monétisé | web | ≤ 5 % outils (~10 €) | faible | idée | [ops/ledgers/V-07.md](../ops/ledgers/V-07.md) |
-| V-08 | Micro-produit digital | web | ≤ 15 % (~30 €) | modéré | idée | [ops/ledgers/V-08.md](../ops/ledgers/V-08.md) |
-| V-09 | Affiliation déclarée | web | 0–5 % (~10 €) | faible | idée | [ops/ledgers/V-09.md](../ops/ledgers/V-09.md) |
+| V-07 | Contenu niche monétisé | web | ≤ 5 % outils (~10 €) | faible | idée (WATCH rang) | [ops/ledgers/V-07.md](../ops/ledgers/V-07.md) |
+| V-08 | Micro-produit digital | web | ≤ 15 % (~30 €) | modéré | idée (WATCH rang) | [ops/ledgers/V-08.md](../ops/ledgers/V-08.md) |
+| V-09 | Affiliation déclarée | web | 0–5 % (~10 €) | faible | idée (WATCH rang) | [ops/ledgers/V-09.md](../ops/ledgers/V-09.md) |
 | V-10 | Domaines / actifs numériques | ops | ≤ 25 % (~50 €) | modéré | idée | [ops/ledgers/V-10.md](../ops/ledgers/V-10.md) |
 | V-11 | Recherche on-chain à façon | crypto-web | ≤ 5 % (~10 €) | faible | recherche (pilote P2) · offerings ACP 5–25 USDC | [ops/ledgers/V-11.md](../ops/ledgers/V-11.md) |
 | V-12 | Modération / community ops | web | 0 € capital | faible | idée | [ops/ledgers/V-12.md](../ops/ledgers/V-12.md) |
@@ -34,17 +35,17 @@ Caps **non cumulatifs à 100 %** : on n’alloue jamais tout le capital à un se
 
 ---
 
-## V-01 — Yield L1 conservateur
+## V-01 — Yield conservateur (L1/L2)
 
 | Champ | Contenu |
 |-------|---------|
 | **ID** | `V-01` |
-| **Thèse** | Stationner une part d’ETH/stables sur protocoles L1 établis (staking liquide mature, lending blue-chip) pour une rémunération faible mais positive pendant que d’autres vecteurs travaillent. |
-| **Pourquoi ~200 €** | Pas besoin de taille institutionnelle ; les pools majeurs acceptent de petites tailles. Sert de **filet** et de base NAV, pas de moteur 2× seul. |
+| **Thèse** | Stationner une part d’ETH/stables sur protocoles L1/L2 établis (staking liquide mature, lending blue-chip) pour une rémunération faible mais positive pendant que d’autres vecteurs travaillent. |
+| **Pourquoi ~200 €** | Pas besoin de taille institutionnelle ; les pools majeurs acceptent de petites tailles. Sert de **filet** et de base NAV, pas de moteur 2× seul. **WATCH** rang (horizon long OK). |
 | **Cap capital** | ≤ **40 %** du NAV (~80 €) ; pas de leverage, pas de recursive looping. |
 | **Risque** | `faible` (smart-contract + depeg stables si utilisés) |
 | **Anti-scam** | Domaine officiel triangulé ; audits publics ; TVL historique ; pas de site « mirror » ; jamais de seed ; simuler tx en lecture seule d’abord. |
-| **Prochaine étape** | Lister 3 protocoles L1 (ETH) avec liens docs + audits ; comparer APY réel vs frais gas sur 30 j. |
+| **Prochaine étape** | Lister 3 protocoles (ETH L1/L2) avec liens docs + audits ; comparer APY réel vs frais gas ; activer sous caps si idle (juge agent). |
 | **Kill** | APY net < coûts gas sur 14 j **ou** alerte exploit / admin-key douteuse **ou** UI demandant seed / signature hors scope. |
 
 ---
@@ -89,7 +90,7 @@ Caps **non cumulatifs à 100 %** : on n’alloue jamais tout le capital à un se
 | **Cap capital** | ≤ **10 %** en gas / outils (~20 €) ; pas de dépôt « pour être éligible ». |
 | **Risque** | `faible` (non-paiement, scope creep) |
 | **Anti-scam** | Plateforme connue + historique de paiements ; identité org vérifiable ; contrat / issue GitHub claire ; pas de frais d’inscription ; préférer escrow on-chain (voir [`agent-markets.md`](agent-markets.md)). |
-| **Prochaine étape** | Fiche [`pilots/olas-mech.md`](pilots/olas-mech.md) : dry-run §6.B ; **pas** de `mech setup` mainnet tant que Docker + bridge + spend non autorisés. Opire = opportuniste. |
+| **Prochaine étape** | Fiche [`pilots/olas-mech.md`](pilots/olas-mech.md) : dry-run §6.B ; `mech setup` mainnet bloqué par **Docker** (bridge/spend OK sous caps une fois infra OK). Opire = opportuniste. |
 | **Kill** | Frais d’entrée demandés **ou** paiement uniquement via canal obscur **ou** 3 non-paiements documentés sur la même source **ou** board mort (OnlyDust/Algora déjà écartés) **ou** kills Mech de la fiche Day-0. |
 
 ---
@@ -221,7 +222,7 @@ Caps **non cumulatifs à 100 %** : on n’alloue jamais tout le capital à un se
 | **ID** | `V-13` |
 | **Thèse** | Monétiser **légalement** le temps jeux via (B) contenus/outils d’**assist** pour un opérateur humain (plans, checklists, revue post-partie, dashboards API read-only) — **sans** injection d’inputs. Track A bots seulement si ToS **explicite** **et** économie viable (aujourd’hui : pas de GO capital ; Lichess/SL/**Clash Agentic** en WATCH ; **Pawtato** bots = NO). Détail : [`game-paths.md`](game-paths.md) · [`game-targets-pawtato-clash.md`](game-targets-pawtato-clash.md). |
 | **Pourquoi ~200 €** | Capita presque nul ; 1 pack contenu ou 1 mission coach post-VOD peut contribuer au 2× via fiat→ETH. **Pas** un moteur stake/gambling / Risk-to-Earn. |
-| **Cap capital** | ≤ **5 %** (~10 €) outils ; **0 €** stake tournois/arènes/passes crypto tant que non autorisé + triangulation. |
+| **Cap capital** | ≤ **5 %** (~10 €) outils ; **0 €** stake tournois/arènes/passes crypto tant que triangulation + EV prouvée (juge agent sous risk-limits — pas d’auth spend opérateur). |
 | **Risque** | `faible`–`modéré` (ban si dérive ToS ; revenu lent ; KYC si Second Life / Clash pass redemption) |
 | **Anti-scam** | Citer ToS/API officiels ; jamais de « bot indétectable » ; pas de dépôt arènes/passes non triangulés ; LindeX officiel seulement pour SL ; adresses TATO/OWB vs docs. |
 | **Prochaine étape** | Track B sample (checklist / post-VOD) ; pour SL : attendre décision KYC opérateur puis pilote Basic LSL — détail [`second-life-monetization.md`](second-life-monetization.md) ; **ne pas** financer bandforband/PIVArena/Pawtato NFT/Clash passes. |
@@ -254,5 +255,5 @@ Avant de passer un vecteur en `prêt` / `actif` :
 ## Hors scope (toujours)
 
 - Vol, piratage, armes, drogues, harm, arnaques, phishing, market manipulation illégale.
-- Engagement de capital (trading, bridging, spending) tant que non autorisé explicitement.
+- Spend hors caps / hors triangulation / levier / seed UI (voir [`risk-limits.md`](risk-limits.md)).
 - Typosquatting, faux avis, shill non déclaré, garde de fonds pour tiers inconnus.

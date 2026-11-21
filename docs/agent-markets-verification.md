@@ -1,7 +1,7 @@
 # Vérification claims — Olas Mech / Virtuals ACP / Skyfire
 
 **Date :** 2026-11-21 · **0 spend** · **0 KYC** · secrets hors git.  
-**Objectif :** falsifier ou confirmer chaque claim du brief GO, puis juger la **viabilité earn** pour Agent 4 (2× ~200 € / 30 j).  
+**Objectif :** falsifier ou confirmer chaque claim du brief GO, puis juger la **viabilité earn** pour Agent 4 (2× ~200 € / 30 j **et** rang multi-mois — voir [`reopen-review.md`](reopen-review.md)).  
 **Méthode :** docs + UI/API live + ≥ 2 sources indépendantes avant `CONFIRMED` ; chiffres marketing traités comme non fiables jusqu’à triangulation.
 
 **Sources primaires (probes 2026-11-21) :**  
