@@ -19,7 +19,7 @@ Classes de risque : `faible` · `modéré` · `élevé` (toujours borné au capi
 | V-01 | Yield L1 conservateur | crypto | ≤ 40 % (~80 €) | faible | idée | [ops/ledgers/V-01.md](../ops/ledgers/V-01.md) |
 | V-02 | Points / airdrop légitimes | crypto | ≤ 25 % (~50 €) | modéré | idée | [ops/ledgers/V-02.md](../ops/ledgers/V-02.md) |
 | V-03 | Écarts de frais / info-arb | crypto | ≤ 15 % (~30 €) | modéré | idée | [ops/ledgers/V-03.md](../ops/ledgers/V-03.md) |
-| V-04 | Bounties / grants (+ Mech) | travail | ≤ 10 % gas (~20 €) | faible | recherche (pilote P1) · canaux [`agent-markets`](agent-markets.md) | [ops/ledgers/V-04.md](../ops/ledgers/V-04.md) |
+| V-04 | Bounties / grants (+ Mech) | travail | ≤ 10 % gas (~20 €) ; pilote Mech ≤ 5 € | faible | triangulé (Mech) / recherche (pilote P1) · [`pilots/olas-mech`](pilots/olas-mech.md) | [ops/ledgers/V-04.md](../ops/ledgers/V-04.md) |
 | V-05 | LP prudent paires majeures | crypto | ≤ 20 % (~40 €) | modéré | idée | [ops/ledgers/V-05.md](../ops/ledgers/V-05.md) |
 | V-06 | Freelance / agent markets | web | 0 € capital (temps) | faible | recherche (pilote P0) · pivot agent-markets | [ops/ledgers/V-06.md](../ops/ledgers/V-06.md) |
 | V-07 | Contenu niche monétisé | web | ≤ 5 % outils (~10 €) | faible | idée | [ops/ledgers/V-07.md](../ops/ledgers/V-07.md) |
@@ -89,8 +89,8 @@ Caps **non cumulatifs à 100 %** : on n’alloue jamais tout le capital à un se
 | **Cap capital** | ≤ **10 %** en gas / outils (~20 €) ; pas de dépôt « pour être éligible ». |
 | **Risque** | `faible` (non-paiement, scope creep) |
 | **Anti-scam** | Plateforme connue + historique de paiements ; identité org vérifiable ; contrat / issue GitHub claire ; pas de frais d’inscription ; préférer escrow on-chain (voir [`agent-markets.md`](agent-markets.md)). |
-| **Prochaine étape** | Prioriser **Olas Mech** (outil docs/research) + shortlist bounties escrowées ; Opire = opportuniste seulement (no escrow, ~162 USD board). Immunefi hors exploit offensif. |
-| **Kill** | Frais d’entrée demandés **ou** paiement uniquement via canal obscur **ou** 3 non-paiements documentés sur la même source **ou** board mort (OnlyDust/Algora déjà écartés). |
+| **Prochaine étape** | Fiche [`pilots/olas-mech.md`](pilots/olas-mech.md) : dry-run §6.B ; **pas** de `mech setup` mainnet tant que Docker + bridge + spend non autorisés. Opire = opportuniste. |
+| **Kill** | Frais d’entrée demandés **ou** paiement uniquement via canal obscur **ou** 3 non-paiements documentés sur la même source **ou** board mort (OnlyDust/Algora déjà écartés) **ou** kills Mech de la fiche Day-0. |
 
 ---
 

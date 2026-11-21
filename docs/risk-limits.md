@@ -67,7 +67,7 @@ Avant toute autorisation de spend :
 | Pilote | Cap engage | Notes |
 |--------|------------|-------|
 | V-06 | 0 € marché | Temps ; outils ≤ 5 % si un jour autorisé |
-| V-04 | ≤ 10 € gas | Sous le cap 10 % |
+| V-04 / Mech | ≤ **5 €** gas Gnosis (fiche [`pilots/olas-mech.md`](pilots/olas-mech.md)) ; ≤ 10 € V-04 total | Sous le cap 10 % ; **0 spend** tant que NO Phase 2 |
 | V-11 | ≤ 10 € outils/API | Sous le cap 5 % |
 | **Total pilotes** | **≤ ~20 €** | ≪ 70 % ; le reste reste liquide |
 

@@ -9,7 +9,7 @@ Pas de secrets. Pas d’ops capital tant que non autorisé — les champs PnL re
 | V-01 | [V-01.md](V-01.md) | idée |
 | V-02 | [V-02.md](V-02.md) | idée |
 | V-03 | [V-03.md](V-03.md) | idée |
-| V-04 | [V-04.md](V-04.md) | recherche (pilote P1) |
+| V-04 | [V-04.md](V-04.md) | triangulé Mech / recherche (pilote P1) — [olas-mech](../../docs/pilots/olas-mech.md) |
 | V-05 | [V-05.md](V-05.md) | idée |
 | V-06 | [V-06.md](V-06.md) | recherche (pilote P0) |
 | V-07 | [V-07.md](V-07.md) | idée |
