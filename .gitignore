@@ -1,0 +1,62 @@
+# Secrets & credentials — never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+*.seed
+*.mnemonic
+secrets/
+credentials/
+*.wallet
+wallet.json
+keystore.json
+
+# Bitwarden / session artifacts
+.bw-session
+bw-session*
+*.bws
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+
+# Node / Python / build
+node_modules/
+dist/
+build/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+coverage/
+.coverage
+*.egg-info/
+
+# Logs & local runtime
+*.log
+logs/
+tmp/
+.cache/
+
+# Infra local state (hooks only for now; keep out of git if generated)
+.terraform/
+*.tfstate
+*.tfstate.*
+cdk.out/
+.aws-sam/
+
+# Agent / Cursor local
+.cursor/mcp.json
+*.local.md
