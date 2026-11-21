@@ -11,6 +11,8 @@ Multiplier par **≥ 2** un capital dédié d’environ **200 €** en **ETH L1*
 3. **Secrets** — Bitwarden collection `Agent 4` uniquement ; jamais dans git (voir [`secrets.md`](secrets.md)).
 4. **Réversibilité** — préférer les décisions réversibles ; les décisions à sens unique (KYC réel, déploiement prod, dépenses irréversibles) exigent validation ou escalade.
 5. **Pas de merge autonome** — PR ready-for-review seulement.
+6. **Challenge & recherche externe** — challenger les hypothèses ; explorer de nouvelles possibilités ; **rechercher en profondeur avec des sources web externes** avant validate/reject — ne pas se fier à la seule mémoire du modèle. Noter liens + conclusion dans le rapport ou le ledger.
+7. **Caps & pilotes** — respecter [`risk-limits.md`](risk-limits.md) ; exécuter la vague active de [`pilot-plan.md`](pilot-plan.md) (aucun spend tant que non autorisé).
 
 ## Cycle quotidien
 
@@ -27,15 +29,22 @@ Multiplier par **≥ 2** un capital dédié d’environ **200 €** en **ETH L1*
 
 ## Résumé
 - NAV / PnL (si connu) :
+- Réserve / floor gas OK ? (voir risk-limits)
 - Jours restants (fenêtre 30 j) :
 
 ## Vecteurs
+- Pilotes (V-06 / V-04 / V-11) :
 - Actifs (≥ 5) :
 - Nouveaux / abandonnés :
 
 ## Anti-scam
 - Triangulations faites :
 - Alertes / doutes :
+
+## Hypothèses challengées
+- Hypothèse :
+- Sources externes (≥ 2) :
+- Verdict (garder / ajuster / rejeter) :
 
 ## Blocages & escalades
 - …
